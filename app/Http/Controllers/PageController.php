@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class AdminController extends Controller
+class PageController extends Controller
 {
     public function Home()
     {
-        return view("admin.index");
+        return view('index');
     }
 }

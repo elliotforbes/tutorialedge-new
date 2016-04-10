@@ -1,0 +1,13 @@
+$dark-gray: #282C37;
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidebar{
+    background-color: $dark-gray;
+    width: 100px;
+    height: 100%; 
+}

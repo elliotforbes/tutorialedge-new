@@ -10,6 +10,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+
+Route::get('/', 'PageController@Home');
+
 Route::group(['prefix' => 'api/v1'], function (){
     Route::resource('lessons', 'LessonsController');    
 });
@@ -18,8 +21,4 @@ Route::group(['prefix' => 'admin'], function (){
     Route::get('/', 'AdminController@Home'); 
 });
 
-
-Route::get('/', function () {
-    return view('welcome');
-});
 
