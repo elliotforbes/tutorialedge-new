@@ -12,10 +12,11 @@ class CreateLessonsTable extends Migration
      */
     public function up()
     {
-        Schema::create('Lessons', function (Blueprint $table){
+        Schema::create('lessons', function (Blueprint $table){
             $table->increments('id');
             $table->string('title');
             $table->string('body');
+            $table->boolean('isLive');
             $table->timestamps();
         });
     }

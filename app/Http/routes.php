@@ -14,6 +14,10 @@ Route::group(['prefix' => 'api/v1'], function (){
     Route::resource('lessons', 'LessonsController');    
 });
 
+Route::group(['prefix' => 'admin'], function (){
+    Route::get('/', 'AdminController@Home'); 
+});
+
 
 Route::get('/', function () {
     return view('welcome');
