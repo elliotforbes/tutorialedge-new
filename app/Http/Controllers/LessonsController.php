@@ -7,8 +7,18 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Lesson;
 
-class LessonsController extends Controller
+use App\Tutorialedge\Transformers\LessonTransformer;
+
+class LessonsController extends ApiController
 {
+    
+    protected $lessonTransformer;
+    
+    function __construct(LessonTransformer $lessonTransformer)
+    {
+        $this->lessonTransformer = $lessonTransformer;   
+    }
+    
     /**
      * Returns all lessons in database
      * 
@@ -19,7 +29,7 @@ class LessonsController extends Controller
         $lessons = Lesson::all();
         
         return response()->json([
-            'data' => $this->transformAll($lessons)
+            'data' => $this->lessonTransformer->transformCollection($lessons->all())
         ], 200);
     }
     
@@ -40,7 +50,7 @@ class LessonsController extends Controller
         }
         
         return response()->json([
-            'data' => $this->transform($lesson)
+            'data' => $this->lessonTransformer->transform($lesson)
         ], 200);
     }
     
@@ -56,26 +66,6 @@ class LessonsController extends Controller
         $lesson->fill($input)->save();
         return Lesson::all();
 	}
-    
-    /**
-    * Transforms our lesson data and only returns the
-    * fields we want to return.
-    */
-    private function transform($lesson)
-    {
-        return [
-            'title' => $lesson['title'],
-            'body' => $lesson['body'],
-            'active' => $lesson['isLive']
-        ];
-    }
-    
-    /**
-    * Transforms a collection of lessons
-    */
-    private function transformAll($lessons)
-    {
-        return array_map([$this, 'transform'], $lessons->toArray());
-    }
+   
     
 }
