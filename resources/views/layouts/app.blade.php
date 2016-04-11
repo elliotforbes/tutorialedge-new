@@ -35,6 +35,8 @@
         </div>
         
         <div class="content">
+            
+            
         </div>
         
         <footer class="page-footer">
