@@ -1,13 +1,36 @@
-$dark-gray: #282C37;
+$dark-gray: #2D3E4E;
+$light-blue: #00CCFF;
 
-body{
-    margin: 0;
-    padding: 0;
+nav{
+    background-color: $dark-gray;
+    
+    .github-signin{
+        background-color: $light-blue;
+    }
+    
+    ul li:hover{
+        background-color: $light-blue;
+    }
+    
+    .brand-logo{
+        margin-left: 20px;
+    }
+    
+}
+
+.content{
+    height: 800px;
+    width: 100%;
 }
 
 
+footer{
+    
+    .page-footer{
+        background-color: $dark-gray;
+    }
+}
+
 .sidebar{
     background-color: $dark-gray;
-    width: 100px;
-    height: 100%; 
 }

@@ -1,10 +1,20 @@
-body {
-  margin: 0;
-  padding: 0; }
+nav {
+  background-color: #2D3E4E; }
+  nav .github-signin {
+    background-color: #00CCFF; }
+  nav ul li:hover {
+    background-color: #00CCFF; }
+  nav .brand-logo {
+    margin-left: 20px; }
+
+.content {
+  height: 800px;
+  width: 100%; }
+
+footer .page-footer {
+  background-color: #2D3E4E; }
 
 .sidebar {
-  background-color: #282C37;
-  width: 100px;
-  height: 100%; }
+  background-color: #2D3E4E; }
 
 /*# sourceMappingURL=admin-style.css.map */
