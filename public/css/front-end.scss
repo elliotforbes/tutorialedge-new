@@ -1,0 +1,137 @@
+$dark-gray: #2D3E4E;
+$footer-gray: #FAFAFA;
+$light-blue: #00CCFF;
+$pale-white: #F5F5F1;
+$light-gray: #9A9A9A;
+
+nav{
+    background-color: $dark-gray;
+    
+    .github-signin{
+        background-color: $light-blue;
+    }
+    
+    ul li:hover{
+        background-color: $light-blue;
+    }
+    
+    .brand-logo{
+        margin-left: 20px;
+        font-weight: 100;
+    }
+    
+}
+
+.content{
+    width:50%;
+    min-height: 600px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height:29px;
+    
+    h1, h2, h3, h4, h5{
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 800;
+         margin-bottom: 10px;
+    }
+    
+    h1{
+        font-size: 55px;
+        
+         text-align: center;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+    
+    .info{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        color: $light-gray;
+    }
+        
+    pre {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .tip{
+        background-color: $pale-white;
+        padding: 20px;
+        text-align: center;
+        .large{
+            font-size: 24px;
+            font-weight: 800;
+            width: 100%;
+        }
+    }
+    
+}
+
+.comment-container{
+    width: 100%;
+    background-color: #F5F5F1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .comments{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 20px;
+        
+        .comment{
+            margin-top: 20px;
+            padding: 20px;
+            width: 100%;
+            background-color: white;
+            
+            .icon{
+                width: 80px;
+                height: 80px;
+                border-radius: 40px;
+                background-color: #112F5A;
+                color: white;
+                text-align: center;
+                padding-top: 7px;
+                font-size: 48px;
+                float: left;
+                margin-right: 20px;
+            }
+            
+            h5{
+                font-size: 16px;
+                a{
+                    color: #505b69;
+                    margin: 1em 0;
+                    line-height: 1.3em;
+                    font-weight: 600;
+                }
+                
+                .time-since{
+                    color: #9ba6b5;
+                }
+            }
+        }
+    
+    }
+}
+
+footer.page-footer{
+    background-color: white;
+    color: #aeaeae;
+    margin-top: 0;
+    a{
+        color: #525252;
+    }
+    
+    .footer-copyright{
+        background-color: $footer-gray;
+        color: #525252;
+    }
+
+}
+
+.clear{
+    clear:both;
+}

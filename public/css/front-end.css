@@ -1,0 +1,91 @@
+nav {
+  background-color: #2D3E4E; }
+  nav .github-signin {
+    background-color: #00CCFF; }
+  nav ul li:hover {
+    background-color: #00CCFF; }
+  nav .brand-logo {
+    margin-left: 20px;
+    font-weight: 100; }
+
+.content {
+  width: 50%;
+  min-height: 600px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 29px; }
+  .content h1, .content h2, .content h3, .content h4, .content h5 {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px; }
+  .content h1 {
+    font-size: 55px;
+    text-align: center; }
+  .content h2 {
+    font-size: 30px; }
+  .content .info {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #9A9A9A; }
+  .content pre {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .content .tip {
+    background-color: #F5F5F1;
+    padding: 20px;
+    text-align: center; }
+    .content .tip .large {
+      font-size: 24px;
+      font-weight: 800;
+      width: 100%; }
+
+.comment-container {
+  width: 100%;
+  background-color: #F5F5F1;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .comment-container .comments {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px; }
+    .comment-container .comments .comment {
+      margin-top: 20px;
+      padding: 20px;
+      width: 100%;
+      background-color: white; }
+      .comment-container .comments .comment .icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        background-color: #112F5A;
+        color: white;
+        text-align: center;
+        padding-top: 7px;
+        font-size: 48px;
+        float: left;
+        margin-right: 20px; }
+      .comment-container .comments .comment h5 {
+        font-size: 16px; }
+        .comment-container .comments .comment h5 a {
+          color: #505b69;
+          margin: 1em 0;
+          line-height: 1.3em;
+          font-weight: 600; }
+        .comment-container .comments .comment h5 .time-since {
+          color: #9ba6b5; }
+
+footer.page-footer {
+  background-color: white;
+  color: #aeaeae;
+  margin-top: 0; }
+  footer.page-footer a {
+    color: #525252; }
+  footer.page-footer .footer-copyright {
+    background-color: #FAFAFA;
+    color: #525252; }
+
+.clear {
+  clear: both; }
+
+/*# sourceMappingURL=front-end.css.map */
