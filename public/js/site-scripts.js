@@ -2,7 +2,7 @@ $(".button-collapse").sideNav();
 
 $(function(){
       $(".element").typed({
-        strings: ["First sentence.", "Second sentence."],
+        strings: ["Laravel 5", "OpenGL Programming", "Programming Design Patterns"],
         typeSpeed: 0
       });
   });

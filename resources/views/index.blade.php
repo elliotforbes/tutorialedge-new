@@ -1,7 +1,13 @@
 @extends('layouts.app')
 
 @section('banner')
-<div class="element"></div>
+<div class="banner">
+    <div class="banner-cont">
+        <h1>Learn: <span class="element"></span></h1>
+        <h3>Our Goal is to help new developers land their dream jobs<br/>
+by teaching you some of the latest and greatest programming frameworks.</h3>
+    </div>
+</div>
 @endsection
 
 @section('content')

@@ -1,6 +1,27 @@
 @import "grid";
 @import "colours";
 
+.banner{
+    background-color: $light-blue;
+    margin-top: -40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    .banner-cont{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+        .element{
+            font-weight: 800;
+        }    
+        
+        h3{
+            font-size: 32px;
+        }
+    }
+    
+}
+
 .homepage-cont{
     
     min-height: 600px;
