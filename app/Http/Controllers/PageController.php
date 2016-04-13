@@ -11,7 +11,8 @@ class PageController extends Controller
 {
     public function Home()
     {
-        return view('index');
+        $lessons = Lesson::all();
+        return view('index', compact('lessons'));
     }
     
     public function show($slug)

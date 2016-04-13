@@ -1,8 +1,10 @@
 @import "grid";
 @import "colours";
 
-.container{
+.homepage-cont{
     
+    min-height: 600px;
+   
     @include breakpoint(mobileonly){
         width: 90%;
     }
@@ -19,5 +21,42 @@
         width: 80%;
     }
     
+}
+
+.course-container{
     
+    margin-top: 40px;
+     
+    .course-box{
+        margin-bottom: 40px;
+    }
+   
+}
+
+.gray-container{
+    background-color: $pale-white;
+    width: 100%;
+    min-height: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    .promo{
+        text-align: center;
+        
+        h5{
+            font-weight:800;
+        }
+        
+        p{
+            font-weight:300;
+        }
+        
+        i{
+            margin: 40px 0;
+            color: $light-blue;
+            font-size: 7rem;
+            display: block;
+        }
+        
+    }
 }

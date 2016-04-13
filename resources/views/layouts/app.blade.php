@@ -39,6 +39,8 @@
             </nav>
         </div>
         
+        @yield('banner')
+        
         @yield('content')
         
         <footer class="page-footer">
@@ -68,11 +70,10 @@
         </footer>
         
         <!--Import jQuery before materialize.js-->
-        <script src="{{ asset('/js/prism.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('/js/prism.js') }}"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="{{ asset('/js/typed.js') }}"></script>
         <script type="text/javascript" src="{{ asset('/js/materialize.min.js') }}"></script>
-        <script type="text/javascript">
-            $(".button-collapse").sideNav();
-        </script>
+        <script type="text/javascript" src="{{ asset('/js/site-scripts.js') }}"></script>
     </body>    
 </html>
