@@ -1,8 +1,6 @@
-$dark-gray: #2D3E4E;
-$footer-gray: #FAFAFA;
-$light-blue: #00CCFF;
-$pale-white: #F5F5F1;
-$light-gray: #9A9A9A;
+@import "colours";
+@import "grid";
+@import "homepage";
 
 nav{
     background-color: $dark-gray;
@@ -23,12 +21,27 @@ nav{
 }
 
 .content{
-    width:50%;
     min-height: 600px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     line-height:29px;
+    
+    @include breakpoint(mobileonly){
+        width: 90%;
+    }
+    
+    @include breakpoint(phablet){
+        width: 90%;
+    }
+    
+    @include breakpoint(tablet){
+        width: 80%;
+    }
+    
+    @include breakpoint(laptop){
+        width: 50%;
+    }
     
     h1, h2, h3, h4, h5{
         font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -76,7 +89,21 @@ nav{
     padding-top: 40px;
     padding-bottom: 40px;
     .comments{
-        width: 50%;
+        @include breakpoint(mobileonly){
+            width: 90%;
+        }
+        
+        @include breakpoint(phablet){
+            width: 90%;
+        }
+        
+        @include breakpoint(tablet){
+            width: 80%;
+        }
+        
+        @include breakpoint(laptop){
+            width: 50%;
+        }
         margin: auto;
         margin-bottom: 20px;
         

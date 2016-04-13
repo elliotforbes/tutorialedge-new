@@ -1,3 +1,22 @@
+/*
+* All the colours for the site are defined here
+*/
+/*
+* All the colours for the site are defined here
+*/
+@media (max-width: 37.5em) {
+  .container {
+    width: 90%; } }
+@media (min-width: 37.5em) {
+  .container {
+    width: 90%; } }
+@media (min-width: 50em) {
+  .container {
+    width: 80%; } }
+@media (min-width: 64em) {
+  .container {
+    width: 80%; } }
+
 nav {
   background-color: #2D3E4E; }
   nav .github-signin {
@@ -9,12 +28,23 @@ nav {
     font-weight: 100; }
 
 .content {
-  width: 50%;
   min-height: 600px;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   line-height: 29px; }
+  @media (max-width: 37.5em) {
+    .content {
+      width: 90%; } }
+  @media (min-width: 37.5em) {
+    .content {
+      width: 90%; } }
+  @media (min-width: 50em) {
+    .content {
+      width: 80%; } }
+  @media (min-width: 64em) {
+    .content {
+      width: 50%; } }
   .content h1, .content h2, .content h3, .content h4, .content h5 {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 800;
@@ -46,9 +76,20 @@ nav {
   padding-top: 40px;
   padding-bottom: 40px; }
   .comment-container .comments {
-    width: 50%;
     margin: auto;
     margin-bottom: 20px; }
+    @media (max-width: 37.5em) {
+      .comment-container .comments {
+        width: 90%; } }
+    @media (min-width: 37.5em) {
+      .comment-container .comments {
+        width: 90%; } }
+    @media (min-width: 50em) {
+      .comment-container .comments {
+        width: 80%; } }
+    @media (min-width: 64em) {
+      .comment-container .comments {
+        width: 50%; } }
     .comment-container .comments .comment {
       margin-top: 20px;
       padding: 20px;

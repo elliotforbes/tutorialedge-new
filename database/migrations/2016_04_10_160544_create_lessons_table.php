@@ -18,6 +18,7 @@ class CreateLessonsTable extends Migration
             $table->string('description');
             $table->string('body');
             $table->boolean('isLive');
+            $table->string('author');
             $table->string('slug')->unique();
             $table->timestamps();
             $table->timestamp('published_at')->index();

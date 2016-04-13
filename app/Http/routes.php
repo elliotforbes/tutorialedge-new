@@ -17,7 +17,7 @@ Route::group(['prefix' => 'api/v1'], function (){
     Route::resource('lessons', 'LessonsController');    
 });
 
-Route::group(['prefix' => 'admin'], function (){
+Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware', 'prefix' => 'admin'], function (){
     Route::get('/', 'AdminController@Home'); 
 });
 

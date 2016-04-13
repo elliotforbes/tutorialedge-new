@@ -11,5 +11,7 @@ class Lesson extends Model
         'title',
         'body',
         'slug',
+        'author',
+        'description',
     ];
 }

@@ -1,0 +1,23 @@
+@import "grid";
+@import "colours";
+
+.container{
+    
+    @include breakpoint(mobileonly){
+        width: 90%;
+    }
+    
+    @include breakpoint(phablet){
+        width: 90%;
+    }
+    
+    @include breakpoint(tablet){
+        width: 80%;
+    }
+    
+    @include breakpoint(laptop){
+        width: 80%;
+    }
+    
+    
+}

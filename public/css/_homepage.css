@@ -1,0 +1,17 @@
+/*
+* All the colours for the site are defined here
+*/
+@media (max-width: 37.5em) {
+  .container {
+    width: 90%; } }
+@media (min-width: 37.5em) {
+  .container {
+    width: 90%; } }
+@media (min-width: 50em) {
+  .container {
+    width: 80%; } }
+@media (min-width: 64em) {
+  .container {
+    width: 80%; } }
+
+/*# sourceMappingURL=_homepage.css.map */

@@ -1,5 +1,5 @@
-$dark-gray: #2D3E4E;
-$light-blue: #00CCFF;
+@import "grid";
+@import "colours";
 
 nav{
     background-color: $dark-gray;
