@@ -21,4 +21,5 @@ Route::group(['prefix' => 'admin'], function (){
     Route::get('/', 'AdminController@Home'); 
 });
 
+Route::get('/{slug}', 'PageController@show');
 

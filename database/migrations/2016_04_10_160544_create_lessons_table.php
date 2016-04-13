@@ -17,6 +17,7 @@ class CreateLessonsTable extends Migration
             $table->string('title');
             $table->string('body');
             $table->boolean('isLive');
+            $table->string('slug');
             $table->timestamps();
         });
     }

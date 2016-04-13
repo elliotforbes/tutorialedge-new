@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
         <link rel="stylesheet" href="{{ asset('/css/materialize.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('/css/front-end.css', Request::secure()) }}">
+        <link rel="stylesheet" href="{{ asset('/css/front-end.css') }}">
        
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
