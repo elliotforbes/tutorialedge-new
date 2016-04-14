@@ -59,6 +59,15 @@
 
 @media (max-width: 37.5em) {
   body p {
+    font-size: 21px; } }
+@media (min-width: 37.5em) {
+  body p {
+    font-size: 20px; } }
+@media (min-width: 50em) {
+  body p {
+    font-size: 20px; } }
+@media (min-width: 64em) {
+  body p {
     font-size: 19px; } }
 
 nav {
