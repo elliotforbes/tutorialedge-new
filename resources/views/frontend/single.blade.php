@@ -14,7 +14,7 @@
     </div>
     
     <div class="post-body">
-        {{ $lesson->body }}
+        {!! $lesson->body !!}
             
     </div>
 </div>
