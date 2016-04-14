@@ -16,7 +16,7 @@ class CreateLessonsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('description');
-            $table->string('body');
+            $table->text('body');
             $table->boolean('isLive');
             $table->string('author');
             $table->string('slug')->unique();
