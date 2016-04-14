@@ -169,7 +169,8 @@ nav {
         padding-top: 7px;
         font-size: 48px;
         float: left;
-        margin-right: 20px; }
+        margin-right: 20px;
+        margin-bottom: 20px; }
       .comment-container .comments .comment h5 {
         font-size: 16px; }
         .comment-container .comments .comment h5 a {

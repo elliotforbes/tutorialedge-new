@@ -13,5 +13,24 @@ class Lesson extends Model
         'slug',
         'author',
         'description',
+        'id',
+        'lesson_id',
+        
+        'created_at',
+        'updated_at',
     ];
+    
+    public function comments()
+    {
+        return $this->hasMany("App\Comment");
+    }
+    
+    /**
+    * Get the tags for this article
+    */
+    public function tags()
+    {
+        return $this->belongsToMany("App\Tag")->withTimestamps();
+    }
+
 }
