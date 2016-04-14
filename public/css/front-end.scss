@@ -2,8 +2,22 @@
 @import "grid";
 @import "homepage";
 
+body{
+    
+    @include breakpoint(mobileonly){
+        p{
+            font-size: 19px;
+        }
+    }
+    
+}
+
 nav{
     background-color: $dark-gray;
+    
+    .button-collapse{
+        padding-left: 10px;
+    }
     
     .github-signin{
         background-color: $light-blue;
@@ -29,6 +43,9 @@ nav{
     
     @include breakpoint(mobileonly){
         width: 90%;
+        p{
+            font-size: 22px;
+        }
     }
     
     @include breakpoint(phablet){
@@ -78,6 +95,12 @@ nav{
             font-size: 24px;
             font-weight: 800;
             width: 100%;
+        }
+    }
+    
+    .post-body{
+        h1{
+            font-size: 38px;
         }
     }
     

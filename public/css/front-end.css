@@ -57,8 +57,14 @@
       font-size: 7rem;
       display: block; }
 
+@media (max-width: 37.5em) {
+  body p {
+    font-size: 19px; } }
+
 nav {
   background-color: #2D3E4E; }
+  nav .button-collapse {
+    padding-left: 10px; }
   nav .github-signin {
     background-color: #00CCFF; }
   nav ul li:hover {
@@ -75,7 +81,9 @@ nav {
   line-height: 29px; }
   @media (max-width: 37.5em) {
     .content {
-      width: 90%; } }
+      width: 90%; }
+      .content p {
+        font-size: 22px; } }
   @media (min-width: 37.5em) {
     .content {
       width: 90%; } }
@@ -109,6 +117,8 @@ nav {
       font-size: 24px;
       font-weight: 800;
       width: 100%; }
+  .content .post-body h1 {
+    font-size: 38px; }
 
 .comment-container {
   width: 100%;
