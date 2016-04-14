@@ -5,25 +5,26 @@
 body{
     
     @include breakpoint(mobileonly){
-        p{
-            font-size: 21px;
+        p, ul, li, a{
+            font-size: 20px;
+            line-height: 32px;
         }
     }
     
     @include breakpoint(phablet){
-        p{
-            font-size: 20px;
+        p, ul, li, a{
+            font-size: 19px;
         }
     }
     
     @include breakpoint(tablet){
-        p{
-            font-size: 20px;
+        p, ul, li, a{
+            font-size: 19px;
         }
     }
     @include breakpoint(laptop){
-        p{
-            font-size: 19px;
+        p, ul, li, a{
+            font-size: 18px;
         }
     }
     
@@ -38,6 +39,10 @@ nav{
     
     .github-signin{
         background-color: $light-blue;
+    }
+    
+    ul li{
+        margin-top: -1px;
     }
     
     ul li:hover{
@@ -102,6 +107,8 @@ nav{
     pre {
         margin-top: 20px;
         margin-bottom: 20px;
+        padding-left: 20px;
+        border-left: 5px solid $light-blue;
     }
     
     .tip{
