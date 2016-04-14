@@ -6,7 +6,19 @@ body{
     
     @include breakpoint(mobileonly){
         p{
-            font-size: 19px;
+            font-size: 18px;
+        }
+    }
+    
+    @include breakpoint(phablet){
+        p{
+            font-size: 17px;
+        }
+    }
+    
+    @include breakpoint(tablet){
+        p{
+            font-size: 17px;
         }
     }
     
