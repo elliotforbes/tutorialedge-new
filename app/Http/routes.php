@@ -24,8 +24,7 @@ Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware', 'prefix' =>
     Route::get('/', 'AdminController@Home'); 
 });
 
+Route::get('/course/{course}', 'PageController@course');
 Route::get('/{slug}', 'PageController@show');
-
-Route::get('/{course}', 'PageController@course');
 
 

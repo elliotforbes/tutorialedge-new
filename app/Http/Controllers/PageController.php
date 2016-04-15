@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Lesson;
+use App\Course;
 
 class PageController extends Controller
 {
