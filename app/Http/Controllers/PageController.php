@@ -51,9 +51,11 @@ class PageController extends Controller
      /*
       * Returns the course page for any courses
       */
-      public function course()
+      public function course($slug)
       {
-          return view('frontend.course');
+          $course = Course::whereSlug($slug)->get()->first();
+          
+          return view('frontend.course', compact('course'));
       }
     
     
