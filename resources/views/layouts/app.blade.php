@@ -26,7 +26,8 @@
                 <a href="{{ url('/') }}" class="brand-logo">TutorialEdge.net</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="badges.html">Tutorials</a></li>
+                    <li><a href="{{ url('/search') }}">Search</a></li>
+                    <li><a href="{{ url('/tutorials') }}">Tutorials</a></li>
                     <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Courses<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a class="github-signin" href="#">Register With Github</a></li>
                 </ul>

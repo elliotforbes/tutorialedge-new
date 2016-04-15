@@ -62,7 +62,7 @@ nav{
 }
 
 .content{
-    min-height: 600px;
+    min-height: 100px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -131,6 +131,24 @@ nav{
         h1{
             font-size: 38px;
         }
+    }
+    
+}
+
+.search{
+    
+    .input-field{
+        input{
+            font-size: 23px;
+        }
+    }
+    
+    .search-results{
+        
+        .result{
+            background-color: white;
+        }
+        
     }
     
 }

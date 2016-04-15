@@ -42,9 +42,9 @@
 .gray-container {
   background-color: #F5F5F1;
   width: 100%;
-  min-height: 300px;
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  min-height: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
   .gray-container .promo {
     text-align: center; }
     .gray-container .promo h5 {
@@ -89,7 +89,7 @@ nav {
         margin-top: 10px; } }
 
 .content {
-  min-height: 600px;
+  min-height: 100px;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -136,6 +136,11 @@ nav {
       width: 100%; }
   .content .post-body h1 {
     font-size: 38px; }
+
+.search .input-field input {
+  font-size: 23px; }
+.search .search-results .result {
+  background-color: white; }
 
 .comment-container {
   width: 100%;

@@ -12,6 +12,9 @@
 */
 
 Route::get('/', 'PageController@Home');
+Route::get('/tutorials', 'PageController@allTutorials');
+Route::get('/search', 'PageController@search');
+Route::get('/about', 'PageController@about');
 
 Route::group(['prefix' => 'api/v1'], function (){
     Route::resource('lessons', 'LessonsController');    
@@ -22,4 +25,5 @@ Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware', 'prefix' =>
 });
 
 Route::get('/{slug}', 'PageController@show');
+
 
