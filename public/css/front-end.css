@@ -84,6 +84,9 @@ nav {
   nav .brand-logo {
     margin-left: 20px;
     font-weight: 100; }
+    @media (max-width: 37.5em) {
+      nav .brand-logo {
+        margin-top: 10px; } }
 
 .content {
   min-height: 600px;

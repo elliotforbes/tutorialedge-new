@@ -50,6 +50,11 @@ nav{
     }
     
     .brand-logo{
+        
+        @include breakpoint(mobileonly){
+            margin-top: 10px;
+        }
+        
         margin-left: 20px;
         font-weight: 100;
     }
