@@ -47,6 +47,14 @@ class PageController extends Controller
      {
          return view('frontend.search');
      }
+     
+     /*
+      * Returns the course page for any courses
+      */
+      public function course()
+      {
+          return view('frontend.course');
+      }
     
     
     
