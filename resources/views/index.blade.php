@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@section('title')
+The Home of High Quality Programming Tutorials
+@endsection
+
+@section('meta')
+<meta name="description" content="A Game Development Tutorial site focused on bringing you high quality programming courses...">
+@endsection
+
 @section('banner')
 <div class="banner">
     <div class="banner-cont">

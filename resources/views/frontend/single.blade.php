@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
-@section('meta-tags')
+@section('title')
+{{ $lesson->title }}
+@endsection
+
+@section('meta')
 <meta name="description" content="{{ $lesson->description }}">
 @endsection
 

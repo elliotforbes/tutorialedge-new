@@ -1,9 +1,17 @@
 @extends('layouts.app')
 
+@section('title')
+The Blog
+@endsection
+
+@section('meta')
+<meta name="description" content="All Blog Posts">
+@endsection
+
 @section('banner')
 <div class="gray-container">
     <div class="content">
-        <h1>Blog</h1>
+        <h1>The Blog</h1>
     </div>
 </div>
 @endsection

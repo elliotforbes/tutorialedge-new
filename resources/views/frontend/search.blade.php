@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@section('title')
+Search the Site
+@endsection
+
+@section('meta')
+<meta name="description" content="Search the site for high quality programming tutorials...">
+@endsection
+
 @section('banner')
 <div class="gray-container search">
     <div class="content">

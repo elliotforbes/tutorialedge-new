@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@section('title')
+All Tutorials
+@endsection
+
+@section('meta')
+<meta name="description" content="All Tutorials">
+@endsection
+
 @section('banner')
 <div class="gray-container">
     <div class="content">

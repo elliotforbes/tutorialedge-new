@@ -64,6 +64,16 @@ class PageController extends Controller
       }
       
       /*
+      * Returns the course page for any courses
+      */
+      public function courses()
+      {
+          $courses = Course::paginate(15);
+          
+          return view('frontend.course', compact('courses'));
+      }
+      
+      /*
        *
        */
        public function contact()

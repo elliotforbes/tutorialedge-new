@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>@yield('title') | TutorialEdge.net</title>
+        @yield('meta')
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="google-site-verification" content="o0UedRQqZULbVZPe6SPx1VD1YxJd6WL-2-15-XHWS1g" />
+		<link rel="author" href="https://plus.google.com/b/115194233692529836662">
+		<meta property="og:site_name" content="TutorialEdge.net" />
+ 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
         <link rel="stylesheet" href="{{ asset('/css/materialize.min.css') }}">
         <link rel="stylesheet" href="{{ asset('/css/front-end.css') }}">
-       
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        
     </head>
     <body>
         
         <!-- Dropdown Structure -->
         <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">Developing a Website with Laravel 5.2</a></li>
-            <li><a href="#!">Introduction to Website Security</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">OpenGL Game Programming For Beginners</a></li>
+            <li><a href="#!">THIS NEEDS TO BE ADDED</a></li>
         </ul>
         <div class="navbar-fixed">
             <nav>
@@ -27,7 +33,7 @@
                     <li><a href="{{ url('/blog') }}">Blog</a></li>
                     <li><a href="{{ url('/search') }}">Search</a></li>
                     <li><a href="{{ url('/tutorials') }}">Tutorials</a></li>
-                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Courses<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-button" href="{{ url('/courses') }}" data-activates="dropdown1">Courses<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a class="github-signin" href="#">Register With Github</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
