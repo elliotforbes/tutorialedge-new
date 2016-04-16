@@ -20,8 +20,11 @@
     
     <div class="search-results">
         <div class="result">
-            
+            <h3>Search Result 1</h3>
+            <p>Search Description</p>
         </div>
+        
+        <?php echo $results->render(); ?>
     </div>
     
 </div>

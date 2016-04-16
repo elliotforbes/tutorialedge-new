@@ -9,5 +9,9 @@
 @endsection
 
 @section('content')
-
+<div class="content">
+    
+    {{ $course->description }}
+    
+</div>
 @endsection
