@@ -15,6 +15,9 @@ Route::get('/', 'PageController@Home');
 Route::get('/tutorials', 'PageController@allTutorials');
 Route::get('/search', 'PageController@search');
 Route::get('/about', 'PageController@about');
+Route::get('/contact', 'PageController@contact');
+Route::get('/blog', 'PageController@blog');
+Route::get('/advertise', 'PageController@advertise');
 
 Route::group(['prefix' => 'api/v1'], function (){
     Route::resource('lessons', 'LessonsController');    

@@ -54,18 +54,17 @@
               <div class="col l4 offset-l2 s12">
                 <h5>Links</h5>
                 <ul>
-                  <li><a class="text-lighten-3" href="#!">Contact Me</a></li>
-                  <li><a class="text-lighten-3" href="#!">Blog</a></li>
-                  <li><a class="text-lighten-3" href="#!">About Us</a></li>
-                  <li><a class="text-lighten-3" href="#!">Advertise Here</a></li>
+                  <li><a class="text-lighten-3" href="{{ url('/contact') }}">Contact Me</a></li>
+                  <li><a class="text-lighten-3" href="{{ url('/blog') }}">Blog</a></li>
+                  <li><a class="text-lighten-3" href="{{ url('/about') }}">About Us</a></li>
+                  <li><a class="text-lighten-3" href="{{ url('/advertise') }}">Advertise Here</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
-            <a class="text-lighten-4 right" href="#!">More Links</a>
+            TutorialEdge © 2016 Copyright 
             </div>
           </div>
         </footer>

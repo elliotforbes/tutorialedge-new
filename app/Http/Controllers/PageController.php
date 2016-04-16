@@ -60,6 +60,38 @@ class PageController extends Controller
           
           return view('frontend.course', compact('course'));
       }
+      
+      /*
+       *
+       */
+       public function contact()
+       {
+           return view('frontend.static.contact');
+       }
+       
+       /*
+       *
+       */
+       public function advertise()
+       {
+           return view('frontend.static.advertise');
+       }
+       
+       /*
+       *
+       */
+       public function blog()
+       {
+           return view('frontend.static.blog');
+       }
+       
+       /*
+       *
+       */
+       public function about()
+       {
+           return view('frontend.static.about');
+       }
     
     
     
