@@ -18,7 +18,8 @@ class PageController extends Controller
     public function Home()
     {
         $lessons = Lesson::all();
-        return view('index', compact('lessons'));
+        $courses = Course::all();
+        return view('index', compact('lessons', 'courses'));
     }
     /*
      * Show the an article based of slug passed in.
