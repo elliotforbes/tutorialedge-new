@@ -13,9 +13,10 @@
         
         <!-- Dropdown Structure -->
         <ul id="dropdown1" class="dropdown-content">
-            @foreach($courses as $course)
-                <li><a href="{{ url('/') }}/{{ $course->slug }}">{{ $course->title }}</a></li>
-            @endforeach
+            <li><a href="#!">Developing a Website with Laravel 5.2</a></li>
+            <li><a href="#!">Introduction to Website Security</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">OpenGL Game Programming For Beginners</a></li>
         </ul>
         <div class="navbar-fixed">
             <nav>
