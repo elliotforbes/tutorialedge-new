@@ -17,7 +17,7 @@ class Lesson extends Model
         'lesson_id',
         
         'created_at',
-        'updated_at',
+        'updated_at'
     ];
     
     public function comments()

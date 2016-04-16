@@ -61,7 +61,7 @@
             <h5>
                 <a href="#">{{ $comment->author }}</a>
                 <span class="time-since">
-                    - {{ date("d M, Y",strtotime($lesson->created_at)) }} @ {{ date("h:m", strtotime($lesson->created_at)) }}
+                    - {{ date("d M, Y",strtotime($comment->created_at)) }} @ {{ date("h:m", strtotime($comment->created_at)) }}
                 </span>
             </h5>
             <p>{{ $comment->body }}</p>

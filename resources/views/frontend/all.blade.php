@@ -1,8 +1,15 @@
 @extends('layouts.app')
 
+@section('banner')
+<div class="gray-container">
+    <div class="content">
+        <h1>All Tutorials</h1>
+    </div>
+</div>
+@endsection
+
 @section('content')
 <div class="content">
-    <h1>All Tutorials</h1>
     
     @foreach($lessons as $lesson)
     <div class="col s12 m4 l4">

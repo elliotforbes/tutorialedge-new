@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Lesson;
 use App\Course;
+use App\Post;
 
 class PageController extends Controller
 {
@@ -82,7 +83,17 @@ class PageController extends Controller
        */
        public function blog()
        {
-           return view('frontend.static.blog');
+           $posts = Post::paginate(15);
+           return view('frontend.static.blog', compact('posts'));
+       }
+       
+       /*
+       *
+       */
+       public function blogSingle($slug)
+       {
+           $post = Post::whereSlug($slug)->get()->first();
+           return view('frontend.static.blog-single', compact('post'));
        }
        
        /*

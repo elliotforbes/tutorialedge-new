@@ -91,8 +91,8 @@ nav {
 .content {
   min-height: 100px;
   margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   line-height: 29px; }
   @media (max-width: 37.5em) {
     .content {
@@ -136,6 +136,10 @@ nav {
       width: 100%; }
   .content .post-body h1 {
     font-size: 38px; }
+  .content .result {
+    margin-bottom: 40px; }
+    .content .result button {
+      background-color: #00CCFF; }
 
 .search .input-field input {
   font-size: 23px; }

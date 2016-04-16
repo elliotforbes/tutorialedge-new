@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
         <link rel="stylesheet" href="{{ asset('/css/materialize.min.css') }}">
         <link rel="stylesheet" href="{{ asset('/css/front-end.css') }}">
@@ -26,6 +24,7 @@
                 <a href="{{ url('/') }}" class="brand-logo">TutorialEdge.net</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="{{ url('/blog') }}">Blog</a></li>
                     <li><a href="{{ url('/search') }}">Search</a></li>
                     <li><a href="{{ url('/tutorials') }}">Tutorials</a></li>
                     <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Courses<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -71,7 +70,7 @@
         
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="{{ asset('/js/prism.js') }}"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="{{ asset('/js/jquery.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('/js/typed.js') }}"></script>
         <script type="text/javascript" src="{{ asset('/js/materialize.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('/js/site-scripts.js') }}"></script>

@@ -19,11 +19,21 @@
     <h2>Results:</h2>
     
     <div class="search-results">
+        @foreach($results as $result)
         <div class="result">
-            <h3>Search Result 1</h3>
-            <p>Search Description</p>
+            <h4>{{ $result->title }}</h4>
+            <p>
+                <strong>{{ $result->author }} resulted at: {{ date("d M, Y",strtotime($result->created_at)) }}</strong>
+                <br/>{{ $result->description }}
+            </p>
+            <a href="{{ url('/blog') }}/{{ $result->slug }}">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Read Now...
+                    <i class="material-icons right">send</i>
+                </button>
+            </a>
         </div>
-        
+        @endforeach
+            
         <?php echo $results->render(); ?>
     </div>
     

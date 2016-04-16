@@ -64,8 +64,8 @@ nav{
 .content{
     min-height: 100px;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     line-height:29px;
     
     @include breakpoint(mobileonly){
@@ -131,6 +131,14 @@ nav{
         h1{
             font-size: 38px;
         }
+    }
+    
+    .result{
+        margin-bottom: 40px;
+        button{
+            background-color: $light-blue;
+        }
+        
     }
     
 }
