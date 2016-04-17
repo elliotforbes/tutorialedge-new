@@ -16,7 +16,21 @@
         <link rel="stylesheet" href="{{ secure_asset('/css/materialize.min.css', Request::secure() )  }}">
         <link rel="stylesheet" href="{{ secure_asset('/css/front-end.css' , Request::secure() ) }}">
         
-        
+         <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-10255990-23', 'auto');
+            ga('send', 'pageview');
+        </script>
     </head>
     <body>
         
@@ -34,12 +48,13 @@
                     <li><a href="{{ url('/search') }}">Search</a></li>
                     <li><a href="{{ url('/tutorials') }}">Tutorials</a></li>
                     <li><a class="dropdown-button" href="{{ url('/courses') }}" data-activates="dropdown1">Courses<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a class="github-signin" href="#">Register With Github</a></li>
+                    <li><a class="github-signin" href="{{ url('/auth/github') }}">Register With Github</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Register With Github</a></li>
+                    <li><a href="{{ url('/tutorials') }}">Tutorials</a></li>
+                    <li><a href="{{ url('/blog') }}">Blog</a></li>
+                    <li><a href="{{ url('/search') }}">Search</a></li>
+                    <li><a href="{{ url('/auth/github') }}">Register With Github</a></li>
                 </ul>
                 </div>
             </nav>
