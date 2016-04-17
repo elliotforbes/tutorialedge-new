@@ -35,7 +35,7 @@
   margin-top: 40px; }
   .course-container .course-box {
     margin-bottom: 40px;
-    height: 300px; }
+    min-height: 300px; }
 
 .gray-container {
   background-color: #F5F5F1;
