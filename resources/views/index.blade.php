@@ -28,7 +28,6 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
                         <span class="card-title">{{ $lesson->title }}</span>
-                        <p>{{ $lesson->description }}</p>
                     </div>
                     <div class="card-action">
                     <a href="{{ url('/') }}/{{ $lesson->slug }}">Read Now</a>
