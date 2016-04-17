@@ -52,17 +52,17 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
         <div class="col s12 m6 l4 promo">
             <i class="material-icons">flash_on</i>
             <h5>Learn the latest and greatest frameworks</h5>
-            <p>By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+            <p>Follow our courses and learn how to use the latest frameworks whilst developing your own applications and websites.</p>
         </div>
         <div class="col s12 m6 l4 promo">
             <i class="material-icons">group</i>
-            <h5>Join the growing group of programmers using our site to advance their careers.</h5>
-            <p>By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+            <h5>Join the Community</h5>
+            <p>Participate in a discussion about your favourite tools and new packages or ask for advice on how to tackle a specific programming challenge on our new forums.</p>
         </div>
         <div class="col s12 m6 l4 promo">
             <i class="material-icons">trending_up</i>
             <h5>Level up your development skills</h5>
-            <p>By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+            <p>Learn new programming skills that could ultimately seal you your dream job.</p>
         </div>
 
         </div>
