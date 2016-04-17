@@ -9,22 +9,24 @@
 @endsection
 
 @section('banner')
-<div class="content">
-    <h1>{{ $lesson->title }}</h1>
-    
-    <div class="info">
-        {{ $lesson->author }} 
-        | {{ date("d M, Y",strtotime($lesson->created_at)) }}
-        | Tags: 
-        @foreach ($lesson->tags as $tag)
-            @if (count($lesson->tags) > 1)
-               / {{ $tag->name }} 
-            @else 
-                {{ $tag->name }}
-            @endif
-        @endforeach
+<div class="gray-container">
+    <div class="content">
+        <h1>{{ $lesson->title }}</h1>
+        
+        <div class="info">
+            {{ $lesson->author }} 
+            | {{ date("d M, Y",strtotime($lesson->created_at)) }}
+            | Tags: 
+            @foreach ($lesson->tags as $tag)
+                @if (count($lesson->tags) > 1)
+                / {{ $tag->name }} 
+                @else 
+                    {{ $tag->name }}
+                @endif
+            @endforeach
+        </div>
+        
     </div>
-    
 </div>
 @endsection
 
