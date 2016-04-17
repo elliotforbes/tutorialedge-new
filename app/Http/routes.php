@@ -33,3 +33,7 @@ Route::get('/course/{course}', 'PageController@course');
 Route::get('/{slug}', 'PageController@show');
 
 
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

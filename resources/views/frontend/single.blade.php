@@ -16,7 +16,6 @@
     <div class="info">
         {{ $lesson->author }} 
         | {{ date("d M, Y",strtotime($lesson->created_at)) }}
-        | 3 Comments 
         | Tags: 
         @foreach ($lesson->tags as $tag)
             @if (count($lesson->tags) > 1)

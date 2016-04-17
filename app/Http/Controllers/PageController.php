@@ -17,7 +17,7 @@ class PageController extends Controller
      */
     public function Home()
     {
-        $lessons = Lesson::all();
+        $lessons = Lesson::paginate(10);
         $courses = Course::all();
         return view('index', compact('lessons', 'courses'));
     }
