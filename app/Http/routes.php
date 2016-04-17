@@ -33,7 +33,7 @@ Route::get('/course/{course}', 'PageController@course');
 Route::get('/{slug}', 'PageController@show');
 
 
-
-Route::auth();
+Route::get('auth/github', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/github/callback', 'Auth\AuthController@handleProviderCallback');
 
 Route::get('/home', 'HomeController@index');
