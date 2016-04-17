@@ -75,7 +75,7 @@
         </footer>
         
         <!--Import jQuery before materialize.js-->
-        {{ HTML::script('js/prism.js') }}
+        <script type="text/javascript" src="{{ secure_asset('/js/prism.js', true) }}"></script>
         <script type="text/javascript" src="{{ secure_asset('/js/jquery.min.js', Request::secure()) }}"></script>
         <script type="text/javascript" src="{{ secure_asset('/js/typed.js', Request::secure()) }}"></script>
         <script type="text/javascript" src="{{ secure_asset('/js/materialize.min.js', Request::secure()) }}"></script>
