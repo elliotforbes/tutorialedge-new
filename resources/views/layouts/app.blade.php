@@ -75,7 +75,7 @@
         </footer>
         
         <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="{{ secure_asset('/js/prism.js', true) }}"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/prism.min.js"></script>
         <script type="text/javascript" src="{{ secure_asset('/js/jquery.min.js', Request::secure()) }}"></script>
         <script type="text/javascript" src="{{ secure_asset('/js/typed.js', Request::secure()) }}"></script>
         <script type="text/javascript" src="{{ secure_asset('/js/materialize.min.js', Request::secure()) }}"></script>
