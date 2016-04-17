@@ -25,19 +25,19 @@ Search the Site
 
 @section('content')
 
-<div class="content">   
+<div class="content" id="search">   
     
     <h2>Results:</h2>
     
     <div class="search-results">
         <div id="app">
             <div v-for="result in results" class="result">
-                <h4>{{ $result->title }}</h4>
+                <h4>@{{ result.title }}</h4>
                 <p>
-                    <strong>{{ $result->author }} resulted at: {{ date("d M, Y",strtotime($result->created_at)) }}</strong>
-                    <br/>{{ $result->description }}
+                    <strong>@{{ result.author }}</strong>
+                    <br/>@{{ result.description }}
                 </p>
-                <a href="{{ url('/blog') }}/{{ $result->slug }}">
+                <a href="{{ url('/') }}/@{{ result.slug }}">
                     <button class="btn waves-effect waves-light" type="submit" name="action">Read Now...
                         <i class="material-icons right">send</i>
                     </button>
@@ -48,6 +48,6 @@ Search the Site
     
 </div>
 
-<script src="{{ asset('/js/vue-script.js') }}"></script>
+<script src="{{ secure_asset('/js/search.js', true) }}"></script>
 
 @endsection
