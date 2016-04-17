@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Session;
 use Socialite;
 use Illuminate\Http\Request;
 use Auth;
+use Log;
 
 class AuthController extends Controller
 {
