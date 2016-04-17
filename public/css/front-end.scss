@@ -68,6 +68,11 @@ nav{
     margin-bottom: 40px;
     line-height:29px;
     
+    img{
+        width: 100%;
+        height: auto;
+    }
+    
     @include breakpoint(mobileonly){
         width: 90%;
         p{

@@ -1,9 +1,17 @@
 @extends('layouts.app')
 
+@section('title')
+The Story
+@endsection
+
+@section('meta')
+<meta name="description" content="The Story">
+@endsection
+
 @section('banner')
 <div class="gray-container">
     <div class="content">
-        <h1>About Us:</h1>
+        <h1>The Story:</h1>
     </div>
 </div>
 @endsection
@@ -16,6 +24,17 @@
     
     <h2>The Code</h2>
     
-    <p><strong>For those interested</strong> in what the code
+    <p><strong>For those interested</strong> in what the code base looks like for the <b>entire</b> website then be sure to check out this github repo: <a href="https://github.com/emforce/tutorialedge-new">https://github.com/emforce/tutorialedge-new</a></p>
+    
+    <h2>The Growth</h2>
+    
+    <p>Since it's inception the site's shown good growth and now exceeds <b>9,000 hits per month</b> and the growth doesn't seem to be slowing down. My main aim for the site is to become one of the best free resources on the web for learning how to program using various new and emeging frameworks such as Laravel 5 for web development and Java + OpenGL for game development.</p>
+    
+    <img src="{{ asset('/images/growth.png') }}" alt="Google Stats" >
+    
+    <h2>The 6 Month Plan</h2>
+    
+    <p>My plan for the site is to hit the 100 complete tutorials milestone and get the new forum system up and running so that the site can continue to grow and provide help on all aspects of web development. I hope to build a thriving online community that will become the authority on all things web development related.</p>
+    
 </div>
 @endsection
