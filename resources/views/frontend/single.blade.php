@@ -8,8 +8,7 @@
 <meta name="description" content="{{ $lesson->description }}">
 @endsection
 
-@section('content')
-
+@section('banner')
 <div class="content">
     <h1>{{ $lesson->title }}</h1>
     
@@ -26,9 +25,14 @@
         @endforeach
     </div>
     
+</div>
+@endsection
+
+@section('content')
+
+<div class="content">
     <div class="post-body">
-        {!! $lesson->body !!}
-            
+        {!! $lesson->body !!}            
     </div>
 </div>
 
