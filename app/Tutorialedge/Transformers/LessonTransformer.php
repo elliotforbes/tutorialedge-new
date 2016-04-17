@@ -6,7 +6,9 @@ class LessonTransformer extends Transformer {
     {
         return [
             'title' => $lesson['title'],
-            'body' => $lesson['body'],
+            'description' => $lesson['description'],
+            'author' => $lesson['author'],
+            'slug' => $lesson['slug'],
             'active' => $lesson['isLive']  
         ];
     }
