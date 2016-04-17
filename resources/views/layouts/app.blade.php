@@ -48,13 +48,22 @@
                     <li><a href="{{ url('/search') }}">Search</a></li>
                     <li><a href="{{ url('/tutorials') }}">Tutorials</a></li>
                     <li><a class="dropdown-button" href="{{ url('/courses') }}" data-activates="dropdown1">Courses<i class="material-icons right">arrow_drop_down</i></a></li>
+                    @if (Auth::guest())
                     <li><a class="github-signin" href="{{ url('/auth/github') }}">Register With Github</a></li>
+                    @else
+                    <li><a class="github-signin" href="{{ url('/auth/logout') }}">Logout</a></li>
+                    @endif
+                    
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="{{ url('/tutorials') }}">Tutorials</a></li>
                     <li><a href="{{ url('/blog') }}">Blog</a></li>
                     <li><a href="{{ url('/search') }}">Search</a></li>
+                    @if (Auth::guest())
                     <li><a href="{{ url('/auth/github') }}">Register With Github</a></li>
+                    @else
+                    <li><a href="{{ url('/auth/logout') }}">Logout</a></li>
+                    @endif
                 </ul>
                 </div>
             </nav>
