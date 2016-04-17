@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use DB;
 use App\Http\Requests;
 use App\Lesson;
 use App\Course;
@@ -17,7 +18,7 @@ class PageController extends Controller
      */
     public function Home()
     {
-        $lessons = Lesson::paginate(9);
+        $lessons = DB::table('lessons')->orderBy('created_at', 'desc')->paginate(9);
         $courses = Course::all();
         return view('index', compact('lessons', 'courses'));
     }
