@@ -40,8 +40,9 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
         
         <div class="break"></div>
         
-        <?php echo $lessons->render(); ?>
-        
+        <div class="pagination">
+            <?php echo $lessons->render(); ?>
+        </div>
     </div>
 </div>
 
