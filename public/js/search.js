@@ -1,8 +1,9 @@
+
 var vm = new Vue({
   el: '#search',
   data: 
   {
-    results: []
+    results: [{title : "This Still hasn't been Implemented", author: "Elliot Forbes", description : "I'm still learning how to use vue.js for things so this is still in the works."}]
   },
   ready : function()
   {
@@ -12,12 +13,7 @@ var vm = new Vue({
   {
       fetchAllLessons: function()
       {
-            // GET request
-            this.$http({url: 'https://tutorialedge.net/api/v1/lessons', method: 'GET'}).then(function (response) {
-                this.$set('results', response.results);
-            }, function (response) {
-                console.log("FUCK");
-            });
+           
       }
   }
 })
