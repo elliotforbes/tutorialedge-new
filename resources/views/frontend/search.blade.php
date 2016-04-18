@@ -44,6 +44,6 @@ Search the Site
         
     </div>
 </div>
-<script src="{{ asset('/js/search.js') }}"></script>
+<script src="{{ secure_asset('/js/search.js', true) }}"></script>
 
 @endsection
