@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="{{ secure_asset('/css/prism.css', Request::secure() ) }}">
         <link rel="stylesheet" href="{{ secure_asset('/css/materialize.min.css', Request::secure() )  }}">
         <link rel="stylesheet" href="{{ secure_asset('/css/front-end.css' , Request::secure() ) }}">
-        <script src="{{ secure_asset('/node_modules/vue-resource/dist/vue-resource.js') }}"></script>
         <script src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
         
         @yield('meta')
