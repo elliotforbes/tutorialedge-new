@@ -18,11 +18,12 @@
             | {{ date("d M, Y",strtotime($lesson->created_at)) }}
             | Tags: 
             @foreach ($lesson->tags as $tag)
-                @if (count($lesson->tags) > 1)
-                / {{ $tag->name }} 
-                @else 
-                    {{ $tag->name }}
-                @endif
+                <!--<a href="{{ url('/tag') }}/{{ $tag->name }}">-->
+                    <div class="chip">
+                        {{ $tag->name }}
+                        <i class="material-icons">search</i>
+                    </div>    
+                <!--</a>-->
             @endforeach
         </div>
         

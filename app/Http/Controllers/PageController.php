@@ -123,6 +123,11 @@ class PageController extends Controller
        {
            return view('frontend.forum.index');
        }
+       
+       public function tag($slug)
+       {
+           // TODO
+       }
     
     
 }
