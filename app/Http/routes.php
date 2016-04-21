@@ -25,7 +25,7 @@ Route::group(['prefix' => 'api/v1'], function (){
     Route::resource('lessons', 'LessonsController');    
 });
 
-Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware', 'prefix' => 'admin'], function (){
+Route::group(['prefix' => 'admin'], function (){
     Route::get('/', 'AdminController@Home'); 
 });
 
@@ -33,13 +33,6 @@ Route::get('/course/{course}', 'PageController@course');
 Route::get('/{slug}', 'PageController@show');
 
 
-Route::get('auth/github', 'Auth\AuthController@redirectToProvider');
-Route::get('auth/github/callback', 'Auth\AuthController@handleProviderCallback');
-
-Route::get('/home', 'HomeController@index');
-
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+Route::get('/auth/github', 'Auth\AuthController@redirectToProvider');
+Route::get('/auth/github/callback', 'Auth\AuthController@handleProviderCallback');
 

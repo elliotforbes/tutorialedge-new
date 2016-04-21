@@ -28,6 +28,23 @@ class User extends Authenticatable
      */
     public function isAdmin()
     {
-        return $this->is_admin;
+       foreach ($this->roles()->get() as $role)
+       {
+           if ($role->name == 'Admin')
+           {
+               return true;
+           }
+       }
+       return false;
+    }
+    
+    public function articles()
+    {
+        return $this->hasMany('App\Lesson');
+    }
+    
+    public function roles()
+    {
+        return $this->belongsToMany('App\Role');
     }
 }

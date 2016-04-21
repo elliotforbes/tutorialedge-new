@@ -34,7 +34,22 @@
 
 <div class="content">
     <div class="post-body">
-        {!! $lesson->body !!}            
+        {!! $lesson->body !!}         
+        
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="https://avatars1.githubusercontent.com/u/3332224?v=3&s=460" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                This post was written by me: Elliot Forbes. If you wish to get in touch then contact me @ admin@tutorialedge.net.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>   
     </div>
 </div>
 
