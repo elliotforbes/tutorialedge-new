@@ -28,12 +28,12 @@ Search the Site
         <div class="search-results">
             <div id="search">
                 <div v-for="result in results" class="result">
-                    <h4>@{{ result.title }}</h4>
+                    <h4>Under Construction</h4>
                     <p>
-                        <strong>@{{ result.author }}</strong>
-                        <br/>@{{ result.description }}
+                        <strong>Elliot Forbes</strong>
+                        <br/>A lot of new features still have to be implemented on the site... This is one of them.
                     </p>
-                    <a href="{{ url('/') }}/@{{ result.slug }}">
+                    <a href="#">
                         <button class="btn waves-effect waves-light" type="submit" name="action">Read Now...
                             <i class="material-icons right">send</i>
                         </button>
