@@ -116,6 +116,13 @@ class PageController extends Controller
            return view('frontend.static.about');
        }
     
+       /*
+       *
+       */
+       public function forum()
+       {
+           return view('frontend.forum.index');
+       }
     
     
 }

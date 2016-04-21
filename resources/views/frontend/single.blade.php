@@ -43,8 +43,9 @@
               <img src="https://avatars1.githubusercontent.com/u/3332224?v=3&s=460" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
             </div>
             <div class="col s10">
+                <h6><b>Author:</b> Elliot Forbes </h6>
               <span class="black-text">
-                This post was written by me: Elliot Forbes. If you wish to get in touch then contact me @ admin@tutorialedge.net.
+                I'm a 22 year old Software Engineer currently working for JPMorganChase. If you wish to get in touch then contact me @ admin@tutorialedge.net.
               </span>
             </div>
           </div>
