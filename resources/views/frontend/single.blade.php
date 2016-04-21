@@ -21,7 +21,6 @@
                 <!--<a href="{{ url('/tag') }}/{{ $tag->name }}">-->
                     <div class="chip">
                         {{ $tag->name }}
-                        <i class="material-icons">search</i>
                     </div>    
                 <!--</a>-->
             @endforeach
