@@ -12,9 +12,9 @@
 		<meta property="og:site_name" content="TutorialEdge.net" />
  
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="{{ secure_asset('/css/prism.css', Request::secure() ) }}">
-        <link rel="stylesheet" href="{{ secure_asset('/css/materialize.min.css', Request::secure() )  }}">
-        <link rel="stylesheet" href="{{ secure_asset('/css/front-end.css' , Request::secure() ) }}">
+        <link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure() ) }}">
+        <link rel="stylesheet" href="{{ asset('/css/materialize.min.css', Request::secure() )  }}">
+        <link rel="stylesheet" href="{{ asset('/css/front-end.css' , Request::secure() ) }}">
         <script src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
         
         @yield('meta')
@@ -105,9 +105,9 @@
         
         
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/prism.min.js"></script>
-        <script type="text/javascript" src="{{ secure_asset('/js/jquery.min.js', Request::secure()) }}"></script>
-        <script type="text/javascript" src="{{ secure_asset('/js/typed.js', Request::secure()) }}"></script>
-        <script type="text/javascript" src="{{ secure_asset('/js/materialize.min.js', Request::secure()) }}"></script>
-        <script type="text/javascript" src="{{ secure_asset('/js/site-scripts.js', Request::secure()) }}"></script>
+        <script type="text/javascript" src="{{ asset('/js/jquery.min.js', Request::secure()) }}"></script>
+        <script type="text/javascript" src="{{ asset('/js/typed.js', Request::secure()) }}"></script>
+        <script type="text/javascript" src="{{ asset('/js/materialize.min.js', Request::secure()) }}"></script>
+        <script type="text/javascript" src="{{ asset('/js/site-scripts.js', Request::secure()) }}"></script>
     </body>    
 </html>
