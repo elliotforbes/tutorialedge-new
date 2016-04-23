@@ -49,7 +49,7 @@ class PageController extends Controller
      */
      public function search()
      {
-         $results = Lesson::paginate(15);
+         $results = Lesson::get()->all();
          
          return view('frontend.search', compact('results'));
      }

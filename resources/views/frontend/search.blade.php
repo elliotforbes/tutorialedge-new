@@ -16,34 +16,43 @@ Search the Site
         <div class="content">
             <h1>Search:</h1>
             <div class="input-field">
-                <input placeholder="Search Here..." id="first_name2" type="text" class="validate">
+                <input v-model="query" placeholder="Search Here..." id="first_name2" type="text" class="validate">
             </div>
         </div>
     </div> 
 
     <div class="content">   
         
-        <h2>Results:</h2>
+       
         
         <div class="search-results">
             <div id="search">
-                <div v-for="result in results" class="result">
-                    <h4>Under Construction</h4>
-                    <p>
-                        <strong>Elliot Forbes</strong>
-                        <br/>A lot of new features still have to be implemented on the site... This is one of them.
-                    </p>
-                    <a href="#">
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Read Now...
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </a>
+                <h2>Results For: @{{ query }}</h2>
+             
+                <div v-if="query != ''" v-for="lesson in results.data | filterBy query" class="result">
+                    
+                    <div class="col s12 m12 l12">
+                        <div class="card-panel white">
+                        <div class="icon valign-wrapper">
+                            <i class="material-icons">description</i>
+                        </div>
+                        <a href="{{ url('/') }}/@{{ lesson.slug }}">
+                        <h5>@{{ lesson.title }}</h5>
+                        </a>
+                        <span>
+                            <b>@{{ lesson.author }}</b>
+                            @{{ lesson.description }}
+                        </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         
+            
+        
     </div>
 </div>
-<script src="{{ asset('/js/search.js', true) }}"></script>
+<script src="{{ asset('/js/search.js') }}"></script>
 
 @endsection

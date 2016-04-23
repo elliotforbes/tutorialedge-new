@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="{{ asset('/css/materialize.min.css', Request::secure() )  }}">
         <link rel="stylesheet" href="{{ asset('/css/front-end.css' , Request::secure() ) }}?v=123">
         <script src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
-        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.16/vue-resource.min.js"></script>
         @yield('meta')
         
          <script>
@@ -65,7 +65,7 @@
                     @if (Auth::guest())
                     <li><a href="{{ url('/auth/github') }}">Register With Github</a></li>
                     @else
-                    <li><a href="{{ url('/auth/logout') }}">Logout</a></li>
+                    <li><a href="{{ url('/profile') }}">Profile</a></li>
                     @endif
                 </ul>
                 </div>
