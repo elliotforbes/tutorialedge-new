@@ -19,7 +19,7 @@ The Forum
         <div class="col s12 m12 l12">
             <div class="card-panel white">
             <div class="icon valign-wrapper">
-                <span class="valign">E</span>
+                <i class="material-icons">not_interested</i>
             </div>
             <h5>Forum Post Title</h5>
             <span>I am a very simple card. I am good at containing small bits of information.

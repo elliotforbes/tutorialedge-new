@@ -18,11 +18,11 @@
             | {{ date("d M, Y",strtotime($lesson->created_at)) }}
             | Tags: 
             @foreach ($lesson->tags as $tag)
-                <!--<a href="{{ url('/tag') }}/{{ $tag->name }}">-->
+                <a href="{{ url('/tag') }}/{{ $tag->name }}">
                     <div class="chip">
                         {{ $tag->name }}
                     </div>    
-                <!--</a>-->
+                </a>
             @endforeach
         </div>
         
@@ -60,7 +60,7 @@
         @if (Auth::guest())
          <div class="comment">
             <div class="icon valign-wrapper">
-                <span class="valign">!</span>
+                <i class="material-icons">not_interested</i>
             </div>
             <h5>
                 <a href="#">Access Denied</a>
@@ -81,7 +81,7 @@
         @foreach($lesson->comments as $comment)
         <div class="comment">
             <div class="icon valign-wrapper">
-                <span class="valign">E</span>
+                <i class="material-icons">not_interested</i>
             </div>
             <h5>
                 <a href="#">{{ $comment->author }}</a>

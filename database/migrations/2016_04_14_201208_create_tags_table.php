@@ -39,6 +39,6 @@ class CreateTagsTable extends Migration
     public function down()
     {
         Schema::drop('tags');
-        Schema::drop('lesson_id');
+        Schema::drop('lesson_tag');
     }
 }

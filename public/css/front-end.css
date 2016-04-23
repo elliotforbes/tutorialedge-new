@@ -100,8 +100,9 @@ nav {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px; }
-  .icon span {
-    margin-left: 33px; }
+  .icon i {
+    font-size: 48px;
+    margin-left: 17px; }
 
 .content {
   min-height: 100px;

@@ -9,6 +9,7 @@ use App\Http\Requests;
 use App\Lesson;
 use App\Course;
 use App\Post;
+use App\Tag;
 
 class PageController extends Controller
 {
@@ -125,6 +126,11 @@ class PageController extends Controller
        
        public function tag($slug)
        {
+           $tag = Tag::where('name', '=', $slug)->get()->first();
+           
+           $articles = $tag->articles;
+          
+           return view('frontend.tag', compact('tag', 'articles')); 
        }
     
     
