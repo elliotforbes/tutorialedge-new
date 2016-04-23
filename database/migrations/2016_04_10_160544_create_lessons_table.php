@@ -14,8 +14,8 @@ class CreateLessonsTable extends Migration
     {
         Schema::create('lessons', function (Blueprint $table){
             $table->increments('id');
-            $table->integer('course_id');
             $table->string('title');
+            $table->integer('course_id');
             $table->string('description');
             $table->text('body');
             $table->boolean('isLive');

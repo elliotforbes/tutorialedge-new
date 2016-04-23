@@ -14,7 +14,7 @@ Search the Site
 <div id="search">
     <div class="gray-container search">
         <div class="content">
-            <h1>Search Now:</h1>
+            <h1>Search:</h1>
             <div class="input-field">
                 <input placeholder="Search Here..." id="first_name2" type="text" class="validate">
             </div>

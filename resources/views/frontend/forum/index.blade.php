@@ -22,8 +22,8 @@ The Forum
                 <i class="material-icons">not_interested</i>
             </div>
             <h5>Forum Post Title</h5>
-            <span>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+            <span>
+                This is currently under construction. Stay tuned for updates!
             </span>
             </div>
         </div>
