@@ -15,8 +15,8 @@
         <link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure() ) }}">
         <link rel="stylesheet" href="{{ asset('/css/materialize.min.css', Request::secure() )  }}">
         <link rel="stylesheet" href="{{ asset('/css/front-end.css' , Request::secure() ) }}?v=123">
-        <script src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.16/vue-resource.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.16/vue-resource.min.js"></script>
         @yield('meta')
         
          <script>

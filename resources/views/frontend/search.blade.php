@@ -53,6 +53,6 @@ Search the Site
         
     </div>
 </div>
-<script src="{{ asset('/js/search.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/js/search.js') }}"></script>
 
 @endsection
