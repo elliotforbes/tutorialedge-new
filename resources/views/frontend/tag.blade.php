@@ -4,7 +4,7 @@
 <div class="gray-container">
     <div class="content">
         <h1>{{ $tag->name }}</h1>
-        <h5 class="center-align">All Articles With Tag: {{ $tag->name }}</h5>
+        <h5 class="center-align">All Articles For Tag: {{ $tag->name }}</h5>
     </div>
 </div>
 @endsection
