@@ -15,7 +15,7 @@ class AddAuthorForeignKeyToLessons extends Migration
         Schema::table('lessons', function (Blueprint $table){
             $table->integer('author_id');
             
-            $table->foreign('user_id')
+            $table->foreign('author_id')
                   ->references('id')
                   ->on('users')
                   ->onDelete('cascade'); 
