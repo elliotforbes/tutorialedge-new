@@ -20,6 +20,8 @@ Search the Site
             </div>
         </div>
     </div> 
+    
+    @{{ data | json }}
 
     <div class="content">   
         
@@ -30,6 +32,7 @@ Search the Site
                 <h2>Results For: @{{ query }}</h2>
              
                 <div v-if="query != ''" v-for="lesson in results.data | filterBy query" class="result">
+                    
                     
                     <div class="col s12 m12 l12">
                         <div class="card-panel white">
@@ -53,6 +56,6 @@ Search the Site
         
     </div>
 </div>
-<script type="text/javascript" src="{{ asset('/js/search.js') }}"></script>
+<script src="{{ asset('/js/search.js') }}"></script>
 
 @endsection
