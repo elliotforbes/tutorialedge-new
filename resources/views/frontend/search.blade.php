@@ -20,8 +20,6 @@ Search the Site
             </div>
         </div>
     </div> 
-    
-    @{{ $data | json }}
 
     <div class="content">   
         
