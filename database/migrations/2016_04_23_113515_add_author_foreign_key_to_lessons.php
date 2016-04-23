@@ -13,12 +13,12 @@ class AddAuthorForeignKeyToLessons extends Migration
     public function up()
     {
         Schema::table('lessons', function (Blueprint $table){
-            $table->integer('author_id');
+            // $table->integer('author_id');
             
-            $table->foreign('author_id')
-                  ->references('id')
-                  ->on('users')
-                  ->onDelete('cascade'); 
+            // $table->foreign('author_id')
+            //       ->references('id')
+            //       ->on('users')
+            //       ->onDelete('cascade'); 
         });
     }
 
