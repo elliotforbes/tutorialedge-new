@@ -89,6 +89,20 @@ nav {
       nav .brand-logo {
         margin-top: 10px; } }
 
+.icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: #112F5A;
+  color: white;
+  padding-top: 7px;
+  font-size: 48px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+  .icon span {
+    margin-left: 33px; }
+
 .content {
   min-height: 100px;
   margin: auto;
@@ -101,12 +115,13 @@ nav {
     border-radius: 40px;
     background-color: #112F5A;
     color: white;
-    text-align: center;
-    padding-top: 27px;
+    padding-top: 7px;
     font-size: 48px;
     float: left;
     margin-right: 20px;
     margin-bottom: 20px; }
+    .content .icon span {
+      margin-left: 28px; }
   .content img {
     width: 100%;
     height: auto; }

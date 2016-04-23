@@ -30,7 +30,6 @@ class PageController extends Controller
     public function show($slug)
     {
         $lesson = Lesson::whereSlug($slug)->get()->first();
-        
         return view('frontend.single', compact('lesson')); 
     }
     
@@ -126,7 +125,6 @@ class PageController extends Controller
        
        public function tag($slug)
        {
-           // TODO
        }
     
     

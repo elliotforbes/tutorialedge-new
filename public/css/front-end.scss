@@ -60,7 +60,21 @@ nav{
     }
     
 }
-
+.icon{
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            background-color: #112F5A;
+            color: white;
+            padding-top: 7px;
+            font-size: 48px;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            span{
+                margin-left: 33px;
+            }
+        }
 .content{
     min-height: 100px;
     margin: auto;
@@ -69,18 +83,20 @@ nav{
     line-height:29px;
     
     .icon{
-        width: 80px;
-        height: 80px;
-        border-radius: 40px;
-        background-color: #112F5A;
-        color: white;
-        text-align: center;
-        padding-top: 27px;
-        font-size: 48px;
-        float: left;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            background-color: #112F5A;
+            color: white;
+            padding-top: 7px;
+            font-size: 48px;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            span{
+                margin-left: 28px;
+            }
+        }
     
     img{
         width: 100%;

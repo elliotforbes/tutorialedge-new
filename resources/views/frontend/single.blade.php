@@ -14,7 +14,7 @@
         <h1>{{ $lesson->title }}</h1>
         
         <div class="info">
-            {{ $lesson->author }} 
+            Elliot Forbes
             | {{ date("d M, Y",strtotime($lesson->created_at)) }}
             | Tags: 
             @foreach ($lesson->tags as $tag)
@@ -48,7 +48,7 @@
               <img src="https://avatars1.githubusercontent.com/u/3332224?v=3&s=460" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
             </div>
             <div class="col s10">
-                <h6><b>Author:</b> Elliot Forbes </h6>
+                <h6><b>Author:</b> {{ $lesson->author }}</h6>
               <span class="black-text">
                 I'm a 22 year old Software Engineer currently working for JPMorganChase. If you wish to get in touch then contact me @ admin@tutorialedge.net.
               </span>
@@ -59,8 +59,8 @@
         
         @if (Auth::guest())
          <div class="comment">
-            <div class="icon">
-                !
+            <div class="icon valign-wrapper">
+                <span class="valign">!</span>
             </div>
             <h5>
                 <a href="#">Access Denied</a>
@@ -80,8 +80,8 @@
         @endif
         @foreach($lesson->comments as $comment)
         <div class="comment">
-            <div class="icon">
-                E
+            <div class="icon valign-wrapper">
+                <span class="valign">E</span>
             </div>
             <h5>
                 <a href="#">{{ $comment->author }}</a>
