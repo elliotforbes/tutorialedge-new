@@ -21,7 +21,7 @@ Search the Site
         </div>
     </div> 
     
-    @{{ data | json }}
+    @{{ $data | json }}
 
     <div class="content">   
         
