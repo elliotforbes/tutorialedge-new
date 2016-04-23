@@ -227,6 +227,27 @@ nav{
             width: 100%;
             background-color: white;
             
+            i{
+                color: $light-blue;
+            }
+            
+            button{
+                background-color: $light-blue;
+                i{
+                    color: white;
+                }
+            }
+            
+            .input-field{
+                
+                label{
+                    .active{
+                        color: $light-blue;
+                    }
+                }
+                
+            }
+            
             h5{
                 font-size: 16px;
                 a{

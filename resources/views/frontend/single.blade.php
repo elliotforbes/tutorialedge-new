@@ -73,6 +73,20 @@
         </div>
         @else
          <div class="comment">
+
+            <form class="col s12" action="POST">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Write Your Own Comment</label>
+                        
+                         <button class="btn waves-effect waves-light right-align" type="submit" name="action">Submit
+                            <i class="material-icons left">comment</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
             
             <div class="clear"></div>
         </div>

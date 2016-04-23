@@ -203,6 +203,14 @@ nav {
       padding: 20px;
       width: 100%;
       background-color: white; }
+      .comment-container .comments .comment i {
+        color: #00CCFF; }
+      .comment-container .comments .comment button {
+        background-color: #00CCFF; }
+        .comment-container .comments .comment button i {
+          color: white; }
+      .comment-container .comments .comment .input-field label .active {
+        color: #00CCFF; }
       .comment-container .comments .comment h5 {
         font-size: 16px; }
         .comment-container .comments .comment h5 a {
