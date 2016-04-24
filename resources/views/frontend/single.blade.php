@@ -86,7 +86,7 @@
                 <input type="hidden" name="slug" value="{{ $lesson->slug }}">
                 <div class="row">
                     <div class="input-field col s12">
-                        <i class="material-icons prefix">mode_edit</i>
+                        <i class="material-icons prefix">comment</i>
                         <textarea id="textarea1" class="materialize-textarea" name="body"></textarea>
                         <label for="textarea1">Write Your Own Comment</label>
                         
