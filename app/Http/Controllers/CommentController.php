@@ -24,20 +24,19 @@ class CommentController extends Controller
         
         $comment = new Comment($request->all());
         $user = Auth::id();
+        
         Log::info($comment);
-        Log::info($request->slug);
+        
         $lesson = Lesson::whereSlug($request->slug)->get()->first();
         Log::info($lesson);
         
-        if($user == null){
-            $comment->author = "TEST";
-            $lesson->comments()->save($comment);
-            Log::info("Comment Successfully Saved");
-            return back();
-        }
+        $comment->author = User::find($user)->get()->first()->name;
+        Log::info($comment->author);
         
+        $lesson->comments()->save($comment);
+        Log::info("Comment Successfully Saved");
         return back();
-        
+    
     }
     
 }
