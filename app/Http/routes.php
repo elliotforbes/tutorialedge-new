@@ -21,6 +21,8 @@ Route::get('/courses', 'PageController@courses');
 Route::get('/blog/{slug}', 'PageController@blogSingle');
 Route::get('/advertise', 'PageController@advertise');
 
+Route::resource('comments', 'CommentController');
+
 Route::group(['prefix' => 'api/v1'], function (){
     Route::resource('lessons', 'LessonsController');    
 });

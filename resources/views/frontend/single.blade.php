@@ -71,18 +71,19 @@
             <p>Register now and get the latest tutorials and courses delivered straight to your mailbox! 
             <div class="clear"></div>
         </div>
-        @else
+        
          <div class="comment">
 
-            <form class="col s12" action="POST">
+            <form class="col s12" method="POST" action="{{ url('/') }}/comments">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">mode_edit</i>
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <textarea id="textarea1" class="materialize-textarea" name="body"></textarea>
                         <label for="textarea1">Write Your Own Comment</label>
                         
                          <button class="btn waves-effect waves-light right-align" type="submit" name="action">Submit
-                            <i class="material-icons left">comment</i>
+                            <i class="material-icons left comment-icon">comment</i>
                         </button>
                     </div>
                 </div>

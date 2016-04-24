@@ -203,7 +203,7 @@ nav {
       padding: 20px;
       width: 100%;
       background-color: white; }
-      .comment-container .comments .comment i {
+      .comment-container .comments .comment i.comment-icon {
         color: #00CCFF; }
       .comment-container .comments .comment button {
         background-color: #00CCFF; }
