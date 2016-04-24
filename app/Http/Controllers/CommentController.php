@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Comment;
+use App\Lesson;
 use Auth;
 use Log;
 
@@ -17,16 +18,19 @@ class CommentController extends Controller
         return "Comments";
     }
     
-    public function store(Request $request)
+    public function store(Request $request, Lesson $lesson)
     {
+        Log::info("Comment Store Method Called");
         $comment = new Comment($request->all());
-        
         $user = Auth::id();
         
-        Log::info("Comment Store Method Called");
-        Log::info($comment);
-        Log::info($request->all());
-        Log::info("User: " + $user);
+        if($user != null){
+            $lesson->comments()-save($comment);
+            Log::info("Comment Successfully Saved");
+            return back();
+        }
+        
+        return back();
         
     }
     
