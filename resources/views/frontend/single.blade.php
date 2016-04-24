@@ -71,7 +71,7 @@
             <p>Register now and get the latest tutorials and courses delivered straight to your mailbox! 
             <div class="clear"></div>
         </div>
-        
+        @else
          <div class="comment">
 
             <form class="col s12" method="POST" action="{{ url('/') }}/comments">
