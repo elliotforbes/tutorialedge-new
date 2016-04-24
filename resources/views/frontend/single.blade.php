@@ -16,6 +16,7 @@
         <div class="info">
             Elliot Forbes
             | {{ date("d M, Y",strtotime($lesson->created_at)) }}
+            | Comments: <a href="#comments">{{ count($lesson->comments) }}</a>
             | Tags: 
             @foreach ($lesson->tags as $tag)
                 <a href="{{ url('/tag') }}/{{ $tag->name }}">
@@ -39,7 +40,7 @@
 </div>
 
 <div class="comment-container">
-    <div class="comments">
+    <div class="comments" id="comments">
         
         @include('frontend.partials._author')
         
