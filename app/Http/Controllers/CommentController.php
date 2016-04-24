@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Comment;
 use App\Lesson;
+use App\User;
 use Auth;
 use Log;
 
