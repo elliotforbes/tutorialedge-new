@@ -37,4 +37,10 @@ The Story
     <p>My plan for the site is to hit the 100 complete tutorials milestone and get the new forum system up and running so that the site can continue to grow and provide help on all aspects of web development. I hope to build a thriving online community that will become the authority on all things web development related.</p>
     
 </div>
+
+<div class="comment-container">
+    <div class="comments">
+        @include('frontend.partials._author')
+    </div>
+</div>
 @endsection
