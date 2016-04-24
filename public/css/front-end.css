@@ -123,6 +123,9 @@ nav {
     margin-bottom: 20px; }
     .content .icon span {
       margin-left: 28px; }
+  .content .chip {
+    background-color: #00CCFF;
+    color: white; }
   .content img {
     width: 100%;
     height: auto; }
