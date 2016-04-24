@@ -1,23 +1,84 @@
 /*
 * All the colours for the site are defined here
 */
+/*
+* All the colours for the site are defined here
+*/
+.banner {
+  background-color: #00CCFF;
+  margin-top: -40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: white; }
+  .banner .banner-cont {
+    margin: auto;
+    width: 80%;
+    text-align: center; }
+    .banner .banner-cont .element {
+      font-weight: 800; }
+    .banner .banner-cont h3 {
+      font-size: 32px; }
+
+.homepage-cont {
+  min-height: 600px; }
+  @media (max-width: 37.5em) {
+    .homepage-cont {
+      width: 90%; } }
+  @media (min-width: 37.5em) {
+    .homepage-cont {
+      width: 90%; } }
+  @media (min-width: 50em) {
+    .homepage-cont {
+      width: 80%; } }
+  @media (min-width: 64em) {
+    .homepage-cont {
+      width: 80%; } }
+
+.course-container {
+  margin-top: 40px; }
+  .course-container .course-box {
+    margin-bottom: 40px;
+    min-height: 300px; }
+
+.gray-container {
+  background-color: #F5F5F1;
+  width: 100%;
+  min-height: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .gray-container .promo {
+    text-align: center; }
+    .gray-container .promo h5 {
+      font-weight: 800; }
+    .gray-container .promo p {
+      font-weight: 300; }
+    .gray-container .promo i {
+      margin: 40px 0;
+      color: #00CCFF;
+      font-size: 7rem;
+      display: block; }
+
 nav {
   background-color: #2D3E4E; }
+  nav .button-collapse {
+    padding-left: 10px; }
   nav .github-signin {
     background-color: #00CCFF; }
+  nav ul li {
+    margin-top: -1px; }
   nav ul li:hover {
     background-color: #00CCFF; }
   nav .brand-logo {
-    margin-left: 20px; }
+    margin-left: 20px;
+    font-weight: 100; }
+    @media (max-width: 37.5em) {
+      nav .brand-logo {
+        margin-top: 10px; } }
 
 .content {
-  height: 800px;
-  width: 100%; }
-
-footer .page-footer {
-  background-color: #2D3E4E; }
-
-.sidebar {
-  background-color: #2D3E4E; }
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 /*# sourceMappingURL=admin-style.css.map */

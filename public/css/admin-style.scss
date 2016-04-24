@@ -1,11 +1,20 @@
-@import "grid";
 @import "colours";
+@import "grid";
+@import "homepage";
 
 nav{
     background-color: $dark-gray;
     
+    .button-collapse{
+        padding-left: 10px;
+    }
+    
     .github-signin{
         background-color: $light-blue;
+    }
+    
+    ul li{
+        margin-top: -1px;
     }
     
     ul li:hover{
@@ -13,24 +22,20 @@ nav{
     }
     
     .brand-logo{
+        
+        @include breakpoint(mobileonly){
+            margin-top: 10px;
+        }
+        
         margin-left: 20px;
+        font-weight: 100;
     }
     
 }
 
 .content{
-    height: 800px;
-    width: 100%;
-}
-
-
-footer{
-    
-    .page-footer{
-        background-color: $dark-gray;
-    }
-}
-
-.sidebar{
-    background-color: $dark-gray;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
