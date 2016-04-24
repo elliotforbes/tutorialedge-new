@@ -68,7 +68,12 @@
                     - You need to login or register in order to add your own comments
                 </span>
             </h5>
-            <p>Register now and get the latest tutorials and courses delivered straight to your mailbox! 
+            <p>Register now and get the latest tutorials and courses delivered straight to your mailbox!</p>
+            <a href="{{ url('/auth/github') }}">
+            <button class="btn waves-effect waves-light">Register with Github
+                <i class="material-icons left comment-icon"></i>
+            </button>
+            </a>
             <div class="clear"></div>
         </div>
         @else
@@ -76,6 +81,7 @@
 
             <form class="col s12" method="POST" action="{{ url('/') }}/comments">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <input type="hidden" name="slug" value="{{ $lesson->slug }}">
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">mode_edit</i>
@@ -96,7 +102,7 @@
         @foreach($lesson->comments as $comment)
         <div class="comment">
             <div class="icon valign-wrapper">
-                <i class="material-icons">not_interested</i>
+                <i class="material-icons">comment</i>
             </div>
             <h5>
                 <a href="#">{{ $comment->author }}</a>

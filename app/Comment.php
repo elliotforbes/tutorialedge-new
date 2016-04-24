@@ -14,5 +14,6 @@ class Comment extends Model
     protected $fillable = [
         'author',
         'lesson_id',
+        'body',
     ];
 }

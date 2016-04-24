@@ -21,11 +21,17 @@ class CommentController extends Controller
     public function store(Request $request, Lesson $lesson)
     {
         Log::info("Comment Store Method Called");
+        
         $comment = new Comment($request->all());
         $user = Auth::id();
+        Log::info($comment);
+        Log::info($request->slug);
+        $lesson = Lesson::whereSlug($request->slug)->get()->first();
+        Log::info($lesson);
         
-        if($user != null){
-            $lesson->comments()-save($comment);
+        if($user == null){
+            $comment->author = "TEST";
+            $lesson->comments()->save($comment);
             Log::info("Comment Successfully Saved");
             return back();
         }
