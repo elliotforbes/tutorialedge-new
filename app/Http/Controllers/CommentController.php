@@ -33,7 +33,7 @@ class CommentController extends Controller
         
         $comment->author = User::find($user)->get()->first()->name;
         Log::info($comment->author);
-        if($user != null){
+        if(Auth::check()){
             $lesson->comments()->save($comment);
             Log::info("Comment Successfully Saved");
             return back();
