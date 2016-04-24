@@ -95,7 +95,7 @@ class PageController extends Controller
        */
        public function blog()
        {
-           $posts = Post::paginate(15);
+           $posts = Post::orderBy('id', 'DESC')->paginate(15);
            return view('frontend.static.blog', compact('posts'));
        }
        
