@@ -75,10 +75,10 @@ nav {
       nav .brand-logo {
         margin-top: 10px; } }
 
-.content {
-  width: 60%;
-  margin: auto;
+.container {
   margin-top: 40px;
   margin-bottom: 40px; }
+  .container h5 {
+    margin-bottom: 60px; }
 
 /*# sourceMappingURL=admin-style.css.map */

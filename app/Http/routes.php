@@ -29,6 +29,7 @@ Route::group(['prefix' => 'api/v1'], function (){
 
 Route::group(['prefix' => 'admin'], function (){
     Route::get('/', 'AdminController@Home'); 
+    Route::resource('articles', 'Admin\LessonController');
 });
 
 Route::get('/forum', 'PageController@forum');
