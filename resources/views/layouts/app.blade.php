@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure() ) }}">
         <link rel="stylesheet" href="{{ asset('/css/materialize.min.css', Request::secure() )  }}">
-        <link rel="stylesheet" href="{{ asset('/css/front-end.css' , Request::secure() ) }}?v=123">
+        <link rel="stylesheet" href="{{ asset('/css/front-end.css' , Request::secure() ) }}?v=12">
         <script type="text/javascript" src="//cdn.jsdelivr.net/vue/latest/vue.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.16/vue-resource.min.js"></script>
         @yield('meta')
