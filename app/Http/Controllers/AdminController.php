@@ -17,4 +17,6 @@ class AdminController extends Controller
         Log::info($user);
         return view("admin.index");
     }
+    
+    
 }
