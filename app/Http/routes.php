@@ -20,6 +20,7 @@ Route::get('/blog', 'PageController@blog');
 Route::get('/courses', 'PageController@courses');
 Route::get('/blog/{slug}', 'PageController@blogSingle');
 Route::get('/advertise', 'PageController@advertise');
+Route::get('/sitemap', 'PageController@sitemap');
 
 Route::resource('comments', 'CommentController');
 

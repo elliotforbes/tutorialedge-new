@@ -10,6 +10,9 @@ use App\Lesson;
 use App\Course;
 use App\Post;
 use App\Tag;
+use App;
+use Log;
+use URL;
 
 class PageController extends Controller
 {
@@ -131,6 +134,31 @@ class PageController extends Controller
            $articles = $tag->articles;
           
            return view('frontend.tag', compact('tag', 'articles')); 
+       }
+       
+       
+       public function sitemap()
+       {
+           $sitemap = App::make("sitemap");
+           
+        //    $sitemap->setCache('laravel.sitemap', 60);
+           Log::info("Sitemap Route Hit");
+        //    if($sitemap->isCached())
+        //    {
+               Log::info("Sitemap isn't cached, creating new sitemap");
+               $sitemap->add(URL::to('/'), '2015-01-01T12:00:00+02:00'  , '1.0', 'daily');
+               
+               $lessons = Lesson::orderBy('created_at', 'desc')->get()->all();
+               
+               foreach($lessons as $lesson)
+               {
+                   Log::info($lesson);
+                   $sitemap->add($lesson->slug, $lesson->updated_at, '1.0', 'monthly');
+               }
+        //    }
+           
+           Log::info($sitemap->render('xml'));
+           return $sitemap->render('xml');
        }
     
     
