@@ -153,8 +153,8 @@ class PageController extends Controller
                foreach($lessons as $lesson)
                {
                    Log::info($lesson);
-                   $location = URL::to('/') . $lesson->slug;
-                   $sitemap->add($location , $lesson->updated_at, '1.0', 'monthly');
+                   $location = URL::to('/') . "/" . $lesson->slug;
+                   $sitemap->add($location , $lesson->created_at, '1.0', 'monthly');
                }
         //    }
            
