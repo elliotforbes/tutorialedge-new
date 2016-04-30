@@ -11,7 +11,7 @@ The Home of High Quality Programming Tutorials
 @section('banner')
 <div class="banner">
     <div class="banner-cont">
-        <h1>Learn: Laravel 5</h1>
+        <h1>Learn: Programming</h1>
         <h3>Our Goal is to help new developers land their dream jobs<br/>
 by teaching you some of the latest and greatest programming frameworks.</h3>
     </div>
