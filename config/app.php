@@ -149,7 +149,8 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         Roumen\Sitemap\SitemapServiceProvider::class,
-
+        Snowfire\Beautymail\BeautymailServiceProvider::class,
+        Themsaid\MailPreview\MailPreviewServiceProvider::class,
         /*
          * Application Service Providers...
          */
