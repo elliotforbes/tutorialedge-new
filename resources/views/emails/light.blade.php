@@ -5,8 +5,8 @@
 @stop
 
 @section('banner')
-<h3>Interesting Points:</h3>
-<p></p>
+<h3>Site Growth:</h3>
+<p>So over the past </p>
 @stop
 
 @section('content')

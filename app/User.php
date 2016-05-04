@@ -3,10 +3,12 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Traits\Admin;
 
 class User extends Authenticatable
 {
-       
+    use Admin;
+    
     /**
 	 * The attributes that are mass assignable.
 	 *
@@ -22,21 +24,6 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-    
-    /**
-     * Returns a boolean
-     */
-    public function isAdmin()
-    {
-       foreach ($this->roles()->get() as $role)
-       {
-           if ($role->name == 'Admin')
-           {
-               return true;
-           }
-       }
-       return false;
-    }
     
     public function articles()
     {
