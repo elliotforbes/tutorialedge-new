@@ -15,7 +15,6 @@ class Lesson extends Model
         'description',
         'id',
         'lesson_id',
-        
         'created_at',
         'updated_at'
     ];
