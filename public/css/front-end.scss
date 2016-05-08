@@ -172,6 +172,36 @@ nav{
         h1{
             font-size: 38px;
         }
+        
+        .recommended-articles{
+            
+            .article{
+                width: 100%;
+                padding: 20px;
+                border: 1px solid $pale-white;
+                margin-bottom: 20px;
+                
+                h2{
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 10px;
+                    font-size: 22px;
+                }
+                
+                p{
+                    color: $light-gray;
+                    text-overflow:ellipsis;
+                    font-size: 17px;  
+                }
+                
+                .url{
+                    font-size: 14px;
+                }
+                
+            }
+            
+            
+        }
     }
     
     .result{

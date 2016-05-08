@@ -171,6 +171,22 @@ nav {
       width: 100%; }
   .content .post-body h1 {
     font-size: 38px; }
+  .content .post-body .recommended-articles .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #F5F5F1;
+    margin-bottom: 20px; }
+    .content .post-body .recommended-articles .article h2 {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 10px;
+      font-size: 22px; }
+    .content .post-body .recommended-articles .article p {
+      color: #9A9A9A;
+      text-overflow: ellipsis;
+      font-size: 17px; }
+    .content .post-body .recommended-articles .article .url {
+      font-size: 14px; }
   .content .result {
     margin-bottom: 40px; }
     .content .result button {

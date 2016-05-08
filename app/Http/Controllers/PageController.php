@@ -34,7 +34,19 @@ class PageController extends Controller
     public function show($slug)
     {
         $lesson = Lesson::whereSlug($slug)->get()->first();
-        return view('frontend.single', compact('lesson')); 
+        log::info($lesson->tags->get(0));
+        $firstTag = $lesson->tags->get(0);
+        
+        $articles = Lesson::whereHas('tags', function($firstTag) use ($firstTag)
+                    {
+                        $firstTag->where('id', $firstTag->id);
+                    })
+                    ->where('id', '!=', $lesson->id)
+                    ->take(2)
+                    ->get();
+                    
+        log::info($articles);
+        return view('frontend.single', compact('lesson', 'articles')); 
     }
     
     /*
