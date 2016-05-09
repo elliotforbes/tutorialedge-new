@@ -17,7 +17,8 @@
         <link rel="stylesheet" href="{{ asset('/css/front-end.css' , Request::secure() ) }}?v=15">
         <script type="text/javascript" src="//cdn.jsdelivr.net/vue/latest/vue.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.16/vue-resource.min.js"></script>
-        @yield('meta')
+        <link rel="icon" type="image/png" href="{{ asset('/favicon.ico', Request::secure()) }}">
+         @yield('meta')
         
          <script>
             (function (i, s, o, g, r, a, m) {
