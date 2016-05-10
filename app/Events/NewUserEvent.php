@@ -6,10 +6,7 @@ use App\Events\Event;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-use App\Lesson;
-use Illuminate\Session\Store;
-
-class PostViewEvent extends Event
+class NewUserEvent extends Event
 {
     use SerializesModels;
 
@@ -18,12 +15,10 @@ class PostViewEvent extends Event
      *
      * @return void
      */
-    public function __construct(Lesson $lesson, Store $session)
+    public function __construct()
     {
-        $this->lesson = $lesson;
-        $this->session = $session;
+        //
     }
-    
 
     /**
      * Get the channels the event should be broadcast on.
