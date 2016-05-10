@@ -13,6 +13,7 @@ use App\Tag;
 use App;
 use Log;
 use URL;
+use Auth;
 
 class PageController extends Controller
 {
@@ -147,6 +148,20 @@ class PageController extends Controller
            $articles = $tag->articles;
           
            return view('frontend.tag', compact('tag', 'articles')); 
+       }
+       
+       public function profile()
+       {
+           if(Auth::user())
+           {
+               $user = Auth::user();
+                
+               return view('frontend.profile.index', compact('user'));
+           } 
+           else
+           {
+               return view('frontend.profile.register');
+           } 
        }
        
        
