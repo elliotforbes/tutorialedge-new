@@ -2,33 +2,55 @@
 @import "grid";
 @import "homepage";
 
-nav{
-    background-color: $dark-gray;
+#sidebar{
+    width: 220px;
+    background-color: $dark-purple;
+    color: white;
+    position:absolute;
+    top: 0;
+    bottom: 0;
     
-    .button-collapse{
-        padding-left: 10px;
+    .admin-logo{
+        background-color: $admin-logo;
+        padding: 20px;
+        text-align: center;
     }
     
-    .github-signin{
-        background-color: $light-blue;
+    .pure-menu-heading{
+        color: white;
     }
     
-    ul li{
-        margin-top: -1px;
-    }
-    
-    ul li:hover{
-        background-color: $light-blue;
-    }
-    
-    .brand-logo{
-        
-        @include breakpoint(mobileonly){
-            margin-top: 10px;
+    .pure-menu-list{
+        li{
+            a{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: #5F637E;   
+            }
+            
+            a:hover{
+                color: white;
+                background-color: $dark-blue;
+            }
         }
-        
-        margin-left: 20px;
-        font-weight: 100;
+    }
+}
+
+#main{
+    background-color: $admin-background;
+    position: absolute;
+    left: 220px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+    
+   
+    .widget{
+        background-color: white;
+        width: 96%;
+        height: 200px;    
+        border: 1px solid #EAEDF4;
     }
     
 }

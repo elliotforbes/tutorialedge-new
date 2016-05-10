@@ -58,22 +58,40 @@
       font-size: 7rem;
       display: block; }
 
-nav {
-  background-color: #2D3E4E; }
-  nav .button-collapse {
-    padding-left: 10px; }
-  nav .github-signin {
-    background-color: #00CCFF; }
-  nav ul li {
-    margin-top: -1px; }
-  nav ul li:hover {
-    background-color: #00CCFF; }
-  nav .brand-logo {
-    margin-left: 20px;
-    font-weight: 100; }
-    @media (max-width: 37.5em) {
-      nav .brand-logo {
-        margin-top: 10px; } }
+#sidebar {
+  width: 220px;
+  background-color: #2E3144;
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0; }
+  #sidebar .admin-logo {
+    background-color: #272938;
+    padding: 20px;
+    text-align: center; }
+  #sidebar .pure-menu-heading {
+    color: white; }
+  #sidebar .pure-menu-list li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #5F637E; }
+  #sidebar .pure-menu-list li a:hover {
+    color: white;
+    background-color: #265778; }
+
+#main {
+  background-color: #F1F5F8;
+  position: absolute;
+  left: 220px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 20px; }
+  #main .widget {
+    background-color: white;
+    width: 96%;
+    height: 200px;
+    border: 1px solid #EAEDF4; }
 
 .container {
   margin-top: 40px;

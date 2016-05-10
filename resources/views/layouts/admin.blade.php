@@ -10,34 +10,40 @@
         <meta name="google-site-verification" content="o0UedRQqZULbVZPe6SPx1VD1YxJd6WL-2-15-XHWS1g" />
 		<link rel="author" href="https://plus.google.com/b/115194233692529836662">
 		<meta property="og:site_name" content="TutorialEdge.net" />
-        
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('/css/materialize.min.css', Request::secure() )  }}">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
         <link rel="stylesheet" href="{{ asset('/css/admin-style.css' , Request::secure() ) }}">
 </head>
 <body>
-
-    <!-- Dropdown Structure -->
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="{{ url('/admin/articles') }}">All</a></li>
-        <li><a href="{{ url('/admin/articles/create') }}">Create</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">Edit</a></li>
-    </ul>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">TutorialEdge Admin</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html">Articles</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Articles<i class="material-icons right">arrow_drop_down</i></a></li>
-            </ul>
+    <div id="sidebar">
+        <div id="menu">
+            <div class="pure-menu">
+                <div class="admin-logo pure-menu-heading">TutorialEdge</div>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Articles</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Users</a></li>
+                </ul>
+            </div>
         </div>
-    </nav>
+    </div>
+    
+    <div id="main">
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <div class="widget">
+                    
+                </div>
+            </div>
+            <div class="pure-u-1-2">
+                <div class="widget">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+        
     
     
-    @yield('content')
    
 
     <script type="text/javascript" src="{{ asset('/js/jquery.min.js', Request::secure()) }}"></script>
