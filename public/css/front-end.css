@@ -171,6 +171,9 @@ nav {
       width: 100%; }
   .content .post-body h1 {
     font-size: 38px; }
+  .content .post-body ul li {
+    list-style-type: circle;
+    margin-left: 40px; }
   .content .post-body .recommended-articles .article {
     width: 100%;
     padding: 20px;
