@@ -18,10 +18,9 @@ class PostViewEvent extends Event
      *
      * @return void
      */
-    public function __construct(Lesson $lesson, Store $session)
+    public function __construct(Lesson $lesson)
     {
         $this->lesson = $lesson;
-        $this->session = $session;
     }
     
 
