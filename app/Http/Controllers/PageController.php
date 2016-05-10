@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Events\PostViewEvent;
 use DB;
 use App\Http\Requests;
 use App\Lesson;
@@ -14,6 +15,7 @@ use App;
 use Log;
 use URL;
 use Auth;
+use Event;
 
 class PageController extends Controller
 {
@@ -33,10 +35,12 @@ class PageController extends Controller
      * @return view
      */
     public function show($slug)
-    {
+    {  
         $lesson = Lesson::whereSlug($slug)->get()->first();
         // log::info($lesson->tags->get(0));
         $tag = $lesson->tags->get(0);
+        // fire an event every time a lesson is vieweds
+        Event::fire(new PostViewEvent($lesson));   
         
         $articles = Lesson::whereHas('tags', function($q) use ($tag)
                     {

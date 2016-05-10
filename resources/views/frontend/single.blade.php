@@ -17,6 +17,7 @@
             Elliot Forbes
             | {{ date("d M, Y",strtotime($lesson->created_at)) }}
             | Comments: <a href="#comments">{{ count($lesson->comments) }}</a>
+            | Views: {{ $lesson->views }}
             | Tags: 
             @foreach ($lesson->tags as $tag)
                 <a href="{{ url('/tag') }}/{{ $tag->name }}">
