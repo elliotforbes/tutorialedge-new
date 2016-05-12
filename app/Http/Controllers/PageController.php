@@ -82,7 +82,7 @@ class PageController extends Controller
       {
           $course = Course::whereSlug($slug)->get()->first();
           
-          return view('frontend.course', compact('course'));
+          return view('frontend.course.single', compact('course'));
       }
       
       /*
@@ -92,7 +92,7 @@ class PageController extends Controller
       {
           $courses = Course::paginate(15);
           
-          return view('frontend.course', compact('courses'));
+          return view('frontend.course.all', compact('courses'));
       }
       
       /*

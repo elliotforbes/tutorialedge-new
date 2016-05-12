@@ -40,7 +40,7 @@ Route::get('/forum', 'PageController@forum');
 
 Route::get('/tag/{slug}', 'PageController@tag');
 
-Route::get('/course/{course}', 'PageController@course');
+Route::get('/course/{slug}', 'PageController@course');
 Route::get('/{slug}', 'PageController@show');
 
 
