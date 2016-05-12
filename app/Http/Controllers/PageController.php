@@ -51,7 +51,7 @@ class PageController extends Controller
                     ->take(2)
                     ->get();
                    
-        log::info("Lesson Requested: ", $lesson->title);
+        // log::info("Lesson Requested: ", $lesson->title);
         
         return view('frontend.single', compact('lesson', 'articles'));     
         
