@@ -52,12 +52,9 @@ class PageController extends Controller
                     ->get();
                    
         log::info("Lesson Requested: ", $lesson->title);
-        if($lesson == null)
-        {
-            return view('frontend.single', compact('lesson', 'articles'));     
-        } else {
-            return view('errors.404');   
-        }
+        
+        return view('frontend.single', compact('lesson', 'articles'));     
+        
     }
     
     /*
@@ -86,11 +83,8 @@ class PageController extends Controller
       public function course($slug)
       {
           $course = Course::whereSlug($slug)->get()->first();
-          if($course == null){
-              return view('frontend.course.single', compact('course'));
-          } else {
-              return view('errors.404');
-          }
+          return view('frontend.course.single', compact('course'));
+         
       }
       
       /*
