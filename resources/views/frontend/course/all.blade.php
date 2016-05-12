@@ -28,7 +28,7 @@ All Courses
                 <p>{{ $course->description }}</p>
                 </div>
                 <div class="card-action">
-                <a href="{{ url('/course/') }}{{ $course->slug }}">Read Now</a>
+                <a href="{{ url('/course') }}/{{ $course->slug }}">Read Now</a>
                 </div>
             </div>
         </div>
