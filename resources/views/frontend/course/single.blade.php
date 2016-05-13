@@ -21,7 +21,7 @@
 
 <div class="content">
     <div class="post-body">
-        {{ $course->body }}
+        {!! $course->body !!}
     </div>
 </div>
 @endsection
