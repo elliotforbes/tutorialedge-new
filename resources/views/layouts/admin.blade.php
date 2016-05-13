@@ -11,7 +11,7 @@
 		<link rel="author" href="https://plus.google.com/b/115194233692529836662">
 		<meta property="og:site_name" content="TutorialEdge.net" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <link rel="stylesheet" href="{{ asset('/css/pure-min.css') }}">
         <link rel="stylesheet" href="{{ asset('/css/admin-style.css' , Request::secure() ) }}">
 </head>
 <body>
