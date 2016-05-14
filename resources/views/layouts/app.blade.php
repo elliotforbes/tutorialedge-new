@@ -48,6 +48,7 @@
                 <a href="{{ url('/') }}" class="brand-logo">TutorialEdge.net</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="{{ url('/courses') }}">Courses</a></li>
                     <li><a href="{{ url('/blog') }}">Blog</a></li>
                     <li><a href="{{ url('/search') }}">Search</a></li>
                     <li><a href="{{ url('/tutorials') }}">Tutorials</a></li>
