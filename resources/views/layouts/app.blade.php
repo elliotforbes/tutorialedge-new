@@ -89,6 +89,7 @@
                 <h5>Links</h5>
                 <ul>
                   <li><a class="text-lighten-3" href="{{ url('/contact') }}">Contact</a></li>
+                  <li><a class="text-lighten-3" href="{{ url('/courses') }}">Courses</a></li>
                   <li><a class="text-lighten-3" href="{{ url('/blog') }}">Blog</a></li>
                   <li><a class="text-lighten-3" href="{{ url('/about') }}">About</a></li>
                   <!--<li><a class="text-lighten-3" href="{{ url('/advertise') }}">Advertise</a></li>-->
