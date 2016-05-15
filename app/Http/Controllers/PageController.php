@@ -42,15 +42,18 @@ class PageController extends Controller
         // fire an event every time a lesson is vieweds
         Event::fire(new PostViewEvent($lesson));   
         
-        $articles = Lesson::whereHas('tags', function($q) use ($tag)
-                    {
-                        // log::info($tag->id);
-                        $q->where('tag_id', $tag->id);
-                    })
-                    ->where('id', '!=', $lesson->id)
-                    ->take(2)
-                    ->get();
-                   
+        if(count($lesson->tags) > 0){
+            $articles = Lesson::whereHas('tags', function($q) use ($tag)
+                        {
+                            // log::info($tag->id);
+                            $q->where('tag_id', $tag->id);
+                        })
+                        ->where('id', '!=', $lesson->id)
+                        ->take(2)
+                        ->get();
+        } else {
+            $articles = DB::table('lessons')->take(2)->get();
+        }
         // log::info("Lesson Requested: ", $lesson->title);
         
         return view('frontend.single', compact('lesson', 'articles'));     

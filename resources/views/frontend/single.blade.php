@@ -19,15 +19,14 @@
             | Comments: <a href="#comments">{{ count($lesson->comments) }}</a>
             | Views: {{ $lesson->views }}
             | Tags: 
-            @if(isset($lesson->tags))
-                @foreach ($lesson->tags as $tag)
-                    <a href="{{ url('/tag') }}/{{ $tag->name }}">
-                        <div class="chip">
-                            {{ $tag->name }}
-                        </div>    
-                    </a>
-                @endforeach
-            @endif
+            @foreach ($lesson->tags as $tag)
+                <a href="{{ url('/tag') }}/{{ $tag->name }}">
+                    <div class="chip">
+                        {{ $tag->name }}
+                    </div>    
+                </a>
+            @endforeach
+            
             <!-- Go to www.addthis.com/dashboard to customize your tools -->
             <div class="addthis_sharing_toolbox"></div>
         </div>
