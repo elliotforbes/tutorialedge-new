@@ -22,6 +22,8 @@ Route::get('/blog/{slug}', 'PageController@blogSingle');
 Route::get('/advertise', 'PageController@advertise');
 Route::get('/sitemap', 'PageController@sitemap');
 Route::get('/profile', 'PageController@profile');
+Route::get('/books', 'BookController@index');
+Route::get('/books/{slug}', 'BookController@single');
 
 Route::resource('comments', 'CommentController');
 
