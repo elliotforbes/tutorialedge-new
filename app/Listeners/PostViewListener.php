@@ -29,7 +29,8 @@ class PostViewListener
      */
     public function handle(PostViewEvent $event)
     {
-        Log::info("HIT");
+        Log::info("PostViewEvent: hit...");
+        Log::info("For Post: ", $event->lesson->title);
         // if ( ! $this->isLessonViewed($lesson) ){
             // Increment the view counter by one...
             $event->lesson->increment('views');
