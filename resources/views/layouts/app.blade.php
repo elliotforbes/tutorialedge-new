@@ -11,8 +11,8 @@
 		<link rel="author" href="https://plus.google.com/b/115194233692529836662">
 		<meta property="og:site_name" content="TutorialEdge.net" />
  
-        <link rel="stylesheet" href="{{ asset('/css/material-icons-cdn.css') }}">
-        <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+        <!--<link rel="stylesheet" href="{{ asset('/css/material-icons-cdn.css') }}">-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure() ) }}">
         <link rel="stylesheet" href="{{ asset('/css/materialize.min.css', Request::secure() )  }}">
         <link rel="stylesheet" href="{{ asset('/css/front-end.css' , Request::secure() ) }}?v=15">
