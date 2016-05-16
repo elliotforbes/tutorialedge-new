@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
+use Log;
+
 class Handler extends ExceptionHandler
 {
     /**
@@ -44,7 +46,30 @@ class Handler extends ExceptionHandler
      * @return \Illuminate\Http\Response
      */
     public function render($request, Exception $e)
-    {
-        return parent::render($request, $e);
+    {   
+        if($this->isHttpException($e))
+        {
+            switch ($e->getStatusCode())
+                {
+                 case 404:
+                 Log::info("404 Registered: Redirecting to Homepage");
+                 return redirect()->guest('/');
+                 break;
+                 
+                 case 500:
+                 Log::info("500 Registered: Redirecting to Homepage");
+                 return redirect()->guest('/');
+                 break;
+                 
+                 default:
+                    return $this->renderHttpException($e);
+                 break;   
+                }
+        }
+        else 
+        {
+            Log::info("Exception Rendered: This was neither 404 or 500");
+            return redirect()->guest('/');
+        }
     }
 }

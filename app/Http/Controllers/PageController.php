@@ -37,6 +37,10 @@ class PageController extends Controller
     public function show($slug)
     {  
         $lesson = Lesson::whereSlug($slug)->get()->first();
+        
+         if(count($lesson) < 1){
+            Log::info("this was null...");
+        }
         // log::info($lesson->tags->get(0));
         $tag = $lesson->tags->get(0);
         // fire an event every time a lesson is vieweds
@@ -54,6 +58,8 @@ class PageController extends Controller
         } else {
             $articles = DB::table('lessons')->take(2)->get();
         }
+        
+       
         // log::info("Lesson Requested: ", $lesson->title);
         
         return view('frontend.single', compact('lesson', 'articles'));     
