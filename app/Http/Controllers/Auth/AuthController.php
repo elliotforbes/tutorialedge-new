@@ -94,16 +94,18 @@ class AuthController extends Controller
      */
     public function handleProviderCallback(Request $request)
     {
+        Log::info("HandleProviderCallback Hit...");
         $user = Socialite::driver('github')->user();
         Session::put('user', $user);
 
+        Log::info("Redirecting to redirect");
         $redirect = $request->input('redirect');
         
         if($redirect)
         {
             return redirect($redirect);
         }
-        
+
         $authUser = $this->findOrCreateUser($user);
 
         Auth::login($authUser, true);
@@ -118,13 +120,17 @@ class AuthController extends Controller
      * @return User
      */
     private function findOrCreateUser($githubUser)
-    {
+    {   
+        Log::info("Finding or Creating a User");
+        
         if ($authUser = User::where('github_id', $githubUser->id)->first()) {
             Log::info("User Found");
             Auth::login($authUser);
+            Log::info("Logging in existing user");
             return $authUser;
         }
         
+        Log::info("Creating a new user");
         Event::fire(new UserCreatedEvent($githubUser));
         return User::create([
             'name' => $githubUser->name,
