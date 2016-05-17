@@ -51,19 +51,19 @@ class Handler extends ExceptionHandler
         {
             switch ($e->getStatusCode())
                 {
-                 case 404:
-                 Log::info("404 Registered: Redirecting to Homepage");
-                 return redirect()->guest('/');
-                 break;
-                 
-                 case 500:
-                 Log::info("500 Registered: Redirecting to Homepage");
-                 return redirect()->guest('/');
-                 break;
-                 
-                 default:
-                    return $this->renderHttpException($e);
-                 break;   
+                    case 404:
+                        Log::info("404 Registered: Redirecting to Homepage");
+                        return redirect()->guest('/');
+                    break;
+                    
+                    case 500:
+                        Log::info("500 Registered: Redirecting to Homepage");
+                        return redirect()->guest('/');
+                    break;
+                    
+                    default:
+                        return $this->renderHttpException($e);
+                    break;   
                 }
         }
         else 
