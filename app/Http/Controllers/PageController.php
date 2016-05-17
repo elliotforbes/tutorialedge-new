@@ -38,8 +38,9 @@ class PageController extends Controller
     {  
         $lesson = Lesson::whereSlug($slug)->get()->first();
         
-         if(count($lesson) < 1){
+        if(count($lesson) < 1){
             Log::info("this was null...");
+            return redirect('errors.404');
         }
         // log::info($lesson->tags->get(0));
         $tag = $lesson->tags->get(0);
