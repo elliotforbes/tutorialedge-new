@@ -40,6 +40,7 @@ class PageController extends Controller
         
         if(count($lesson) < 1){
             Log::info("this was null...");
+            Log::info("Slug: " , $slug);
             return view('errors.404');
         }
         // log::info($lesson->tags->get(0));
@@ -57,11 +58,11 @@ class PageController extends Controller
                         ->take(2)
                         ->get();
         } else {
+            Log::info("Returning 2 Random Recommended Articles");
             $articles = DB::table('lessons')->take(2)->get();
         }
         
-       
-        // log::info("Lesson Requested: ", $lesson->title);
+        Log::info("Lesson Requested: ", $lesson->title);
         
         return view('frontend.single', compact('lesson', 'articles'));     
         
