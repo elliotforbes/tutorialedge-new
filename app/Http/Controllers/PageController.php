@@ -39,8 +39,8 @@ class PageController extends Controller
         $lesson = Lesson::whereSlug($slug)->get()->first();
         
         if(count($lesson) < 1){
-            Log::info("this was null...");
-            Log::info("Slug: " , $slug);
+            Log::info("Lesson could not be found");
+            // Log::info("Slug: " , $slug);
             return view('errors.404');
         }
         // log::info($lesson->tags->get(0));
@@ -62,7 +62,7 @@ class PageController extends Controller
             $articles = DB::table('lessons')->take(2)->get();
         }
         
-        Log::info("Lesson Requested: ", $lesson->title);
+        // Log::info("Lesson Requested: ", $lesson->title);
         
         return view('frontend.single', compact('lesson', 'articles'));     
         
