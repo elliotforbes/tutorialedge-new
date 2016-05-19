@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-    <h1>Hello World</h1>
+    @foreach($lessons as $lesson)
+        <h1>{{ $lesson->title }}</h1>
+    @endforeach
 @endsection
