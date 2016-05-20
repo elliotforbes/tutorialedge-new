@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Log;
 use Auth;
+use App\Lesson;
 
 class AdminController extends Controller
 {
