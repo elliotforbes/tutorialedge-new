@@ -16,7 +16,6 @@ class AdminController extends Controller
         Log::info('Home Route Successfully Hit on AdminController ');
         Log::info($user);
         return view("admin.index");
-    }
-    
+    }  
     
 }

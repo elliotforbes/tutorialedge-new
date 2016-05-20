@@ -12,7 +12,8 @@ class LessonController extends Controller
     
     public function index()
     {
-        return view('admin.article.all');
+        $lessons = Lesson::all();
+        return view('admin.article.all', compact('lessons'));
     }
     
     public function create()
