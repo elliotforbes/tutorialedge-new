@@ -28,7 +28,7 @@
     </div>
     
     <div id="main">
-        <div class="pure-g">
+        <!--<div class="pure-g">
             <div class="pure-u-1-2">
                 <div class="widget">
                     
@@ -39,7 +39,9 @@
                     
                 </div>
             </div>
-        </div>
+        </div>-->
+        @yield('content')
+        
     </div>
         
     
