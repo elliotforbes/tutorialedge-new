@@ -78,6 +78,7 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
 
 <div class="container">
     <div class="course-container row">
+        <h4>Individual Lessons</h4>
         
         @foreach($lessons as $lesson)
         <div class="col s12 m6 l4">
