@@ -19,6 +19,63 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
 @endsection
 
 @section('content')
+
+<div class="gray-container">
+    <div class="container">
+        <div class="row">
+            <h4>Courses</h4>
+            
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{{ asset('/uploads/artificial-intelligence.jpg') }}">
+                    </div>
+                    <div class="card-content">
+                        <h5>Artificial Intelligence</h5>
+                        <p>Learn everything from Graph Theory to Machine Learning in this introductory course.</p>
+                    </div>
+                    <div class="card-action">
+                    <a href="{{ url('/course') }}/artificial-intelligence">View Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{{ asset('/uploads/web-security.png') }}">
+                        
+                    </div>
+                    <div class="card-content">
+                        <h5>Web Security</h5>
+                        <p>Learn some of the most common vulnerabities in websites and how to guard against them.</p>
+                    </div>
+                    <div class="card-action">
+                    <a href="{{ url('/course') }}/introduction-to-web-security">View Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{{ asset('/uploads/laravel-5.jpg') }}">
+                        
+                    </div>
+                    <div class="card-content">
+                        <h5>Laravel 5.2 Fundamentals</h5>
+                        <p>In this course we cover the basics for creating a web application using the Laravel 5.2 PHP framework.</p>
+                    </div>
+                    <div class="card-action">
+                    <a href="{{ url('/course') }}/laravel-5">View Now</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
 <div class="container">
     <div class="course-container row">
         
