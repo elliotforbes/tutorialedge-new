@@ -20,8 +20,8 @@
             <div class="pure-menu">
                 <div class="admin-logo pure-menu-heading">TutorialEdge</div>
                 <ul class="pure-menu-list">
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Articles</a></li>
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Users</a></li>
+                    <li class="pure-menu-item"><a href="{{ url('/admin/articles') }}" class="pure-menu-link">Articles</a></li>
+                    <li class="pure-menu-item"><a href="{{ url('/admin/users') }}" class="pure-menu-link">Users</a></li>
                 </ul>
             </div>
         </div>
