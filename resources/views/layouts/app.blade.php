@@ -20,6 +20,7 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/vue/latest/vue.js"></script>
         <!--<script type="text/javascript" src="{{ asset('/js/vue-resource.min.js') }}"></script>-->
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.16/vue-resource.min.js"></script>
+        <script src="https://use.fontawesome.com/9b263d09bd.js"></script>
         <link rel="icon" type="image/png" href="{{ asset('/favicon.ico', Request::secure()) }}">
          @yield('meta')
         
