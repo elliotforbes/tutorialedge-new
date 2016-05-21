@@ -5,7 +5,7 @@
         </div>
         <div class="col s10">
         <h5>
-            <a target="_blank" href="https://elliotforbes.co.uk">Author - Elliot Forbes</a>
+            <a target="_blank" href="https://elliotforbes.co.uk">Elliot Forbes</a>
             <span class="time-since">
                 
             </span>
