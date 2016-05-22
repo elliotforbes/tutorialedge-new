@@ -43,7 +43,7 @@
   -moz-column-gap: 20px;
   -webkit-column-count: 3;
   -webkit-column-gap: 20px; }
-  .course-container .lesson {
+  .course-container figure {
     column-break-before: always; }
   .course-container figure.snip1253 {
     font-family: 'Raleway', Arial, sans-serif;
