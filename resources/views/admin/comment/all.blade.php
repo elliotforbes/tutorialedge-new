@@ -12,7 +12,7 @@
         <tbody>
             @foreach($comments as $comment)
                 <tr>
-                    <td>{{ $user->id }}</td>
+                    <td>{{ $comment->id }}</td>
                 </tr>
             @endforeach
         </tbody>
