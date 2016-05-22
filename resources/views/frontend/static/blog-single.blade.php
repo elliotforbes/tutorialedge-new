@@ -33,8 +33,6 @@
     <div class="comments">
         
        @include('frontend.partials._author')
-       
-       @include('frontend.partials._comments')
         
     </div>
 </div>
