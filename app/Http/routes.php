@@ -43,7 +43,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
     
 });
 
-// Route::get('/testadmin', 'Admin\AdminController@Home');
+Route::get('/testadmin', 'Admin\AdminController@Home');
 
 Route::get('/forum', 'PageController@forum');
 
