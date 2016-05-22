@@ -4,7 +4,7 @@
 /*
 * All the colours for the site are defined here
 */
-@import url(//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 .banner {
   background-color: #00CCFF;
   margin-top: -40px;
