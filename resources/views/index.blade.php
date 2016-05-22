@@ -82,6 +82,23 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
         
         @foreach($lessons as $lesson)
         <div class="col s12 m6 l4">
+            <figure class="snip1253">
+                <div class="image"><img src="{{ asset('/uploads/') }}/{{ $lesson->image_path }}" alt="sample52"/></div>
+                <figcaption>
+                    <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
+                    <h3>{{ $lesson->title }}</h3>
+                    <p>
+                        {{ $lesson->description }}
+                    </p>
+                </figcaption>
+                <footer>
+                    <div class="views"><i class="ion-eye"></i>{{ $lesson->views }}</div>
+                    <!--<div class="love"><i class="ion-heart"></i>623</div>-->
+                     </footer><a href="{{url('/') }}/{{ $lesson->slug }}"></a>
+            </figure>
+        </div>
+        
+        <!--<div class="col s12 m6 l4">
             <div class="course-box">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
@@ -92,7 +109,7 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         @endforeach
         
         <div class="break"></div>
