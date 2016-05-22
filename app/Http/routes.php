@@ -34,10 +34,16 @@ Route::group(['prefix' => 'api/v1'], function (){
 });
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
-    Route::get('/', 'AdminController@Home'); 
+    Route::get('/', 'Admin\AdminController@Home'); 
     Route::resource('articles', 'Admin\LessonController');
     Route::resource('users', 'Admin\UserController');
+    Route::resource('comments', 'Admin\CommentController');
+    Route::get('/settings', 'Admin\AdminController@Settings');
+    Route::get('/stats', 'Admin\AdminController@Stats');
+    
 });
+
+// Route::get('/testadmin', 'Admin\AdminController@Home');
 
 Route::get('/forum', 'PageController@forum');
 
