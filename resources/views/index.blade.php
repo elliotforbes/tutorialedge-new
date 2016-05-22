@@ -81,7 +81,7 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
         <h4>Tutorials:</h4>
         
         @foreach($lessons as $lesson)
-        <div class="col s12 m6 l4">
+        <div class="lesson col s12 m6 l4">
             <figure class="snip1253">
                 <div class="image"><img src="{{ asset('/uploads/') }}/{{ $lesson->image_path }}" alt="sample52"/></div>
                 <figcaption>

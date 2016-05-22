@@ -49,6 +49,15 @@
 .course-container{
     
     margin-top: 40px;
+    
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+ 
+    .lesson{
+        column-break-before: always;  
+    }
  
     figure.snip1253 {
     font-family: 'Raleway', Arial, sans-serif;
@@ -59,6 +68,7 @@
     margin: 10px 1%;
     min-width: 250px;
     max-width: 310px;
+    max-width;
     width: 100%;
     background-color: #ffffff;
     color: #000000;

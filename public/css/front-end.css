@@ -1,474 +1,82 @@
 /*
-* All the colours for the site are defined here
+Error: Invalid CSS after "    max-width": expected "{", was ";"
+        on line 71 of public/css/_homepage.scss
+        from line 3 of public/css/front-end.scss
+
+66:     float: left;
+67:     overflow: hidden;
+68:     margin: 10px 1%;
+69:     min-width: 250px;
+70:     max-width: 310px;
+71:     max-width;
+72:     width: 100%;
+73:     background-color: #ffffff;
+74:     color: #000000;
+75:     text-align: left;
+76:     font-size: 16px;
+
+Backtrace:
+public/css/_homepage.scss:71
+public/css/front-end.scss:3
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:1179:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:1115:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:1110:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:655:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:725:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:675:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:667:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:656:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:725:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:675:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:667:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:656:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:649:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:674:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:667:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:126:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:42:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/engine.rb:403:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/engine.rb:309:in `to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
 */
-/*
-* All the colours for the site are defined here
-*/
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700);
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-.banner {
-  background-color: #00CCFF;
-  margin-top: -40px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  color: white; }
-  .banner .banner-cont {
-    margin: auto;
-    width: 80%;
-    text-align: center; }
-    .banner .banner-cont .element {
-      font-weight: 800; }
-    .banner .banner-cont h3 {
-      font-size: 32px; }
-
-.homepage-cont {
-  min-height: 600px; }
-  @media (max-width: 37.5em) {
-    .homepage-cont {
-      width: 90%; } }
-  @media (min-width: 37.5em) {
-    .homepage-cont {
-      width: 90%; } }
-  @media (min-width: 50em) {
-    .homepage-cont {
-      width: 80%; } }
-  @media (min-width: 64em) {
-    .homepage-cont {
-      width: 80%; } }
-
-.course-container {
-  margin-top: 40px; }
-  .course-container figure.snip1253 {
-    font-family: 'Raleway', Arial, sans-serif;
-    color: #fff;
-    position: relative;
-    float: left;
-    overflow: hidden;
-    margin: 10px 1%;
-    min-width: 250px;
-    max-width: 310px;
-    width: 100%;
-    background-color: #ffffff;
-    color: #000000;
-    text-align: left;
-    font-size: 16px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
-  .course-container figure.snip1253 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-  .course-container figure.snip1253 .image {
-    max-height: 220px;
-    overflow: hidden; }
-  .course-container figure.snip1253 img {
-    max-width: 100%;
-    vertical-align: top;
-    position: relative; }
-  .course-container figure.snip1253 figcaption {
-    margin: -40px 15px 0;
-    padding: 15px;
-    position: relative;
-    background-color: #ffffff; }
-  .course-container figure.snip1253 .date {
-    background-color: #2980b9;
-    top: 15px;
-    color: #fff;
-    left: 15px;
-    min-height: 48px;
-    min-width: 48px;
-    position: absolute;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase; }
-  .course-container figure.snip1253 .date span {
-    display: block;
-    line-height: 24px; }
-  .course-container figure.snip1253 .date .month {
-    font-size: 14px;
-    background-color: rgba(0, 0, 0, 0.1); }
-  .course-container figure.snip1253 h3,
-  .course-container figure.snip1253 p {
-    margin: 0;
-    padding: 0; }
-  .course-container figure.snip1253 h3 {
-    min-height: 50px;
-    margin-bottom: 10px;
-    margin-left: 60px;
-    font-size: 22px;
-    display: inline-block;
-    font-weight: 600;
-    text-transform: uppercase; }
-  .course-container figure.snip1253 p {
-    font-size: 0.8em;
-    margin-bottom: 20px;
-    line-height: 1.6em; }
-  .course-container figure.snip1253 footer {
-    padding: 0 25px;
-    background-color: #20638f;
-    color: #e6e6e6;
-    font-size: 0.8em;
-    line-height: 30px;
-    text-align: right; }
-  .course-container figure.snip1253 footer > div {
-    display: inline-block;
-    margin-left: 10px; }
-  .course-container figure.snip1253 footer i {
-    color: rgba(255, 255, 255, 0.2);
-    margin-right: 5px; }
-  .course-container figure.snip1253 a {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    z-index: 1; }
-  .course-container figure.snip1253:hover img,
-  .course-container figure.snip1253.hover img {
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15); }
-  .course-container .course-box {
-    margin-bottom: 40px;
-    min-height: 300px; }
-
-.gray-container {
-  background-color: #F5F5F1;
-  width: 100%;
-  min-height: 100px;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-  .gray-container .promo {
-    text-align: center; }
-    .gray-container .promo h5 {
-      font-weight: 800; }
-    .gray-container .promo p {
-      font-weight: 300; }
-    .gray-container .promo i {
-      margin: 40px 0;
-      color: #00CCFF;
-      font-size: 7rem;
-      display: block; }
-
-body {
-  -webkit-font-smoothing: antialiased; }
-  @media (max-width: 37.5em) {
-    body p, body ul, body li, body a {
-      font-size: 20px;
-      line-height: 32px; } }
-  @media (min-width: 37.5em) {
-    body p, body ul, body li, body a {
-      font-size: 19px; } }
-  @media (min-width: 50em) {
-    body p, body ul, body li, body a {
-      font-size: 19px; } }
-  @media (min-width: 64em) {
-    body p, body ul, body li, body a {
-      font-size: 18px; } }
-
-nav {
-  background-color: #2D3E4E; }
-  nav .button-collapse {
-    padding-left: 10px; }
-  nav .github-signin {
-    background-color: #00CCFF; }
-  nav ul li {
-    margin-top: -1px; }
-  nav ul li:hover {
-    background-color: #00CCFF; }
-  nav .brand-logo {
-    margin-left: 20px;
-    font-weight: 100; }
-    @media (max-width: 37.5em) {
-      nav .brand-logo {
-        margin-top: 10px; } }
-
-.author-info {
-  background-color: #ffffff;
-  padding: 30px;
-  padding-bottom: 10px;
-  /* Gap filler */
-  /* Tooltip */
-  /* Arrow */ }
-  .author-info h5 {
-    margin: 0;
-    padding: 0; }
-    .author-info h5 a {
-      font-size: 26px;
-      color: #4e5e6a; }
-  .author-info ul {
-    margin: 0;
-    padding: 0; }
-    .author-info ul li {
-      padding: 0;
-      margin: 0;
-      display: inline; }
-      .author-info ul li a {
-        margin-right: 20px;
-        font-size: 30px; }
-  .author-info p {
-    color: #414a51;
-    font-weight: 400;
-    font-size: 16px;
-    font-family: "proxima-nova", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.2;
-    -webkit-font-smoothing: antialiased; }
-  .author-info .tooltip {
-    display: inline;
-    position: relative;
-    z-index: 999; }
-  .author-info .tooltip::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    bottom: 100%;
-    left: 50%;
-    pointer-events: none;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%); }
-  .author-info .tooltip:hover::after {
-    pointer-events: auto; }
-  .author-info .tooltip-content {
-    position: absolute;
-    z-index: 9999;
-    width: 300px;
-    left: 50%;
-    bottom: 100%;
-    font-size: 20px;
-    line-height: 1.4;
-    text-align: center;
-    font-weight: 400;
-    color: #fffaf0;
-    background: transparent;
-    opacity: 0;
-    margin: 0 0 20px -150px;
-    cursor: default;
-    pointer-events: none;
-    -webkit-font-smoothing: antialiased;
-    -webkit-transition: opacity 0.3s 0.3s;
-    transition: opacity 0.3s 0.3s; }
-  .author-info .tooltip:hover .tooltip-content {
-    opacity: 1;
-    pointer-events: auto;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s; }
-  .author-info .tooltip-content span {
-    display: block; }
-  .author-info .tooltip-text {
-    border-bottom: 10px solid #fffaf0;
-    overflow: hidden;
-    -webkit-transform: scale3d(0, 1, 1);
-    transform: scale3d(0, 1, 1);
-    -webkit-transition: -webkit-transform 0.3s 0.3s;
-    transition: transform 0.3s 0.3s; }
-  .author-info .tooltip:hover .tooltip-text {
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); }
-  .author-info .tooltip-inner {
-    background: rgba(85, 61, 61, 0.95);
-    padding: 40px;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    webkit-transition: -webkit-transform 0.3s;
-    transition: transform 0.3s; }
-  .author-info .tooltip:hover .tooltip-inner {
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  .author-info .tooltip-content::after {
-    content: '';
-    bottom: -20px;
-    left: 50%;
-    border: solid transparent;
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: transparent;
-    border-top-color: #fffaf0;
-    border-width: 10px;
-    margin-left: -10px; }
-  .author-info img {
-    width: 80px;
-    height: 80px; }
-
-.icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 40px;
-  background-color: #112F5A;
-  color: white;
-  padding-top: 7px;
-  font-size: 48px;
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px; }
-  .icon i {
-    font-size: 48px;
-    margin-left: 17px; }
-
-.content {
-  min-height: 100px;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  line-height: 29px; }
-  .content .icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    background-color: #112F5A;
-    color: white;
-    padding-top: 7px;
-    font-size: 48px;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px; }
-    .content .icon span {
-      margin-left: 28px; }
-  .content .chip {
-    background-color: #00CCFF;
-    color: white; }
-  .content img {
-    width: 100%;
-    height: auto; }
-  @media (max-width: 37.5em) {
-    .content {
-      width: 90%; }
-      .content p {
-        font-size: 22px; } }
-  @media (min-width: 37.5em) {
-    .content {
-      width: 90%; } }
-  @media (min-width: 50em) {
-    .content {
-      width: 80%; } }
-  @media (min-width: 64em) {
-    .content {
-      width: 50%; } }
-  .content h1, .content h2, .content h3, .content h4, .content h5 {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 800;
-    margin-bottom: 10px; }
-  .content h1 {
-    font-size: 55px;
-    text-align: center; }
-  .content h2 {
-    font-size: 30px; }
-  .content .info {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    color: #9A9A9A; }
-  .content pre {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-left: 20px;
-    border-left: 5px solid #00CCFF; }
-  .content .tip {
-    background-color: #F5F5F1;
-    padding: 20px;
-    text-align: center; }
-    .content .tip .large {
-      font-size: 24px;
-      font-weight: 800;
-      width: 100%; }
-  .content .post-body h1 {
-    font-size: 38px; }
-  .content .post-body ul li {
-    list-style-type: circle;
-    margin-left: 40px; }
-  .content .post-body .recommended-articles .article {
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #F5F5F1;
-    margin-bottom: 20px; }
-    .content .post-body .recommended-articles .article h2 {
-      margin: 0;
-      padding: 0;
-      margin-bottom: 10px;
-      font-size: 22px; }
-    .content .post-body .recommended-articles .article p {
-      color: #9A9A9A;
-      text-overflow: ellipsis;
-      font-size: 17px; }
-    .content .post-body .recommended-articles .article .url {
-      font-size: 14px; }
-  .content .result {
-    margin-bottom: 40px; }
-    .content .result button {
-      background-color: #00CCFF; }
-
-.search .input-field input {
-  font-size: 23px; }
-.search .search-results .result {
-  background-color: white; }
-
-.comment-container {
-  width: 100%;
-  background-color: #F5F5F1;
-  padding-top: 40px;
-  padding-bottom: 40px; }
-  .comment-container .comments {
-    margin: auto;
-    margin-bottom: 20px; }
-    @media (max-width: 37.5em) {
-      .comment-container .comments {
-        width: 90%; } }
-    @media (min-width: 37.5em) {
-      .comment-container .comments {
-        width: 90%; } }
-    @media (min-width: 50em) {
-      .comment-container .comments {
-        width: 80%; } }
-    @media (min-width: 64em) {
-      .comment-container .comments {
-        width: 50%; } }
-    .comment-container .comments .comment {
-      margin-top: 20px;
-      padding: 20px;
-      width: 100%;
-      background-color: white; }
-      .comment-container .comments .comment i.comment-icon {
-        color: #00CCFF; }
-      .comment-container .comments .comment button {
-        background-color: #00CCFF; }
-        .comment-container .comments .comment button i {
-          color: white; }
-      .comment-container .comments .comment .input-field label .active {
-        color: #00CCFF; }
-      .comment-container .comments .comment h5 {
-        font-size: 16px; }
-        .comment-container .comments .comment h5 a {
-          color: #505b69;
-          margin: 1em 0;
-          line-height: 1.3em;
-          font-weight: 600; }
-        .comment-container .comments .comment h5 .time-since {
-          color: #9ba6b5; }
-
-footer.page-footer {
-  background-color: white;
-  color: #aeaeae;
-  margin-top: 0; }
-  footer.page-footer a {
-    color: #525252; }
-  footer.page-footer .footer-copyright {
-    background-color: #FAFAFA;
-    color: #525252; }
-
-.clear {
-  clear: both; }
-
-.break {
-  width: 100%;
-  height: 40px;
-  clear: both; }
-
-.pagination {
-  margin: auto; }
-
-/*# sourceMappingURL=front-end.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    max-width\": expected \"{\", was \";\"\A         on line 71 of public/css/_homepage.scss\A         from line 3 of public/css/front-end.scss\A \A 66:     float: left;\A 67:     overflow: hidden;\A 68:     margin: 10px 1%;\A 69:     min-width: 250px;\A 70:     max-width: 310px;\A 71:     max-width;\A 72:     width: 100%;\A 73:     background-color: #ffffff;\A 74:     color: #000000;\A 75:     text-align: left;\A 76:     font-size: 16px;"; }
