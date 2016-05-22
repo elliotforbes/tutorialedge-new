@@ -88,7 +88,7 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
                     <div class="date"><span class="day">{{ date("d",strtotime($lesson->created_at)) }}</span><span class="month">{{ date("M",strtotime($lesson->created_at)) }}</span></div>
                     <h3>{{ $lesson->title }}</h3>
                     <p>
-                        {{ $lesson->description }}
+                        {{ Str::limit($lesson->description, 140) }}
                     </p>
                 </figcaption>
                 <footer>
@@ -97,19 +97,6 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
                      </footer><a href="{{url('/') }}/{{ $lesson->slug }}"></a>
             </figure>
         </div>
-        
-        <!--<div class="col s12 m6 l4">
-            <div class="course-box">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">{{ $lesson->title }}</span>
-                    </div>
-                    <div class="card-action">
-                    <a href="{{ url('/') }}/{{ $lesson->slug }}">Read Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>-->
         @endforeach
         
         <div class="break"></div>
