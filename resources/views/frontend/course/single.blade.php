@@ -24,4 +24,11 @@
         {!! $course->body !!}
     </div>
 </div>
+
+<div class="gray-container">
+    <div class="content">
+        @include('frontend.partials._author')
+    </div>
+</div>
+
 @endsection

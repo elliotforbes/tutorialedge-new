@@ -1,8 +1,6 @@
 <div class="comment-container">
     <div class="comments" id="comments">
         
-        @include('frontend.partials._author')
-        
         @if (Auth::guest())
          <div class="comment">
             <div class="icon valign-wrapper">
