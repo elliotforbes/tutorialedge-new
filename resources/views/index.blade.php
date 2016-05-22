@@ -88,7 +88,8 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
                     <div class="date"><span class="day">{{ date("d",strtotime($lesson->created_at)) }}</span><span class="month">{{ date("M",strtotime($lesson->created_at)) }}</span></div>
                     <h3>{{ $lesson->title }}</h3>
                     <p>
-                        {{ Str::limit($lesson->description, 140) }}
+                        
+                        {{ $lesson->description }}
                     </p>
                 </figcaption>
                 <footer>
