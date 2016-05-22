@@ -34,11 +34,7 @@
       width: 80%; } }
 
 .course-container {
-  margin-top: 40px;
-  -moz-column-count: 3;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 20px; }
+  margin-top: 40px; }
   .course-container figure.snip1253 {
     font-family: 'Raleway', Arial, sans-serif;
     color: #fff;
