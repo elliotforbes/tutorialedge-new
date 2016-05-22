@@ -237,6 +237,13 @@ nav{
     margin-bottom: 40px;
     line-height:29px;
     
+    .github-link{
+        margin: 20px 0px;
+        padding: 30px 20px 30px 100px;
+        background: #f8f8f8 url(../images/github.png) no-repeat 20px 50%;
+        font-weight: bold;
+    }
+    
     .icon{
             width: 80px;
             height: 80px;

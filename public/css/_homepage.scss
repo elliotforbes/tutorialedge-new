@@ -51,7 +51,6 @@
     margin-top: 40px;
     
  
- 
     figure.snip1253 {
     font-family: 'Raleway', Arial, sans-serif;
     color: #fff;
@@ -114,6 +113,8 @@
     figure.snip1253 p {
     margin: 0;
     padding: 0;
+      /* fallback */
+
     }
     figure.snip1253 h3 {
     min-height: 50px;
@@ -127,7 +128,14 @@
     figure.snip1253 p {
     font-size: 0.8em;
     margin-bottom: 20px;
-    line-height: 1.6em;
+    
+      overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-height: 1.6em;        /* fallback */
+    max-height: 10*2;    
     }
     figure.snip1253 footer {
     padding: 0 25px;
