@@ -1,55 +1,156 @@
 /*
-Error: Invalid CSS after "    max-width": expected "{", was ";"
-        on line 71 of public/css/_homepage.scss
-
-66:     float: left;
-67:     overflow: hidden;
-68:     margin: 10px 1%;
-69:     min-width: 250px;
-70:     max-width: 310px;
-71:     max-width;
-72:     width: 100%;
-73:     background-color: #ffffff;
-74:     color: #000000;
-75:     text-align: left;
-76:     font-size: 16px;
-
-Backtrace:
-public/css/_homepage.scss:71
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:1179:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:1115:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:1110:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:655:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:725:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:675:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:667:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:656:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:725:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:675:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:667:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:656:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:649:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:674:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:667:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:126:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:42:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/engine.rb:403:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.20/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+* All the colours for the site are defined here
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    max-width\": expected \"{\", was \";\"\A         on line 71 of public/css/_homepage.scss\A \A 66:     float: left;\A 67:     overflow: hidden;\A 68:     margin: 10px 1%;\A 69:     min-width: 250px;\A 70:     max-width: 310px;\A 71:     max-width;\A 72:     width: 100%;\A 73:     background-color: #ffffff;\A 74:     color: #000000;\A 75:     text-align: left;\A 76:     font-size: 16px;"; }
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.banner {
+  background-color: #00CCFF;
+  margin-top: -40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: white; }
+  .banner .banner-cont {
+    margin: auto;
+    width: 80%;
+    text-align: center; }
+    .banner .banner-cont .element {
+      font-weight: 800; }
+    .banner .banner-cont h3 {
+      font-size: 32px; }
+
+.homepage-cont {
+  min-height: 600px; }
+  @media (max-width: 37.5em) {
+    .homepage-cont {
+      width: 90%; } }
+  @media (min-width: 37.5em) {
+    .homepage-cont {
+      width: 90%; } }
+  @media (min-width: 50em) {
+    .homepage-cont {
+      width: 80%; } }
+  @media (min-width: 64em) {
+    .homepage-cont {
+      width: 80%; } }
+
+.course-container {
+  margin-top: 40px;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px; }
+  .course-container .lesson {
+    column-break-before: always; }
+  .course-container figure.snip1253 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 250px;
+    max-width: 310px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
+  .course-container figure.snip1253 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .course-container figure.snip1253 .image {
+    max-height: 220px;
+    overflow: hidden; }
+  .course-container figure.snip1253 img {
+    max-width: 100%;
+    vertical-align: top;
+    position: relative; }
+  .course-container figure.snip1253 figcaption {
+    margin: -40px 15px 0;
+    padding: 15px;
+    position: relative;
+    background-color: #ffffff; }
+  .course-container figure.snip1253 .date {
+    background-color: #2980b9;
+    top: 15px;
+    color: #fff;
+    left: 15px;
+    min-height: 48px;
+    min-width: 48px;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .course-container figure.snip1253 .date span {
+    display: block;
+    line-height: 24px; }
+  .course-container figure.snip1253 .date .month {
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.1); }
+  .course-container figure.snip1253 h3,
+  .course-container figure.snip1253 p {
+    margin: 0;
+    padding: 0; }
+  .course-container figure.snip1253 h3 {
+    min-height: 50px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    font-size: 22px;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .course-container figure.snip1253 p {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    line-height: 1.6em; }
+  .course-container figure.snip1253 footer {
+    padding: 0 25px;
+    background-color: #20638f;
+    color: #e6e6e6;
+    font-size: 0.8em;
+    line-height: 30px;
+    text-align: right; }
+  .course-container figure.snip1253 footer > div {
+    display: inline-block;
+    margin-left: 10px; }
+  .course-container figure.snip1253 footer i {
+    color: rgba(255, 255, 255, 0.2);
+    margin-right: 5px; }
+  .course-container figure.snip1253 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1; }
+  .course-container figure.snip1253:hover img,
+  .course-container figure.snip1253.hover img {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15); }
+  .course-container .course-box {
+    margin-bottom: 40px;
+    min-height: 300px; }
+
+.gray-container {
+  background-color: #F5F5F1;
+  width: 100%;
+  min-height: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .gray-container .promo {
+    text-align: center; }
+    .gray-container .promo h5 {
+      font-weight: 800; }
+    .gray-container .promo p {
+      font-weight: 300; }
+    .gray-container .promo i {
+      margin: 40px 0;
+      color: #00CCFF;
+      font-size: 7rem;
+      display: block; }
+
+/*# sourceMappingURL=_homepage.css.map */
