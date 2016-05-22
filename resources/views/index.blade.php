@@ -85,7 +85,7 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
             <figure class="snip1253">
                 <div class="image"><img src="{{ asset('/uploads/') }}/{{ $lesson->image_path }}" alt="sample52"/></div>
                 <figcaption>
-                    <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
+                    <div class="date"><span class="day">{{ date("d",strtotime($lesson->created_at)) }}</span><span class="month">{{ date("M",strtotime($lesson->created_at)) }}</span></div>
                     <h3>{{ $lesson->title }}</h3>
                     <p>
                         {{ $lesson->description }}
