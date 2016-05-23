@@ -46,8 +46,6 @@
     float: left;
     overflow: hidden;
     margin: 10px 1%;
-    min-width: 250px;
-    max-width: 310px;
     width: 100%;
     background-color: #ffffff;
     color: #000000;
@@ -69,6 +67,7 @@
   .course-container figure.snip1253 figcaption {
     margin: -40px 15px 0;
     padding: 15px;
+    height: 180px;
     position: relative;
     background-color: #ffffff; }
   .course-container figure.snip1253 .date {
