@@ -33,7 +33,8 @@ Route::group(['prefix' => 'api/v1'], function (){
     Route::resource('lessons', 'LessonsController', ['only' => ['index', 'show']]);    
 });
 
-Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
+// Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
+Route::group(['prefix' => 'admin'], function (){
     Route::get('/', 'Admin\AdminController@Home'); 
     Route::resource('articles', 'Admin\LessonController');
     Route::resource('users', 'Admin\UserController');

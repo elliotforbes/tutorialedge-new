@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <h2>All Users:</h2>
-    <table class="pure-table">
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th>#</th>

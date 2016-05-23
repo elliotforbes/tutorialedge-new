@@ -1,57 +1,78 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="container">
-    <h5>Create New Article</h5>
-    <div class="row">
-        <form class="col s12">
-        <div class="row">
-            <div class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Lesson Title" name="title" id="title" type="text" class="validate">
-                    <label for="title">Title</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s6">
-                <input placeholder="Placeholder" id="Author" type="text" class="validate">
-                <label for="Author">Author</label>
-                </div>
-                <div class="input-field col s6">
-                <input id="slug" type="text" class="validate" placeholder="slug">
-                <label for="slug">Slug</label>
-                </div>
-            </div>
-            <div class="row">
-                 <div class="input-field col s6">
-                    <select multiple>
-                    <option value="" disabled selected>Choose your option</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                    </select>
-                    <label>Materialize Multiple Select</label>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">comment</i>
-                    <textarea id="icon_prefix2" name="body" class="materialize-textarea"></textarea>
-                    <label for="icon_prefix2">Body</label>
-                </div>
-            </div>
-           
-            
-            <div class="row">
-                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                    <i class="material-icons right">send</i>
-                </button>
-            </div>
-        </form>
+<div class="row">
+    <div class="col-lg-6">
+        <h1>New Post</h1>
     </div>
+    <div class="col-lg-6"></div>
+    
+    <div class="clear"></div>
+    
+    <form class="form" action="" method="POST">
+        <div class="col-lg-12">
+            <div class="form-group">
+                <label>Post Title:</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label>Slug</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label>Status</label>
+                <select class="form-control">
+                    <option value="0">Draft</option>
+                    <option value="1">Published</optino>
+                </select>
+            </div>
+        </div>
+        
+        <div class="col-lg-12">
+            <div class="form-group">
+                <label>Body</label>
+                <textarea class="form-control"></textarea>
+            </div>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label>Image Path</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label>Tags</label>
+                <select class="form-control" multiple>
+                    <option>Tag 1</option>
+                    <option>Tag 2</option>
+                    <option>Tag 3</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label>Upload</label>
+                <div class="clear"></div>
+                <button class="btn btn-primary">Upload Image</button>
+            </div>
+        </div>
+        
+        
+        <div class="clear"></div>
+        <div class="col-lg-6">
+            <button class="btn btn-success">Save</button>
+        </div>
+        
+    </form>
 </div>
-
-<script type="text/javascript">
-</script>
 @endsection

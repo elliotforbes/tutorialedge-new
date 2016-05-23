@@ -219,4 +219,10 @@ body {
   background-color: white;
   border: 1px solid #e6e6e6; }
 
+.clear {
+  clear: both; }
+
+table {
+  margin-top: 40px; }
+
 /*# sourceMappingURL=admin-style.css.map */
