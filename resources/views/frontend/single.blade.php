@@ -56,10 +56,14 @@
                 
     </div>
 </div>
+<div class="comment-container">
+    <div class="comments">
+    @include('frontend.partials._author')
 
-
-@include('frontend.partials._comments')
-
+    @include('frontend.partials._comments')
+    </div>
+    <div class="clear"></div>
+</div>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=emforce"></script>
 
