@@ -22,7 +22,8 @@ class CommentController extends Controller
     public function store(Request $request, Lesson $lesson)
     {
         Log::info("Comment Store Method Called");
-        
+        Log::info($equest->all());
+        Log::info($request->user());
         $comment = new Comment($request->all());
         if($request->user()){
             $user = $request->user();
