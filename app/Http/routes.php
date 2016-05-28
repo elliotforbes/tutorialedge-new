@@ -37,7 +37,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::resource('comments', 'CommentController');
 });
 
-// Route::get('/test', 'EmailController@test');
+Route::get('/test', 'EmailController@test');
 
 Route::group(['prefix' => 'api/v1'], function (){
     Route::resource('lessons', 'LessonsController', ['only' => ['index', 'show']]);    
