@@ -42,15 +42,16 @@ class ErrorListener
         $data = [
            'error' => $event->error,
         ];  
-        
-        $send = Mail::send('emails.error', $data, function ($m) use ($user) {
-            $m->from("elliot@tutorialedge.net", 'TutorialEdge');
-            
-            $m->to($user->email, $user->name)->subject('Error Event');
-        });
-        
-        if (!$send){
-            dd("Something went wrong...");
+        try {
+            $send = Mail::send('emails.error', $data, function ($m) use ($user) {
+                $m->from("elliot@tutorialedge.net", 'TutorialEdge');
+                
+                $m->to($user->email, $user->name)->subject('Error Event');
+            });
+        } 
+        catch (\Exception $e)
+        {
+            dd($e->getMessage());
         }
         
         Log::info("Successfully sent email to Admin");
