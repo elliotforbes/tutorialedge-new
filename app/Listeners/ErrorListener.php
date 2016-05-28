@@ -52,6 +52,7 @@ class ErrorListener
         catch (\Exception $e)
         {
             Log::info($e->getMessage());
+            dd(error_get_last());
         }
         
         Log::info("Successfully sent email to Admin");
