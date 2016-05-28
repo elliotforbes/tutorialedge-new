@@ -29,7 +29,7 @@ class CommentController extends Controller
             Log::info($user);
         } 
         
-        Log::info($reqeust->slug);
+        Log::info($request->slug);
         $lesson = Lesson::whereSlug($request->slug)->get()->first();
         $comment->author = User::find($user)->get()->first()->name;
         
