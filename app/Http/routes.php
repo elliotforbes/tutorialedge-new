@@ -10,30 +10,27 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::get('/', 'PageController@Home');
+Route::get('/tutorials', 'PageController@allTutorials');
+Route::get('/search', 'PageController@search');
+Route::get('/about', 'PageController@about');
+Route::get('/contact', 'PageController@contact');
+Route::get('/blog', 'PageController@blog');
+Route::get('/courses', 'PageController@courses');
+Route::get('/blog/{slug}', 'PageController@blogSingle');
+Route::get('/advertise', 'PageController@advertise');
+Route::get('/sitemap', 'PageController@sitemap');
+Route::get('/profile', 'PageController@profile');
+Route::get('/books', 'BookController@index');
+Route::get('/books/{slug}', 'BookController@single');
+Route::get('/forum', 'PageController@forum');
+// Tags, Courses and Single Lessons
+Route::get('/tag/{slug}', 'PageController@tag');
+Route::get('/course/{slug}', 'PageController@course');
+Route::get('/{slug}', 'PageController@show');
+
 Route::group(['middleware' => 'web'], function () {
-    
-    Route::get('/', 'PageController@Home');
-    Route::get('/tutorials', 'PageController@allTutorials');
-    Route::get('/search', 'PageController@search');
-    Route::get('/about', 'PageController@about');
-    Route::get('/contact', 'PageController@contact');
-    Route::get('/blog', 'PageController@blog');
-    Route::get('/courses', 'PageController@courses');
-    Route::get('/blog/{slug}', 'PageController@blogSingle');
-    Route::get('/advertise', 'PageController@advertise');
-    Route::get('/sitemap', 'PageController@sitemap');
-    Route::get('/profile', 'PageController@profile');
-    Route::get('/books', 'BookController@index');
-    Route::get('/books/{slug}', 'BookController@single');
     Route::resource('comments', 'CommentController');
-    
-    Route::get('/forum', 'PageController@forum');
-
-    // Tags, Courses and Single Lessons
-    Route::get('/tag/{slug}', 'PageController@tag');
-    Route::get('/course/{slug}', 'PageController@course');
-    Route::get('/{slug}', 'PageController@show');
-
 });
 
 // Route::get('/test', 'EmailController@test');
