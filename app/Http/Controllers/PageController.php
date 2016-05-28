@@ -19,7 +19,7 @@ use Event;
 
 class PageController extends Controller
 {
-    
+       
     /*
      * Home page that displays all lessons
      */
@@ -205,6 +205,21 @@ class PageController extends Controller
            
            Log::info($sitemap->render('xml'));
            return $sitemap->render('xml');
+       }
+       
+       public function error404()
+       {
+           return view('errors.404');
+       }
+       
+       public function error500()
+       {
+           return view('errors.500');
+       }
+       
+       public function error()
+       {
+           return view('errors.index');
        }
     
     

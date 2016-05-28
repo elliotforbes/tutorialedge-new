@@ -53,12 +53,12 @@ class Handler extends ExceptionHandler
                 {
                     case 404:
                         Log::info("404 Registered: Redirecting to Homepage");
-                        return redirect()->guest('/');
+                        return redirect()->guest('/404');
                     break;
                     
                     case 500:
                         Log::info("500 Registered: Redirecting to Homepage");
-                        return redirect()->guest('/');
+                        return redirect()->guest('/500');
                     break;
                     
                     default:
@@ -69,7 +69,7 @@ class Handler extends ExceptionHandler
         else 
         {
             Log::info("Exception Rendered: This was neither 404 or 500");
-            return redirect()->guest('/');
+            return redirect()->guest('/error');
         }
     }
 }

@@ -24,6 +24,10 @@ Route::get('/profile', 'PageController@profile');
 Route::get('/books', 'BookController@index');
 Route::get('/books/{slug}', 'BookController@single');
 Route::get('/forum', 'PageController@forum');
+Route::get('/404', 'PageController@error404');
+Route::get('/500', 'PageController@error500');
+Route::get('/error', 'PageController@error');
+
 // Tags, Courses and Single Lessons
 Route::get('/tag/{slug}', 'PageController@tag');
 Route::get('/course/{slug}', 'PageController@course');
