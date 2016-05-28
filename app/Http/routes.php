@@ -34,12 +34,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/course/{slug}', 'PageController@course');
     Route::get('/{slug}', 'PageController@show');
 
-    /*
-    * Our github authentication routes 
-    */
-    Route::get('/auth/github', 'Auth\AuthController@redirectToProvider');
-    Route::get('/auth/github/callback', 'Auth\AuthController@handleProviderCallback');
-    
 });
 
 // Route::get('/test', 'EmailController@test');
@@ -57,3 +51,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
     Route::get('/stats', 'Admin\AdminController@Stats');
     
 });
+
+/*
+* Our github authentication routes 
+*/
+Route::get('/auth/github', 'Auth\AuthController@redirectToProvider');
+Route::get('/auth/github/callback', 'Auth\AuthController@handleProviderCallback');
