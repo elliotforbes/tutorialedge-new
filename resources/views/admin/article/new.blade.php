@@ -26,11 +26,8 @@
         
         <div class="col-lg-6">
             <div class="form-group">
-                <label>Status</label>
-                <select class="form-control">
-                    <option value="0">Draft</option>
-                    <option value="1">Published</optino>
-                </select>
+                <label>Image Path</label>
+                <input type="text" class="form-control">
             </div>
         </div>
         

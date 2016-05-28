@@ -10,7 +10,8 @@
         "laravel/socialite": "^2.0",
         "roumen/sitemap": "^2.6",
         "snowfire/beautymail": "dev-master",
-        "themsaid/laravel-mail-preview": "^1.2"
+        "themsaid/laravel-mail-preview": "^1.2",
+        "guzzlehttp/guzzle": "~5.3|~6.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

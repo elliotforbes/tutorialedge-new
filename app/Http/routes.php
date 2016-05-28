@@ -27,14 +27,13 @@ Route::get('/books/{slug}', 'BookController@single');
 
 Route::resource('comments', 'CommentController');
 
-// Route::get('/test', 'EmailController@test');
+Route::get('/test', 'EmailController@test');
 
 Route::group(['prefix' => 'api/v1'], function (){
     Route::resource('lessons', 'LessonsController', ['only' => ['index', 'show']]);    
 });
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
-// Route::group(['prefix' => 'admin'], function (){
     Route::get('/', 'Admin\AdminController@Home'); 
     Route::resource('articles', 'Admin\LessonController');
     Route::resource('users', 'Admin\UserController');
@@ -44,16 +43,17 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
     
 });
 
-Route::get('/testadmin', 'Admin\AdminController@Home');
-
 Route::get('/forum', 'PageController@forum');
 
+// Tags, Courses and Single Lessons
 Route::get('/tag/{slug}', 'PageController@tag');
-
 Route::get('/course/{slug}', 'PageController@course');
 Route::get('/{slug}', 'PageController@show');
 
 
+/*
+ * Our github authentication routes 
+ */
 Route::get('/auth/github', 'Auth\AuthController@redirectToProvider');
 Route::get('/auth/github/callback', 'Auth\AuthController@handleProviderCallback');
 

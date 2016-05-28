@@ -150,6 +150,7 @@ return [
         Laravel\Socialite\SocialiteServiceProvider::class,
         Roumen\Sitemap\SitemapServiceProvider::class,
         Themsaid\MailPreview\MailPreviewServiceProvider::class,
+        Snowfire\Beautymail\BeautymailServiceProvider::class,
         /*
          * Application Service Providers...
          */
