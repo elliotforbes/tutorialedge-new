@@ -31,8 +31,10 @@ class CommentController extends Controller
         
         Log::info($request->slug);
         $lesson = Lesson::whereSlug($request->slug)->get()->first();
-        $comment->author = User::find($user)->get()->first()->name;
+        Log::info($lesson);
         
+        $comment->author = $user->name;
+   
         if(Auth::check()){
             $lesson->comments()->save($comment);
             Log::info("Comment Successfully Saved");
