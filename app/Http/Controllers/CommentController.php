@@ -30,9 +30,7 @@ class CommentController extends Controller
         } 
         
         Log::info($reqeust->slug);
-        
         $lesson = Lesson::whereSlug($request->slug)->get()->first();
-        
         $comment->author = User::find($user)->get()->first()->name;
         
         if(Auth::check()){
