@@ -22,7 +22,7 @@
     <div class="comment">
 
     <form class="col s12" method="POST" action="{{ url('/') }}/comments">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>}">
         <input type="hidden" name="slug" value="{{ $lesson->slug }}">
         <div class="row">
             <div class="input-field col s12">
