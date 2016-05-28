@@ -7,27 +7,22 @@ use Illuminate\Http\Request;
 use Mail;
 use App\Http\Requests;
 use App\User;
-use Log;
+use Event;
+use App\Events\ErrorEvent;
+
 
 class EmailController extends Controller
 {
     //
     public function test()
     {
-        Log::info("Sending Test Email");
-        $user = User::findOrFail(1);
-        Log::info($user);
+        $error = [
+            'type' => '404',
+            'name' => 'Illegal Something',
+            'body' => 'The stack trace',
+        ];
         
-        Mail::send('emails.light', ['user' => $user], function ($m) use ($user) {
-            $m->from("elliot@tutorialedge.net", 'TutorialEdge');
-            
-            $m->to($user->email, $user->name)->subject('Test Email!');
-        });
-        
-        
-        
-        Log::info("Successfully sent email to User");
-        
-        // return view('frontend.profile.index', compact('user'));
+        Event::fire(new ErrorEvent($error));
+        return "done";
     }
 }

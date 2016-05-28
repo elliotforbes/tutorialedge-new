@@ -2,12 +2,18 @@
 
 namespace App\Listeners;
 
-use App\Events\NewUserEvent;
+use App\Events\ErrorEvent;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class NewUserListener
+use Log;
+use App\User;
+use Mail;
+
+class ErrorListener
 {
+    
+    
     /**
      * Create the event listener.
      *
@@ -21,22 +27,28 @@ class NewUserListener
     /**
      * Handle the event.
      *
-     * @param  NewUserEvent  $event
+     * @param  ErrorEvent  $event
      * @return void
      */
-    public function handle(NewUserEvent $event)
+    public function handle(ErrorEvent $event)
     {
-        Log::info("A New User Has Registered");
+        Log::info("An Error has occured. Sending Email to Admin now...");
+        
         // send an email to me.
         $user = User::findOrFail(1);
+        
         Log::info($user);
         
-        Mail::send('emails.light', ['user' => $user], function ($m) use ($user) {
+        $data = [
+           'error' => $event->error,
+        ];  
+        
+        Mail::send('emails.error', $data, function ($m) use ($user) {
             $m->from("elliot@tutorialedge.net", 'TutorialEdge');
             
-            $m->to($user->email, $user->name)->subject('Test Email!');
+            $m->to($user->email, $user->name)->subject('Error Event');
         });
         
-        Log::info("Successfully sent email to User");
+        Log::info("Successfully sent email to Admin");
     }
 }

@@ -10,6 +10,8 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 use Log;
+use Event;
+use App\Events\ErrorEvent;
 
 class Handler extends ExceptionHandler
 {
@@ -53,15 +55,18 @@ class Handler extends ExceptionHandler
                 {
                     case 404:
                         Log::info("404 Registered: Redirecting to Homepage");
+                        Event::fire(new ErrorEvent($e));
                         return redirect()->guest('/404');
                     break;
                     
                     case 500:
                         Log::info("500 Registered: Redirecting to Homepage");
+                        Event::fire(new ErrorEvent($e));
                         return redirect()->guest('/500');
                     break;
                     
                     default:
+                        Event::fire(new ErrorEvent($e));
                         return $this->renderHttpException($e);
                     break;   
                 }
@@ -69,6 +74,7 @@ class Handler extends ExceptionHandler
         else 
         {
             Log::info("Exception Rendered: This was neither 404 or 500");
+            Event::fire(new ErrorEvent($e));
             return redirect()->guest('/error');
         }
     }

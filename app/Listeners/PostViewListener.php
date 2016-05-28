@@ -16,9 +16,9 @@ class PostViewListener
      *
      * @return void
      */
-    public function __construct(Lesson $lesson)
+    public function __construct()
     {
-        $this->lesson = $lesson;
+        //
     }
 
     /**
@@ -31,14 +31,14 @@ class PostViewListener
     {
         Log::info("PostViewEvent: hit");
         // if ( ! $this->isLessonViewed($lesson) ){
-            // Increment the view counter by one...
-            $event->lesson->increment('views');
+        // Increment the view counter by one...
+        $event->lesson->increment('views');
 
-            // Then increment the value on the model so that we can
-            // display it. This is because the increment method
-            // doesn't increment the value on the model.
-            $event->lesson->views += 1; 
-            // $this->storeLesson($lesson);
+        // Then increment the value on the model so that we can
+        // display it. This is because the increment method
+        // doesn't increment the value on the model.
+        $event->lesson->views += 1; 
+        // $this->storeLesson($lesson);
         // }
     }
     

@@ -9,6 +9,7 @@ use DB;
 use App\Http\Requests;
 use App\Lesson;
 use App\Course;
+use App\User;
 use App\Post;
 use App\Tag;
 use App;
@@ -16,10 +17,11 @@ use Log;
 use URL;
 use Auth;
 use Event;
+use App\Events\ErrorEvent;
 
 class PageController extends Controller
 {
-       
+    
     /*
      * Home page that displays all lessons
      */
@@ -40,7 +42,11 @@ class PageController extends Controller
         
         if(count($lesson) < 1){
             Log::info("Lesson could not be found");
-            // Log::info("Slug: " , $slug);
+            $error = [
+                'type' => '404: Lesson Not Found for Slug: ',
+                'body' => $slug,
+            ];
+            Event::fire(new ErrorEvent($error));
             return view('errors.404');
         }
         // log::info($lesson->tags->get(0));
