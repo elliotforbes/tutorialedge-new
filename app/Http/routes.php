@@ -28,6 +28,16 @@ Route::get('/404', 'PageController@error404');
 Route::get('/500', 'PageController@error500');
 Route::get('/error', 'PageController@error');
 
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
+    Route::get('/', 'Admin\AdminController@Home'); 
+    Route::resource('articles', 'Admin\LessonController');
+    Route::resource('users', 'Admin\UserController');
+    Route::resource('comments', 'Admin\CommentController');
+    Route::get('/settings', 'Admin\AdminController@Settings');
+    Route::get('/stats', 'Admin\AdminController@Stats');
+    
+});
+
 // Tags, Courses and Single Lessons
 Route::get('/tag/{slug}', 'PageController@tag');
 Route::get('/course/{slug}', 'PageController@course');
@@ -43,15 +53,6 @@ Route::group(['prefix' => 'api/v1'], function (){
     Route::resource('lessons', 'LessonsController', ['only' => ['index', 'show']]);    
 });
 
-Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
-    Route::get('/', 'Admin\AdminController@Home'); 
-    Route::resource('articles', 'Admin\LessonController');
-    Route::resource('users', 'Admin\UserController');
-    Route::resource('comments', 'Admin\CommentController');
-    Route::get('/settings', 'Admin\AdminController@Settings');
-    Route::get('/stats', 'Admin\AdminController@Stats');
-    
-});
 
 /*
 * Our github authentication routes 
