@@ -12,7 +12,14 @@ class AddErrorTrackingTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('events', function (Blueprint $table){
+            $table->increments('id');
+            $table->string('error_type');
+            $table->string('error_description');
+            $table->integer('no_occurences')->default(0);
+            $table->timestamps();
+            $table->timestamp('event_time')->index(); 
+        });
     }
 
     /**

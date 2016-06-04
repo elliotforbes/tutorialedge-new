@@ -32,29 +32,9 @@ class ErrorListener
      */
     public function handle(ErrorEvent $event)
     {
-        Log::info("An Error has occured. Sending Email to Admin now...");
+        Log::info("An Error has occured. Adding Error Event to Database");
         
-        // send an email to me.
-        $user = User::findOrFail(1);
+        Log::info($event->error);
         
-        Log::info($user);
-        
-        $data = [
-           'error' => $event->error,
-        ];  
-        try {
-            $send = Mail::send('emails.error', $data, function ($m) use ($user) {
-                $m->from("elliot@tutorialedge.net", 'TutorialEdge');
-                
-                $m->to($user->email, $user->name)->subject('Error Event');
-            });
-        } 
-        catch (\Exception $e)
-        {
-            Log::info($e->getMessage());
-            dd(error_get_last());
-        }
-        
-        Log::info("Successfully sent email to Admin");
     }
 }
