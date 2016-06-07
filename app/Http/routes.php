@@ -28,10 +28,10 @@ Route::get('/404', 'PageController@error404');
 Route::get('/500', 'PageController@error500');
 Route::get('/error', 'PageController@error');
 
-Route::get('/admin-test', 'Admin\AdminController@test');
+// Route::get('/admin-test', 'Admin\AdminController@test');
 
-Route::group(['prefix' => 'admin'], function(){
-// Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
+// Route::group(['prefix' => 'admin'], function(){
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
     Route::get('/', 'Admin\AdminController@Home'); 
     Route::resource('articles', 'Admin\LessonController');
     Route::resource('users', 'Admin\UserController');
