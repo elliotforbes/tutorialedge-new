@@ -15,7 +15,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure() ) }}">
         <link rel="stylesheet" href="{{ asset('/css/materialize.min.css', Request::secure() )  }}">
-        <link rel="stylesheet" href="{{ asset('/css/front-end.css' , Request::secure() ) }}?v=187">
+        <link rel="stylesheet" href="{{ asset('/css/front-end.css' , Request::secure() ) }}?v=197">
         <!--<script type="text/javascript" src="{{ asset('/js/vue.min.js') }}"></script>-->
         <script type="text/javascript" src="//cdn.jsdelivr.net/vue/latest/vue.js"></script>
         <!--<script type="text/javascript" src="{{ asset('/js/vue-resource.min.js') }}"></script>-->
