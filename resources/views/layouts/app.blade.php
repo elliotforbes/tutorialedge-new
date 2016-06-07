@@ -53,9 +53,10 @@
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <!--<li><a href="{{ url('/books') }}">Book Store</a></li>-->
-                    <li><a href="{{ url('/courses') }}">Courses</a></li>
-                    <li><a href="{{ url('/blog') }}">Blog</a></li>
                     <li><a href="{{ url('/search') }}">Search</a></li>
+                    <li><a href="{{ url('/courses') }}">Courses</a></li>
+                    <li><a href="{{ url('/books') }}">Books</a></li>
+                    <li><a href="{{ url('/blog') }}">Blog</a></li>
                     <li><a href="{{ url('/tutorials') }}">Tutorials</a></li>
                     <!--<li><a class="dropdown-button" href="{{ url('/courses') }}" data-activates="dropdown1">Courses<i class="material-icons right">arrow_drop_down</i></a></li>-->
                     @if (Auth::guest())
@@ -66,9 +67,11 @@
                     
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
+                    <li><a href="{{ url('/search') }}">Search</a></li>
                     <li><a href="{{ url('/tutorials') }}">Tutorials</a></li>
                     <li><a href="{{ url('/blog') }}">Blog</a></li>
-                    <li><a href="{{ url('/search') }}">Search</a></li>
+                    <li><a href="{{ url('/books') }}">Books</a></li>
+                    <li><a href="{{ url('/courses') }}">Courses</a></li>
                     @if (Auth::guest())
                     <li><a href="{{ url('/auth/github') }}">Register With Github</a></li>
                     @else
@@ -93,6 +96,8 @@
               <div class="col l4 offset-l2 s12">
                 <h5>Links</h5>
                 <ul>
+                  <li><a class="text-lighten-3" href="{{ url('/tutorials') }}">All Tutorials</a></li>
+                  <li><a class="text-lighten-3" href="{{ url('/books') }}">Books</a></li>
                   <li><a class="text-lighten-3" href="{{ url('/contact') }}">Contact</a></li>
                   <li><a class="text-lighten-3" href="{{ url('/courses') }}">Courses</a></li>
                   <li><a class="text-lighten-3" href="{{ url('/blog') }}">Blog</a></li>

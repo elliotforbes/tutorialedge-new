@@ -21,9 +21,15 @@ Route::get('/blog/{slug}', 'PageController@blogSingle');
 Route::get('/advertise', 'PageController@advertise');
 Route::get('/sitemap', 'PageController@sitemap');
 Route::get('/profile', 'PageController@profile');
-Route::get('/books', 'BookController@index');
-Route::get('/books/{slug}', 'BookController@single');
 Route::get('/forum', 'PageController@forum');
+/*
+ * Book Review Routes:
+ */ 
+Route::get('/books', 'BookController@index');
+Route::get('/book/{slug}', 'BookController@single');
+/*
+ * Error Routes.
+ */
 Route::get('/404', 'PageController@error404');
 Route::get('/500', 'PageController@error500');
 Route::get('/error', 'PageController@error');

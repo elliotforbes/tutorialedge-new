@@ -17,7 +17,7 @@ class BookController extends Controller
     
     public function single($slug)
     {
-        $review = Review::whereSlug($slug)->get()->first();
-        return view('frontend.books.single', compact('review'));
+        $book = Review::whereSlug($slug)->get()->first();
+        return view('frontend.books.single', compact('book'));
     }
 }
