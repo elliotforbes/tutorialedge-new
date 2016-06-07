@@ -19,9 +19,14 @@ The Forum
         <div class="col s12 m12 l12">
             <div class="card-panel white">
             <div class="icon valign-wrapper">
-                <i class="material-icons">not_interested</i>
+                <i class="material-icons">comments</i>
             </div>
-            <h5>Forum Post Title</h5>
+            <h5>
+                Forum Post Title
+                <br/>
+                <small>Author: Elliot Forbes</small>    
+            </h5>
+            
             <span>
                 This is currently under construction. Stay tuned for updates!
             </span>
