@@ -95,8 +95,7 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
                 </figcaption>
                 <footer>
                     <div class="views"><i class="ion-eye"></i>{{ $lesson->views }}</div>
-                    <!--<div class="love"><i class="ion-heart"></i>623</div>-->
-                     </footer><a href="{{url('/') }}/{{ $lesson->slug }}"></a>
+                    </footer><a href="{{url('/') }}/{{ $lesson->slug }}"></a>
             </figure>
         </div>
         @endforeach

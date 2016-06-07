@@ -79,7 +79,7 @@ class PageController extends Controller
      */
     public function allTutorials()
     {
-        $lessons = Lesson::paginate(15);
+        $lessons = Lesson::paginate(9);
         
         return view('frontend.all', compact('lessons'));
     }

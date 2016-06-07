@@ -17,25 +17,29 @@ All Courses
 @endsection
 
 @section('content')
-<div class="content">
-    
+<div class="container">
+    <div class="course-container row">
     @foreach($courses as $course)
-    <div class="col s12 m4 l4">
-        <div class="course-box">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                <span class="card-title">{{ $course->title }}</span>
-                <p>{{ $course->description }}</p>
+        <div class="col s12 m6 l4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{ asset('/uploads/artificial-intelligence.jpg') }}">
+                </div>
+                <div class="card-content">
+                    <h5>{{ $course->title }}</h5>
+                    <p>{{ $course->description }}</p>
                 </div>
                 <div class="card-action">
-                <a href="{{ url('/course') }}/{{ $course->slug }}">Read Now</a>
+                <a href="{{ url('/course') }}/{{ $course->slug }}">View Now</a>
                 </div>
             </div>
         </div>
-    </div>
     @endforeach
-    
-    <?php echo $courses->render() ?>
-    
+    <div class="break"></div>
+        
+    <div class="pagination">
+        <?php echo $courses->render(); ?>
+    </div>
+    </div>
 </div>
 @endsection

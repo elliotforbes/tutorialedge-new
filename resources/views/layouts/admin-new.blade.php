@@ -15,7 +15,7 @@
 </head>
 <body>
 	<header class="cd-main-header">
-		<a href="#0" class="cd-logo">TutorialEdge.net</a>
+		<a href="{{ url('/') }}" class="cd-logo">TutorialEdge.net</a>
 		
 		<div class="cd-search is-hidden">
 			<form action="#0">
