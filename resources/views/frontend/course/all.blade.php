@@ -12,6 +12,9 @@ All Courses
 <div class="gray-container">
     <div class="content">
         <h1>All Courses</h1>
+        <div class="info">
+            
+        </div>
     </div>
 </div>
 @endsection
@@ -40,6 +43,15 @@ All Courses
     <div class="pagination">
         <?php echo $courses->render(); ?>
     </div>
+    </div>
+</div>
+
+<div class="gray-container">
+    <div class="container center">
+        <h2>Become a part of TutorialEdge</h2>
+        <p>TutorialEdge.net has been growing for over a year new and we've seen hundreds of thousands of visitors to the site. Join the growing list of developers who have registered for the site and receive free newletters on the latest industry news as well as top articles.</p>
+        <a href="{{ url('/auth/github') }}"><button class="btn btn-default">+ Register Now</button></a>
+        <div class="break"></div>
     </div>
 </div>
 @endsection
