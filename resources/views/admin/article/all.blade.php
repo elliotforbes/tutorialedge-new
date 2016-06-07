@@ -1,15 +1,12 @@
-@extends('layouts.admin')
+@extends('layouts.admin-new')
 
 @section('content')
-<div class="container">
+<div class="widget">
     <div class="row">
         <div class="col-lg-6">
             <h2>All Lessons:</h2>
         </div>
-        <div class="col-lg-3"></div>
-        <div class="col-lg-3">
-            <button class="btn btn-success pull-right">New Lesson</button>
-        </div> 
+        <div class="clear"></div>
         <div class="col-lg-12">
             <table class="table table-striped">
                 <thead>

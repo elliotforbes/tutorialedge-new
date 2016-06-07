@@ -1,7 +1,7 @@
-@extends('layouts.admin')
+@extends('layouts.admin-new')
 
 @section('content')
-<div class="container">
+<div class="widget">
     <h3>Stats:</h3>
 </div>
 @endsection

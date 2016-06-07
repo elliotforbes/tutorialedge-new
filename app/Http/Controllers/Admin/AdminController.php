@@ -30,4 +30,9 @@ class AdminController extends Controller
         return view("admin.stats");
     }
     
+    public function test()
+    {
+        return view('admin.index-new');
+    }
+    
 }

@@ -1,7 +1,7 @@
-@extends('layouts.admin')
+@extends('layouts.admin-new')
 
 @section('content')
-<div class="container">
+<div class="widget">
     <h2>All Users:</h2>
     <table class="table table-striped">
         <thead>
