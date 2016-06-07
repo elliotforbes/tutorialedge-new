@@ -104,10 +104,10 @@
 				</li>
 
 				<li class="has-children users">
-					<a href="#0">Users</a>
+					<a href="{{ url('/admin/users') }}">Users</a>
 					
 					<ul>
-						<li><a href="#0">All Users</a></li>
+						<li><a href="{{ url('/admin/users') }}">All Users</a></li>
 						<li><a href="#0">Edit User</a></li>
 						<li><a href="#0">Add User</a></li>
 					</ul>

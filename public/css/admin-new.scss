@@ -755,4 +755,32 @@ Sidebar
         margin-bottom: 20px;
     }
     
+    form{
+        
+        label{
+            margin-bottom: 10px;
+        }
+        
+        input{
+            font-size: 17px;
+        }
+        
+        textarea{
+            height: 200px;
+            font-size: 15px;
+        }
+        
+        select{
+            
+            font-size: 17px;
+            padding: 5px;
+            
+            option{
+                font-size: 17px;
+            }
+            
+        }
+        
+    }
+    
 }

@@ -10,25 +10,25 @@
         
         <div class="clear"></div>
         
-        <form class="form" action="" method="POST">
+        <form class="form" action="{{ url('/admin/articles') }}/{{ $lesson->slug }}" method="PATCH">
             <div class="col-lg-12">
                 <div class="form-group">
                     <label>Post Title:</label>
-                    <input type="text" class="form-control">
+                    <input type="text" value="{{ $lesson->title }}" class="form-control">
                 </div>
             </div>
             
             <div class="col-lg-6">
                 <div class="form-group">
                     <label>Slug</label>
-                    <input type="text" class="form-control">
+                    <input type="text" value="{{ $lesson->slug }}" class="form-control">
                 </div>
             </div>
             
             <div class="col-lg-6">
                 <div class="form-group">
                     <label>Status</label>
-                    <select class="form-control">
+                    <select value="{{ $lesson->status }}" class="form-control">
                         <option value="0">Draft</option>
                         <option value="1">Published</optino>
                     </select>
@@ -38,14 +38,14 @@
             <div class="col-lg-12">
                 <div class="form-group">
                     <label>Body</label>
-                    <textarea class="form-control"></textarea>
+                    <textarea class="form-control">{{ $lesson->body }}</textarea>
                 </div>
             </div>
             
             <div class="col-lg-6">
                 <div class="form-group">
                     <label>Image Path</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" value="{{ $lesson->image_path }}">
                 </div>
             </div>
             

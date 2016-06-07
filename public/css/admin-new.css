@@ -488,5 +488,17 @@ Sidebar
   .widget h2 {
     font-size: 22px;
     margin-bottom: 20px; }
+  .widget form label {
+    margin-bottom: 10px; }
+  .widget form input {
+    font-size: 17px; }
+  .widget form textarea {
+    height: 200px;
+    font-size: 15px; }
+  .widget form select {
+    font-size: 17px;
+    padding: 5px; }
+    .widget form select option {
+      font-size: 17px; }
 
 /*# sourceMappingURL=admin-new.css.map */
