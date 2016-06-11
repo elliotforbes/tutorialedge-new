@@ -52,7 +52,7 @@ Route::get('/tag/{slug}', 'PageController@tag');
 Route::get('/course/{slug}', 'PageController@course');
 Route::get('/{slug}', 'PageController@show');
 
-Route::group(['middleware' => 'web'], function () {
+Route::group(function () {
     Route::resource('comments', 'CommentController');
 });
 
