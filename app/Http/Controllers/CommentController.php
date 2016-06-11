@@ -24,9 +24,9 @@ class CommentController extends Controller
         Log::info("Comment Store Method Called");
         $comment = new Comment($request->all());
         
-        if(Auth::user()){
-            Log::info(Auth::user());
-            $user = Auth::user();
+        if(\Auth::check()){
+            Log::info(\Auth::user());
+            $user = \Auth::user();
             Log::info($user);
         }
         
@@ -36,7 +36,7 @@ class CommentController extends Controller
         
         $comment->author = $user->name;
    
-        if(Auth::check()){
+        if(\Auth::check()){
             $lesson->comments()->save($comment);
             Log::info("Comment Successfully Saved");
             return back();
