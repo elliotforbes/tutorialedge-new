@@ -24,11 +24,11 @@ class CommentController extends Controller
         Log::info("Comment Store Method Called");
         $comment = new Comment($request->all());
         
-        if($request->user()){
-            Log::info($request->user());
-            $user = $request->user();
+        if(Auth::user()){
+            Log::info(Auth::user());
+            $user = Auth::user();
             Log::info($user);
-        } 
+        }
         
         Log::info($request->slug);
         $lesson = Lesson::whereSlug($request->slug)->get()->first();
