@@ -52,9 +52,7 @@ Route::get('/tag/{slug}', 'PageController@tag');
 Route::get('/course/{slug}', 'PageController@course');
 Route::get('/{slug}', 'PageController@show');
 
-Route::group([], function () {
-    Route::resource('comments', 'CommentController');
-});
+Route::resource('comments', 'CommentController');
 
 Route::get('/testemail', 'EmailController@test');
 
