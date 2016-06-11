@@ -34,7 +34,7 @@ class CommentController extends Controller
         $lesson = Lesson::whereSlug($request->slug)->get()->first();
         Log::info($lesson);
         
-        $comment->author = $user->email;
+        $comment->author = $user->name;
    
         if(\Auth::check()){
             $lesson->comments()->save($comment);
