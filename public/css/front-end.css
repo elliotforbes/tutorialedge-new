@@ -538,8 +538,8 @@ footer.page-footer {
 
 .sidebar {
   padding: 20px; }
-  .sidebar .course-info p {
-    color: #ABABAB; }
+  .sidebar p {
+    color: #9a9a9a; }
   .sidebar .register .register-btn {
     width: 100%;
     border: none;

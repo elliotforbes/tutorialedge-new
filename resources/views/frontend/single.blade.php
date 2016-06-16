@@ -68,8 +68,11 @@
                         
             </div><!-- .course-info -->
             
-            <div class="register">
+            <div class="register"><!-- .register -->
                 <h2>Register Now:</h2>
+                
+                <p>Register now for free quickly using your preferred social media platform and receive the latest tutorials and updates straight to your inbox.</p>
+                
                 <div class="row">
                     <div class="col s12 m6 l6">
                         <button class="register-btn facebook"><i class="fa fa-facebook-square"></i> Facebook</button>
@@ -80,7 +83,20 @@
                         <button class="register-btn google-plus"><i class="fa fa-google-plus-square"></i> Google+</button>
                     </div>
                 </div>
-            </div>
+            </div><!-- .register -->
+            
+            <div class="ad"><!-- .ad -->
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- article ad -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-6782067367590597"
+                    data-ad-slot="5293007688"
+                    data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div> <!-- .ad -->
             
         </div><!-- end of sidebar-->
         
