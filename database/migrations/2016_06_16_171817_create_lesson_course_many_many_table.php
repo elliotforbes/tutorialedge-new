@@ -12,16 +12,8 @@ class CreateLessonCourseManyManyTable extends Migration
      */
     public function up()
     {
-        Schema::create('course_lesson', function (Blueprint $table) {
-           $table->integer('course_id');
-           $table->integer('lesson_id');
-           $table->integer('salience');
-        });
         
-        Schema::table('course_lesson', function ($table){
-           $table->foreign('lesson_id')->references('id')->on('lessons');
-           $table->foreign('course_id')->references('id')->on('courses'); 
-        });
+        
     }
 
     /**
