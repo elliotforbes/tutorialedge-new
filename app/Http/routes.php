@@ -22,6 +22,7 @@ Route::get('/advertise', 'PageController@advertise');
 Route::get('/sitemap', 'PageController@sitemap');
 Route::get('/profile', 'PageController@profile');
 Route::get('/forum', 'PageController@forum');
+Route::get('/register', 'PageController@register');
 /*
  * Book Review Routes:
  */ 
@@ -66,3 +67,8 @@ Route::group(['prefix' => 'api/v1'], function (){
 */
 Route::get('/auth/github', 'Auth\AuthController@redirectToProvider');
 Route::get('/auth/github/callback', 'Auth\AuthController@handleProviderCallback');
+/*
+* Our facebook authentication routes 
+*/
+Route::get('/auth/redirect', 'Auth\SocialAuthController@redirect');
+Route::get('/auth/callback', 'Auth\SocialAuthController@callback');

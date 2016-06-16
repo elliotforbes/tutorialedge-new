@@ -407,6 +407,9 @@ nav {
     margin-bottom: 20px;
     margin-top: 20px;
     color: #9A9A9A; }
+    .content .info p {
+      margin: 0;
+      padding: 0; }
   .content pre {
     margin-top: 20px;
     margin-bottom: 20px;

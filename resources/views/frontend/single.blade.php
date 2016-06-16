@@ -55,8 +55,6 @@
                 </div><!-- .info. -->
             </div>
             
-            
-            
             <div class="course-info"><!-- .course-info -->
                 <h5>Tags:</h5>
                 @foreach ($lesson->tags as $tag)
@@ -79,21 +77,20 @@
                 <p>Register now for free quickly using your preferred social media platform and receive the latest tutorials and updates straight to your inbox.</p>
                 
                 <div class="row">
-                    <div class="col s12 m6 l6">
-                        <button class="register-btn facebook"><i class="fa fa-facebook-square"></i> Facebook</button>
-                        <button class="register-btn github"><i class="fa fa-github-square"></i> Github</button>
+                    <!--<div class="col s12 m6 l6">
+                        <a href="{{ url('/auth/facebook') }}"><button class="register-btn facebook"><i class="fa fa-facebook-square"></i> Facebook</button></a>
                     </div>
                     <div class="col s12 m6 l6">
-                        <button class="register-btn twitter"><i class="fa fa-twitter-square"></i> Twitter</button>
-                        <button class="register-btn google-plus"><i class="fa fa-google-plus-square"></i> Google+</button>
-                    </div>
+                        <a href="{{ url('/auth/twitter') }}"><button class="register-btn twitter"><i class="fa fa-twitter-square"></i> Twitter</button></a>
+                        <a href="{{ url('/auth/googleplus') }}"><button class="register-btn google-plus"><i class="fa fa-google-plus-square"></i> Google+</button></a>
+                    </div>-->
+                    <a href="{{ url('/auth/github') }}"><button class="register-btn github"><i class="fa fa-github-square"></i> Github</button></a>
                 </div>
             </div><!-- .register -->
             
             <div class="ad"><!-- .ad -->
                 <h2>Sponsor Us:</h2>
-                <p>Want to see your own advertisement here, check out the <a href="{{ url('/contact') }}">contact page</a></p>
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- article ad -->
                 <ins class="adsbygoogle"
                     style="display:block"
@@ -103,6 +100,9 @@
                 <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
+                
+                 <p>Want to see your own advertisement here, check out the <a href="{{ url('/contact') }}">contact page</a></p>
+                
             </div> <!-- .ad -->
             
         </div><!-- end of sidebar-->

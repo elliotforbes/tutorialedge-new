@@ -318,6 +318,12 @@ nav{
         margin-bottom: 20px;
         margin-top: 20px;
         color: $light-gray;
+        
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        
     }
         
     pre {
