@@ -12,18 +12,28 @@
 <div class="gray-container">
     <div class="content">
         <h1>{{ $course->title }}</h1>
-        <div class="info">
-            {{ $course->author }}
-            | {{ date("d M, Y",strtotime($course->created_at)) }}
-        </div>
-    </div>
-</div>
+    </div><!-- .content -->
+</div><!-- .gray-container -->
 
 <div class="content">
-    <div class="post-body">
-        {!! $course->body !!}
-    </div>
-</div>
+    <div class="row">
+        
+        <div class="col s12 m8 l8">
+            <div class="post-body">
+                {!! $course->body !!}
+            </div>
+        </div><!-- .col -->
+        
+        <div class="sidebar col s12 m4 l4"><!-- .sidebar -->
+            <div class="course-info">
+                <h2>Course Information:</h2>
+                <p><b>Author:</b> {{ $course->author }}</p>
+                <p><b>Date Published: </b> {{ date("d M, Y",strtotime($course->created_at)) }}</p>
+            </div><!-- .info -->
+        </div><!-- .sidebar -->
+        
+    </div><!-- .row -->
+</div><!-- .content -->
 
 <div class="gray-container">
     <div class="content">
