@@ -1,11 +1,35 @@
 /*
 * All the colours for the site are defined here
 */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.facebook {
+  background-color: #3B5998; }
+
+.github {
+  background-color: #333333; }
+
+.twitter {
+  background-color: #55ACEE; }
+
+.google-plus {
+  background-color: #DB4437; }
+
 /*
 * All the colours for the site are defined here
 */
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700);
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.facebook {
+  background-color: #3B5998; }
+
+.github {
+  background-color: #333333; }
+
+.twitter {
+  background-color: #55ACEE; }
+
+.google-plus {
+  background-color: #DB4437; }
+
 .banner {
   background-color: #00CCFF;
   margin-top: -40px;
@@ -369,7 +393,7 @@ nav {
       width: 80%; } }
   @media (min-width: 64em) {
     .content {
-      width: 50%; } }
+      width: 80%; } }
   .content h1, .content h2, .content h3, .content h4, .content h5 {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 800;
@@ -447,7 +471,7 @@ nav {
         width: 80%; } }
     @media (min-width: 64em) {
       .comment-container .comments {
-        width: 50%; } }
+        width: 80%; } }
     .comment-container .comments .comment {
       margin-top: 20px;
       padding: 20px;
@@ -494,5 +518,38 @@ footer.page-footer {
 
 .center {
   text-align: center; }
+
+.article-progress {
+  background-color: #F2F2F2;
+  width: 100%;
+  padding: 20px; }
+  @media (max-width: 37.5em) {
+    .article-progress {
+      display: none; } }
+  @media (min-width: 37.5em) {
+    .article-progress {
+      display: none; } }
+  @media (min-width: 50em) {
+    .article-progress {
+      display: block; } }
+  @media (min-width: 64em) {
+    .article-progress {
+      display: block; } }
+
+.sidebar {
+  padding: 20px; }
+  .sidebar .course-info p {
+    color: #ABABAB; }
+  .sidebar .register .register-btn {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px; }
+    .sidebar .register .register-btn i {
+      color: white;
+      margin-right: 5px; }
 
 /*# sourceMappingURL=front-end.css.map */

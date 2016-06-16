@@ -3,6 +3,18 @@
 */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.facebook {
+  background-color: #3B5998; }
+
+.github {
+  background-color: #333333; }
+
+.twitter {
+  background-color: #55ACEE; }
+
+.google-plus {
+  background-color: #DB4437; }
+
 .banner {
   background-color: #00CCFF;
   margin-top: -40px;

@@ -295,7 +295,7 @@ nav{
     }
     
     @include breakpoint(laptop){
-        width: 50%;
+        width: 80%;
     }
     
     h1, h2, h3, h4, h5{
@@ -431,7 +431,7 @@ nav{
         }
         
         @include breakpoint(laptop){
-            width: 50%;
+            width: 80%;
         }
         margin: auto;
         margin-bottom: 20px;
@@ -512,4 +512,56 @@ footer.page-footer{
 
 .center{
     text-align: center;
+}
+
+.article-progress{
+    background-color: #F2F2F2;
+    width: 100%;
+    padding: 20px;
+    
+    @include breakpoint(mobileonly){
+        display: none;
+    }
+    
+    @include breakpoint(phablet){
+        display: none;
+    }
+    
+    @include breakpoint(tablet){
+        display: block;
+    }
+    
+    @include breakpoint(laptop){
+        display: block;
+    }
+    
+}
+
+.sidebar {
+    
+    padding: 20px;
+    
+    .course-info{
+        p{
+            color: #ABABAB;
+        }    
+    }
+    
+    .register{
+        
+        .register-btn{
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 20px;
+            i{
+                color: white;
+                margin-right: 5px;
+            }
+        }
+        
+    }
 }
