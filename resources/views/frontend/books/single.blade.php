@@ -12,14 +12,6 @@
 <div class="gray-container">
     <div class="content">
         <h1>{{ $book->book_name }} Review</h1>
-        
-        <div class="info">
-            Elliot Forbes
-            | {{ date("d M, Y",strtotime($book->created_at)) }}
-            
-            <!-- Go to www.addthis.com/dashboard to customize your tools -->
-            <div class="addthis_sharing_toolbox"></div>
-        </div>
     </div>
 </div>
 @endsection
