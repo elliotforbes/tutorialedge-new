@@ -21,16 +21,7 @@
 <div class="content">
     <div class="row">
         <div class="col s12 m8 l8">
-            <div class="info">
-                Elliot Forbes
-                | {{ date("d M, Y",strtotime($lesson->created_at)) }}
-                | Comments: <a href="#comments">{{ count($lesson->comments) }}</a>
-                | Views: {{ $lesson->views }}
-                
-                
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_sharing_toolbox"></div>
-            </div><!-- .info. -->
+            
             
             <div class="post-body">
                 {!! $lesson->body !!}    
@@ -53,11 +44,21 @@
         </div><!-- .col s9 -->
         
         <div class="sidebar col s12 m4 l4"><!-- .sidebar -->
+            <div class="post-info">
+                <h2>Post Info:</h2>
+                <div class="info"><!-- .info -->
+                    <p><b>Author:</b> Elliot Forbes</p>
+                    <p><b>Date Posted:</b> {{ date("d M, Y",strtotime($lesson->created_at)) }}</p>
+                    <p><b>Comments:</b> <a href="#comments">{{ count($lesson->comments) }}</a></p>
+                    <p><b>Views:</b> {{ $lesson->views }}</p>
+                    
+                </div><!-- .info. -->
+            </div>
+            
+            
+            
             <div class="course-info"><!-- .course-info -->
-                <h2>Course Information</h2>
-                <p>This course teaches a lot of things based on this course subject matter.</p>    
-                
-                 <h5>Tags:</h5>
+                <h5>Tags:</h5>
                 @foreach ($lesson->tags as $tag)
                     <a href="{{ url('/tag') }}/{{ $tag->name }}">
                         <div class="chip">
@@ -65,6 +66,10 @@
                         </div>    
                     </a>
                 @endforeach
+               
+                <h5>Share This Post:</h5>
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_sharing_toolbox"></div>
                         
             </div><!-- .course-info -->
             
@@ -86,6 +91,8 @@
             </div><!-- .register -->
             
             <div class="ad"><!-- .ad -->
+                <h2>Sponsor Us:</h2>
+                <p>Want to see your own advertisement here, check out the <a href="{{ url('/contact') }}">contact page</a></p>
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- article ad -->
                 <ins class="adsbygoogle"
