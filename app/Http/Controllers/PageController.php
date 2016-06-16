@@ -40,6 +40,8 @@ class PageController extends Controller
     {  
         $lesson = Lesson::whereSlug($slug)->get()->first();
         
+        $course = Course::where('id', '=', $lesson->course_id)->get()->first();
+        
         if(count($lesson) < 1){
             Log::info("Lesson could not be found");
             $error = [
@@ -70,7 +72,7 @@ class PageController extends Controller
         
         // Log::info("Lesson Requested: ", $lesson->title);
         
-        return view('frontend.single', compact('lesson', 'articles'));     
+        return view('frontend.single', compact('lesson', 'articles', 'course'));     
         
     }
     
@@ -171,6 +173,11 @@ class PageController extends Controller
            $articles = $tag->articles;
           
            return view('frontend.tag', compact('tag', 'articles')); 
+       }
+       
+       public function register() 
+       {
+            return view('frontend.register');   
        }
        
        public function profile()

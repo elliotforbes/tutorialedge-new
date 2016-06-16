@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class MakeEventsColumnsNullable extends Migration
+class AddCourseFkToLessons extends Migration
 {
     /**
      * Run the migrations.
@@ -12,9 +12,10 @@ class MakeEventsColumnsNullable extends Migration
      */
     public function up()
     {
-        Schema::table('events', function ($table){
-            $table->integer('no_occurences')->drop();
-        });
+        // I cocked up
+        // Schema::table('lessons', function($table){
+        //     $table->foreign('course_id')->references('id')->on('courses');
+        // });
     }
 
     /**

@@ -44,6 +44,22 @@
         </div><!-- .col s9 -->
         
         <div class="sidebar col s12 m4 l4"><!-- .sidebar -->
+            
+            @if($lesson->course_id != 0)
+            <div class="course-info">
+                <h2>{{ $course->title }}:</h2>
+                <table class="striped">
+                    <tbody>
+                        @foreach($course->lessons as $course_lesson)
+                        <tr>
+                            <td><a href="{{ url('/') }}/{{ $course_lesson->slug }}">{{ $course_lesson->title }}</a></td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+                            </div>
+            @endif
+        
             <div class="post-info">
                 <h2>Post Info:</h2>
                 <div class="info"><!-- .info -->
