@@ -15,11 +15,7 @@ class AddCourseFkToLessons extends Migration
         Schema::table('lessons', function($table){
             $table->integer('course_id')->default(0);
         });
-        
-        // I cocked up
-        // Schema::table('lessons', function($table){
-        //     $table->foreign('course_id')->references('id')->on('courses');
-        // });
+       
     }
 
     /**
