@@ -39,7 +39,7 @@
         </div><!-- .col -->
         <div class="sidebar col s12 m4 l4">
             <div class="course-info">
-                <h2>Course Information:</h2>
+                <h2>Review Information:</h2>
                 <p><b>Author:</b> Elliot Forbes</p>
                 <p><b>Date Published: </b> {{ date("d M, Y",strtotime($book->created_at)) }}</p>
             </div><!-- .info -->
