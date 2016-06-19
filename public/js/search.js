@@ -1,35 +1,20 @@
-Vue.component('results', {
-    template: '#results-template'  ,
-    
-});
+angular.module('TutorialApp', [])
 
-new Vue({
-    
-    el: '#search',
-    
-    data : {
-        query : '',
-        message : "Hello World",
-        results : []
-    },
-    
-    // Anything within the ready function will run when the application loads
-    ready: function() {
-        this.fetchLessons();
-    },
-
-    // Methods we want to use in our application are registered here
-    methods: {
-        fetchLessons : function() {
-            console.log("Hello World");
-            this.$http.get('api/v1/lessons', function(data, status, request){
-                if(status == 200)
-                {   
-                    this.results = data;
-                } else {
-                    console.log(error);
-                }
+.controller('SearchController', [ '$scope', '$http', function($scope, $http) {
+      
+    var init = function() {
+        
+        $http.get('/api/v1/lessons')
+            .success(function (response){
+                console.log("Successfully Retrieve lessons");
+                $scope.results = response;
+                console.log($scope.results);
+            })
+            .error(function (response){
+                 console.log("Failed to retrieve lessons");
             });
-        }
-    }
-});
+    };
+    
+    init();
+      
+}]);

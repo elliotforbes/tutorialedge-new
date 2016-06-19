@@ -21,17 +21,19 @@
         <div class="col s12 m8 l8">
             <div class="post-body">
                 {!! $course->body !!}
+                
+                @include('frontend.partials._ad')
             </div>
         </div><!-- .col -->
         
-        <div class="sidebar col s12 m4 l4"><!-- .sidebar -->
+        <div class="sidebar col s12 m4 l4">
             <div class="course-info">
                 <h2>Course Information:</h2>
                 <p><b>Author:</b> {{ $course->author }}</p>
                 <p><b>Date Published: </b> {{ date("d M, Y",strtotime($course->created_at)) }}</p>
-            </div><!-- .info -->
+            </div><!-- .course-info -->
             
-             <div class="register"><!-- .register -->
+             <div class="register">
                 <h2>Register Now:</h2>
                 
                 <p>Register now for free quickly using your preferred social media platform and receive the latest tutorials and updates straight to your inbox.</p>
@@ -45,21 +47,12 @@
                         <a href="{{ url('/auth/googleplus') }}"><button class="register-btn google-plus"><i class="fa fa-google-plus-square"></i> Google+</button></a>
                     </div>-->
                     <a href="{{ url('/auth/github') }}"><button class="register-btn github"><i class="fa fa-github-square"></i> Github</button></a>
-                </div>
+                </div><!-- .row -->
             </div><!-- .register -->
             
             <div class="ad"><!-- .ad -->
                 <h2>Sponsor Us:</h2>
-               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- article ad -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-6782067367590597"
-                    data-ad-slot="5293007688"
-                    data-ad-format="auto"></ins>
-                <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+               @include('frontend.partials._ad')
                 
                  <p>Want to see your own advertisement here, check out the <a href="{{ url('/contact') }}">contact page</a></p>
                 
