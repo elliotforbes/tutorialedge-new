@@ -43,15 +43,15 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
             <div class="col s12 m6 l4">
                 <div class="card">
                     <div class="card-image">
-                        <img src="{{ asset('/uploads/web-security.png') }}">
+                        <img src="{{ asset('/uploads/lwjgl3.png') }}">
                         
                     </div>
                     <div class="card-content">
-                        <h5>Web Security</h5>
-                        <p>Learn some of the most common vulnerabities in websites and how to guard against them.</p>
+                        <h5>LWJGL 3</h5>
+                        <p>Learn the basics of Graphics and Game programming using Java and the highly popular Lightweight Java Game Library 3.</p>
                     </div>
                     <div class="card-action">
-                    <a href="{{ url('/course') }}/introduction-to-web-security">View Now</a>
+                    <a href="{{ url('/course') }}/lwjgl-3-fundamentals">View Now</a>
                     </div>
                 </div>
             </div>
