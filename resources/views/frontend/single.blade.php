@@ -26,7 +26,7 @@
             <div class="post-body">
                 {!! $lesson->body !!}    
                 
-                @include('frontend.partials._ad')
+                
                 
                 <!--@include('frontend.partials._recommended')-->
                     
