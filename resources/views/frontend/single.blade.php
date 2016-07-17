@@ -24,9 +24,7 @@
             
             
             <div class="post-body">
-                {!! $lesson->body !!}    
-                
-                
+                {!! Markdown::parse($lesson->body) !!}    
                 
                 <!--@include('frontend.partials._recommended')-->
                     

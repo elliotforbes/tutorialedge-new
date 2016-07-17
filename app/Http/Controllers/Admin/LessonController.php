@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-use App\Http\Requests;
+use Markdown;
+
+use Request;
 use App\Lesson;
 use Log;
+use Carbon;
 
 class LessonController extends Controller
 {
@@ -20,7 +22,33 @@ class LessonController extends Controller
     
     public function create()
     {
+        Log::info("Create Method Hit");
         return view('admin.article.new');
+    }
+
+    public function store()
+    {
+        $input = Request::all();
+
+        $article = new Lesson();
+
+        $article->title = $input['title'];
+        $article->body = $input['body'];
+        $article->author = $input['author'];
+        $article->slug = $input['slug'];
+        $article->image_path = $input['image_path'];
+        $article->course_id = $input['course_id'];
+
+        $article->published_at = Carbon::now();
+        $article->created_at = Carbon::now();
+        $article->updated_at = Carbon::now();
+
+        $article->save();
+
+        Log::info("Store method hit");
+
+
+        return view('admin.article.edit', compact('article'));
     }
     
     public function show($slug)
@@ -31,13 +59,28 @@ class LessonController extends Controller
     
     public function edit($slug)
     {
-        $lesson = Lesson::whereSlug($slug)->get()->first();
-        return view('admin.article.edit', compact('lesson'));
+        $article = Lesson::whereSlug($slug)->get()->first();
+        return view('admin.article.edit', compact('article'));
     }
     
-    public function update()
+    public function update($slug, Request $request)
     {
         Log::info("Lesson update function hit");
+
+        $input = Request::all();
+        $article = Lesson::whereSlug($slug)->get()->first();
+
+        $article->title = $input['title'];
+        $article->body = $input['body'];
+        $article->author = $input['author'];
+        $article->slug = $input['slug'];
+        $article->image_path = $input['image_path'];
+        $article->course_id = $input['course_id'];
+        $article->updated_at = Carbon::now();
+
+        $article->save();
+
+        return view('admin.article.edit', compact('article'));
     }
     
     

@@ -4,77 +4,52 @@
 <div class="widget">
     <div class="row">
         <div class="col-lg-6">
-            <h2>Edit Post: {{ $lesson->title }}</h2>
+            <h2>Edit Post: {{ $article->title }}</h2>
         </div>
         <div class="col-lg-6"></div>
         
         <div class="clear"></div>
         
-        <form class="form" action="{{ url('/admin/articles') }}/{{ $lesson->slug }}" method="PATCH">
-            <div class="col-lg-12">
+        <div class="col-lg-12">
+            {!! Form::model($article, ['method' => 'PATCH', 'action' => ['Admin\LessonController@update', $article->slug]]) !!}
                 <div class="form-group">
-                    <label>Post Title:</label>
-                    <input type="text" value="{{ $lesson->title }}" class="form-control">
+                    {!! Form::label('Title') !!}
+                    {!! Form::text('title', null, ['class' => 'form-control']) !!}
                 </div>
-            </div>
-            
-            <div class="col-lg-6">
+
                 <div class="form-group">
-                    <label>Slug</label>
-                    <input type="text" value="{{ $lesson->slug }}" class="form-control">
+                    {!! Form::label('body') !!}
+                    {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
                 </div>
-            </div>
-            
-            <div class="col-lg-6">
+
                 <div class="form-group">
-                    <label>Status</label>
-                    <select value="{{ $lesson->status }}" class="form-control">
-                        <option value="0">Draft</option>
-                        <option value="1">Published</optino>
-                    </select>
+                    {!! Form::label('author') !!}
+                    {!! Form::text('author', null, ['class' => 'form-control']) !!}
                 </div>
-            </div>
-            
-            <div class="col-lg-12">
+
                 <div class="form-group">
-                    <label>Body</label>
-                    <textarea class="form-control">{{ $lesson->body }}</textarea>
+                    {!! Form::label('Slug') !!}
+                    {!! Form::text('slug', null, ['class' => 'form-control']) !!}
                 </div>
-            </div>
-            
-            <div class="col-lg-6">
+
                 <div class="form-group">
-                    <label>Image Path</label>
-                    <input type="text" class="form-control" value="{{ $lesson->image_path }}">
+                    {!! Form::label('Image Path') !!}
+                    {!! Form::text('image_path', null, ['class' => 'form-control']) !!}
                 </div>
-            </div>
-            
-            <div class="col-lg-6">
+
                 <div class="form-group">
-                    <label>Tags</label>
-                    <select class="form-control" multiple>
-                        <option>Tag 1</option>
-                        <option>Tag 2</option>
-                        <option>Tag 3</option>
-                    </select>
+                    {!! Form::label('Course ID') !!}
+                    {!! Form::text('course_id', null, ['class' => 'form-control']) !!}
                 </div>
-            </div>
-            
-            <div class="col-lg-6">
+
+
                 <div class="form-group">
-                    <label>Upload</label>
-                    <div class="clear"></div>
-                    <button class="btn btn-primary">Upload Image</button>
+                    {!! Form::submit('submit', ['class' => 'btn btn-primary form-control']) !!}
                 </div>
-            </div>
-            
-            
-            <div class="clear"></div>
-            <div class="col-lg-6">
-                <button class="btn btn-success">Save</button>
-            </div>
-            
-        </form>
+
+            {!! Form::close() !!}
+       </div>
+
     </div>
 </div>
 @endsection

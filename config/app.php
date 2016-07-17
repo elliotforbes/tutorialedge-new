@@ -147,10 +147,11 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         Roumen\Sitemap\SitemapServiceProvider::class,
         Themsaid\MailPreview\MailPreviewServiceProvider::class,
-        Snowfire\Beautymail\BeautymailServiceProvider::class,
+        AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -179,6 +180,7 @@ return [
         'Auth' => Illuminate\Support\Facades\Auth::class,
         'Blade' => Illuminate\Support\Facades\Blade::class,
         'Cache' => Illuminate\Support\Facades\Cache::class,
+        'Carbon' => Carbon\Carbon::class,
         'Config' => Illuminate\Support\Facades\Config::class,
         'Cookie' => Illuminate\Support\Facades\Cookie::class,
         'Crypt' => Illuminate\Support\Facades\Crypt::class,
@@ -205,7 +207,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class
     ],
 
 ];

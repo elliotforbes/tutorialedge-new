@@ -9,69 +9,48 @@
         <div class="col-lg-6"></div>
         
         <div class="clear"></div>
-        
-        <form class="form" action="" method="POST">
-            <div class="col-lg-12">
+
+        <div class="col-lg-12">
+            {!! Form::open(['url' => 'admin/articles']) !!}
                 <div class="form-group">
-                    <label>Post Title:</label>
-                    <input type="text" class="form-control">
+                    {!! Form::label('Title') !!}
+                    {!! Form::text('title', null, ['class' => 'form-control']) !!}
                 </div>
-            </div>
-            
-            <div class="col-lg-6">
+
                 <div class="form-group">
-                    <label>Slug</label>
-                    <input type="text" class="form-control">
+                    {!! Form::label('body') !!}
+                    {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
                 </div>
-            </div>
-            
-            <div class="col-lg-6">
+
                 <div class="form-group">
-                    <label>Image Path</label>
-                    <input type="text" class="form-control">
+                    {!! Form::label('author') !!}
+                    {!! Form::text('author', null, ['class' => 'form-control']) !!}
                 </div>
-            </div>
-            
-            <div class="col-lg-12">
+
                 <div class="form-group">
-                    <label>Body</label>
-                    <textarea class="form-control"></textarea>
+                    {!! Form::label('Slug') !!}
+                    {!! Form::text('slug', null, ['class' => 'form-control']) !!}
                 </div>
-            </div>
-            
-            <div class="col-lg-6">
+
                 <div class="form-group">
-                    <label>Image Path</label>
-                    <input type="text" class="form-control">
+                    {!! Form::label('Image Path') !!}
+                    {!! Form::text('image_path', null, ['class' => 'form-control']) !!}
                 </div>
-            </div>
-            
-            <div class="col-lg-6">
+
                 <div class="form-group">
-                    <label>Tags</label>
-                    <select class="form-control" multiple>
-                        <option>Tag 1</option>
-                        <option>Tag 2</option>
-                        <option>Tag 3</option>
-                    </select>
+                    {!! Form::label('Course ID') !!}
+                    {!! Form::text('course_id', null, ['class' => 'form-control']) !!}
                 </div>
-            </div>
-            
-            <div class="col-lg-6">
+
+
                 <div class="form-group">
-                    <label>Upload</label>
-                    <div class="clear"></div>
-                    <button class="btn btn-primary">Upload Image</button>
+                    {!! Form::submit('submit', ['class' => 'btn btn-primary form-control']) !!}
                 </div>
-            </div>
-            
-            
-            <div class="clear"></div>
-            <div class="col-lg-6">
-                <button class="btn btn-success">Save</button>
-            </div>
-            
-        </form>
+
+            {!! Form::close() !!}
+       </div>
+
+
     </div>
 </div>
 @endsection
