@@ -21,13 +21,22 @@
 <div class="content">
     <div class="row">
         <div class="col s12 m8 l8">
-            
+            <h2>{{ $lesson->title }}</h2>
             
             <div class="post-body">
                 {!! Markdown::parse($lesson->body) !!}    
                 
                 <!--@include('frontend.partials._recommended')-->
-                    
+               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- article ad -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-6782067367590597"
+                    data-ad-slot="5293007688"
+                    data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>     
                         
             </div><!-- .post-body -->
         </div><!-- .col s9 -->
