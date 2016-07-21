@@ -20,9 +20,7 @@
 
 <div class="content">
     <div class="row">
-        <div class="col s12 m8 l8">
-            <h2>{{ $lesson->title }}</h2>
-            
+        <div class="col s12 m8 l8">            
             <div class="post-body">
                 {!! Markdown::parse($lesson->body) !!}    
                 
