@@ -18,6 +18,11 @@
                 </div>
 
                 <div class="form-group">
+                    {!! Form::label('Description') !!}
+                    {!! Form::textarea('description', null, ['class' => 'form-control']) !!}
+                </div>
+
+                <div class="form-group">
                     {!! Form::label('body') !!}
                     {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
                 </div>
