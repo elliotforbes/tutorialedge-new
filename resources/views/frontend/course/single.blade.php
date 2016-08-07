@@ -19,8 +19,8 @@
     <div class="row">
         
         <div class="col s12 m8 l8">
-            <div class="post-body">
-                {!! $course->body !!}
+            <div class="post-body">  
+                {!! Markdown::parse($course->body) !!}
                 
                 @include('frontend.partials._ad')
             </div>
