@@ -37,8 +37,8 @@ Route::get('/error', 'PageController@error');
 
 // Route::get('/admin-test', 'Admin\AdminController@test');
 
-Route::group(['prefix' => 'admin'], function(){
-// Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
+//sRoute::group(['prefix' => 'admin'], function(){
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function (){
     Route::get('/', 'Admin\AdminController@Home'); 
     Route::resource('articles', 'Admin\LessonController');
     Route::resource('users', 'Admin\UserController');
