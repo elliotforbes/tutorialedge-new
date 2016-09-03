@@ -24,18 +24,19 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
     <div class="container">
         <div class="row">
             <h4>Courses</h4>
-            
+
+
             <div class="col s12 m6 l4">
                 <div class="card">
                     <div class="card-image">
-                        <img src="{{ asset('/uploads/artificial-intelligence.jpg') }}">
+                        <img src="{{ asset('/uploads/angular.jpg') }}">
                     </div>
                     <div class="card-content">
-                        <h5>Artificial Intelligence</h5>
-                        <p>Learn everything from Graph Theory to Machine Learning in this introductory course.</p>
+                        <h5>AngularJS Fundamentalss</h5>
+                        <p>Build your very own AngularJS Applications from the ground up and learn how to deliver high quality SPAs</p>
                     </div>
                     <div class="card-action">
-                    <a href="{{ url('/course') }}/artificial-intelligence">View Now</a>
+                    <a href="{{ url('/course') }}/angular-js-fundamentals">View Now</a>
                     </div>
                 </div>
             </div>
