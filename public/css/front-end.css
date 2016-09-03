@@ -183,6 +183,9 @@
       display: block; }
 
 body {
+  -webkit-font-smoothing: antialiased;
+  color: #444;
+  font: 400 16px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased; }
   @media (max-width: 37.5em) {
     body p, body ul, body li, body a {
@@ -395,14 +398,24 @@ nav {
     .content {
       width: 95%; } }
   .content h1, .content h2, .content h3, .content h4, .content h5 {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 800;
-    margin-bottom: 10px; }
+    font-weight: normal;
+    font-family: 'Museo Slab','Helvetica','Arial',sans-serif;
+    letter-spacing: -1px;
+    line-height: 1.3;
+    margin: 10px 0; }
   .content h1 {
     font-size: 55px;
     text-align: center; }
   .content h2 {
-    font-size: 30px; }
+    font-size: 25px; }
+  .content h3 {
+    font-size: 22px;
+    font-weight: normal; }
+  .content h4 {
+    font-size: 18px;
+    font-weight: normal; }
+  .content h5 {
+    font-size: 20px; }
   .content .info {
     margin-bottom: 20px;
     margin-top: 20px;

@@ -35,7 +35,8 @@ Main Page Content
 
 -------------------------------- */
 .cd-main-content .content-wrapper {
-  padding: 45px 5% 3em; }
+  padding: 45px 5% 3em;
+  margin-top: 40px; }
   .cd-main-content .content-wrapper h1 {
     text-align: center;
     padding: 3em 0;
@@ -59,6 +60,9 @@ Main Page Content
     margin-left: 200px; }
   .cd-main-content::before {
     content: 'desktop'; } }
+.cd-main-content .test-widget {
+  background-color: white;
+  padding: 20px; }
 
 /* -------------------------------- 
 

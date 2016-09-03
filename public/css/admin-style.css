@@ -237,6 +237,13 @@ body {
   width: 70%;
   margin: auto; }
 
+.content-wrapper {
+  width: 95%;
+  margin: auto;
+  padding: 20px; }
+  .content-wrapper .container {
+    margin-top: 20px; }
+
 .content {
   padding: 40px;
   background-color: white;

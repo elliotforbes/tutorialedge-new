@@ -57,7 +57,8 @@ Main Page Content
 
 	.content-wrapper {
 		padding: $header-height-S 5% 3em;
-
+		margin-top: 40px;
+		
 		h1 {
 			text-align: center;
 			padding: 3em 0;
@@ -98,6 +99,11 @@ Main Page Content
 		&::before {
 			content: 'desktop';
 		}
+	}
+
+	.test-widget{
+		background-color: white;
+		padding: 20px;
 	}
 }
 
