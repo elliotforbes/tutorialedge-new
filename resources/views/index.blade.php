@@ -84,20 +84,15 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
         
         @foreach($lessons as $lesson)
         <div class="lesson col s12 m6 l4">
-            <figure class="snip1253">
-                <div class="image"><img src="{{ asset('/uploads/') }}/{{ $lesson->image_path }}" alt="sample52"/></div>
-                <figcaption>
-                    <div class="date"><span class="day">{{ date("d",strtotime($lesson->created_at)) }}</span><span class="month">{{ date("M",strtotime($lesson->created_at)) }}</span></div>
-                    <h3>{{ $lesson->title }}</h3>
-                    <p>
-                        
-                        {{ $lesson->description }}
-                    </p>
-                </figcaption>
-                <footer>
-                    <div class="views"><i class="ion-eye"></i>{{ $lesson->views }}</div>
-                    </footer><a href="{{url('/') }}/{{ $lesson->slug }}"></a>
-            </figure>
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">{{ $lesson->title }}</span>
+              <p>{{ $lesson->description }}</p>
+            </div>
+            <div class="card-action">
+              <a href="{{url('/') }}/{{ $lesson->slug }}">Read More</a>
+            </div>
+          </div>
         </div>
         @endforeach
         
