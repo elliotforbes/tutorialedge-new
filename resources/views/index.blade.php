@@ -32,7 +32,7 @@ by teaching you some of the latest and greatest programming frameworks.</h3>
                         <img src="{{ asset('/uploads/angular.jpg') }}">
                     </div>
                     <div class="card-content">
-                        <h5>AngularJS Fundamentalss</h5>
+                        <h5>AngularJS Fundamentals</h5>
                         <p>Build your very own AngularJS Applications from the ground up and learn how to deliver high quality SPAs</p>
                     </div>
                     <div class="card-action">
