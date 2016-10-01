@@ -559,8 +559,15 @@ footer.page-footer{
     }
     
 }
+@media screen and (max-width: 1024px) {
+    .left-sidebar {
+        display: none !important;
+    }
+}
+
 .left-sidebar{
     background-color: white;
+    
     
     .left-sidebar-content{
         padding: 40px;
@@ -577,8 +584,10 @@ footer.page-footer{
         img{
             display: block;
             margin: auto;
-            width: 150px;
-            height: 150px;
+            width: 100%;
+            height: auto;
+            max-width: 150px;
+            max-height: 150px;
             border-radius: 75px;
         }
     }

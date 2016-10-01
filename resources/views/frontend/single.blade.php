@@ -12,7 +12,7 @@
 
 <div class="content">
     <div class="row">
-        <div class="col s12 m2 l2">
+        <div class="col s12 m12 l2">
             <div class="left-sidebar">
                 <div class="left-sidebar-content">
                     <img src="https://avatars0.githubusercontent.com/u/3332224?v=3&s=466" alt="">
@@ -24,7 +24,7 @@
             </div>
         </div>
 
-        <div class="col s12 m7 l7">            
+        <div class="col s12 m12 l7">            
             <div class="post-body">
                 <div class="post-title">
                     <h1>{!! $lesson->title !!}</h1>
@@ -41,7 +41,7 @@
             </div>
         </div><!-- .col s9 -->
         
-        <div class="sidebar col s12 m3 l3"><!-- .sidebar -->
+        <div class="sidebar col s12 m12 l3"><!-- .sidebar -->
             @include('frontend.partials._sidebar')
         </div><!-- end of sidebar-->
         
