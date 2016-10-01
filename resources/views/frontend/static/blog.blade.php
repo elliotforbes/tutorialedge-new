@@ -8,17 +8,10 @@ The Blog
 <meta name="description" content="All Blog Posts">
 @endsection
 
-@section('banner')
-<div class="gray-container">
-    <div class="content">
-        <h1>The Blog</h1>
-    </div>
-</div>
-@endsection
-
 @section('content')
 <div class="container">
     <div class="content">
+        <h1>The Blog</h1>
         @foreach($posts as $post)
         <div class="result">
             <h4>{{ $post->title }}</h4>
