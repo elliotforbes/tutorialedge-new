@@ -1,4 +1,3 @@
-
         
             <div class="post-info">
                 <h2>Post Info:</h2>

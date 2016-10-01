@@ -516,13 +516,13 @@ nav{
 
 .comment-container{
     width: 100%;
-    background-color: #F5F5F1;
     padding-top: 40px;
     padding-bottom: 40px;
     .comments{
         margin: auto;
         margin-bottom: 20px;
-        
+        background-color: white;
+        padding: 40px;
         .comment{
             margin-top: 20px;
             padding: 20px;
