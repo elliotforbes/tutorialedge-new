@@ -12,7 +12,7 @@
 
 <div class="content">
     <div class="row">
-        <div class="col s12 m3 l3">
+        <div class="col s12 m2 l2">
             <div class="left-sidebar">
                 <div class="left-sidebar-content">
                     <img src="https://avatars0.githubusercontent.com/u/3332224?v=3&s=466" alt="">
