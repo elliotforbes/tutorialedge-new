@@ -348,16 +348,51 @@ nav{
         }
         
     }
-        
-    pre {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        margin-left: -40px;
-        margin-right: -40px;
-        padding: 60px;
-        background-color: #272822;
-
+    
+    @include breakpoint(mobileonly){
+         pre {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: -40px;
+            margin-right: -40px;
+            padding: 0px;
+            background-color: #272822;
+        }
     }
+    
+    @include breakpoint(phablet){
+         pre {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: -40px;
+            margin-right: -40px;
+            padding: 60px;
+            background-color: #272822;
+        }
+    }
+    
+    @include breakpoint(tablet){
+         pre {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: -40px;
+            margin-right: -40px;
+            padding: 60px;
+            background-color: #272822;
+        }
+    }
+    @include breakpoint(laptop){
+         pre {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: -40px;
+            margin-right: -40px;
+            padding: 60px;
+            background-color: #272822;
+        }
+    }
+
+   
     
     .tip{
         background-color: $pale-white;

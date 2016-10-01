@@ -426,13 +426,38 @@ nav {
     .content .info p {
       margin: 0;
       padding: 0; }
-  .content pre {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: -40px;
-    margin-right: -40px;
-    padding: 60px;
-    background-color: #272822; }
+  @media (max-width: 37.5em) {
+    .content pre {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: -40px;
+      margin-right: -40px;
+      padding: 0px;
+      background-color: #272822; } }
+  @media (min-width: 37.5em) {
+    .content pre {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: -40px;
+      margin-right: -40px;
+      padding: 60px;
+      background-color: #272822; } }
+  @media (min-width: 50em) {
+    .content pre {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: -40px;
+      margin-right: -40px;
+      padding: 60px;
+      background-color: #272822; } }
+  @media (min-width: 64em) {
+    .content pre {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: -40px;
+      margin-right: -40px;
+      padding: 60px;
+      background-color: #272822; } }
   .content .tip {
     background-color: #F5F5F1;
     padding: 20px;

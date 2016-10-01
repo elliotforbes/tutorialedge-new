@@ -19,7 +19,7 @@
         <script>hljs.initHighlightingOnLoad();</script>
 
         <link rel="stylesheet" href="{{ asset('/css/materialize.min.css', Request::secure() )  }}">
-        <link rel="stylesheet" href="{{ asset('/css/front-end.css' , Request::secure() ) }}?v=24">
+        <link rel="stylesheet" href="{{ asset('/css/front-end.css' , Request::secure() ) }}?v=25">
   
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
         <script src="https://use.fontawesome.com/9b263d09bd.js"></script>
@@ -120,9 +120,7 @@
         <!--Import jQuery before materialize.js-->
         
         
-        <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/prism.min.js"></script>-->
         <script type="text/javascript" src="{{ asset('/js/jquery.min.js', Request::secure()) }}"></script>
-        <script type="text/javascript" src="{{ asset('/js/typed.js', Request::secure()) }}"></script>
         <script type="text/javascript" src="{{ asset('/js/materialize.min.js', Request::secure()) }}"></script>
         <script type="text/javascript" src="{{ asset('/js/site-scripts.js', Request::secure()) }}"></script>
     </body>    
