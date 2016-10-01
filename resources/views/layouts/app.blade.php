@@ -19,7 +19,7 @@
         <script>hljs.initHighlightingOnLoad();</script>
 
         <link rel="stylesheet" href="{{ asset('/css/materialize.min.css', Request::secure() )  }}">
-        <link rel="stylesheet" href="{{ asset('/css/front-end.css' , Request::secure() ) }}?v=213">
+        <link rel="stylesheet" href="{{ asset('/css/front-end.css' , Request::secure() ) }}?v=24">
   
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
         <script src="https://use.fontawesome.com/9b263d09bd.js"></script>
