@@ -26,22 +26,22 @@
                     <div class="row">
                         <div class="col s12 m6 l3">
                             <div class="twitter">
-                                <a href="https://twitter.com/Elliot_F"><i class="ion ion-social-twitter"></i></a>
+                                <a target="_blank" href="https://twitter.com/Elliot_F"><i class="ion ion-social-twitter"></i></a>
                             </div>
                         </div>
                         <div class="col s12 m6 l3">
                             <div class="facebook">
-                                <a href="https://www.facebook.com/tutorialedge"><i class="ion ion-social-facebook"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/tutorialedge"><i class="ion ion-social-facebook"></i></a>
                             </div>
                         </div>
                         <div class="col s12 m6 l3">
                             <div class="github">
-                                <a href="https://github.com/emforce"><i class="ion ion-social-github"></i></a>
+                                <a target="_blank" href="https://github.com/emforce"><i class="ion ion-social-github"></i></a>
                             </div>
                         </div>
                         <div class="col s12 m6 l3">
                             <div class="youtube">
-                                <a href="https://www.youtube.com/channel/UCwFl9Y49sWChrddQTD9QhRA"><i class="ion ion-social-youtube"></i></a>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCwFl9Y49sWChrddQTD9QhRA"><i class="ion ion-social-youtube"></i></a>
                             </div>
                         </div>
                     </div>
