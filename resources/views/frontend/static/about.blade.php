@@ -8,17 +8,10 @@ The Story
 <meta name="description" content="The Story">
 @endsection
 
-@section('banner')
-<div class="gray-container">
-    <div class="content">
-        <h1>The Story:</h1>
-    </div>
-</div>
-@endsection
-
 @section('content')
 <div class="container">
-    <div class="content">
+    <div class="post-body">
+        <h1>The Story:</h1>
         <p><strong>Originally started in December of 2014</strong> this site began as a side hobby of mine and has quickly grown into one of the most successful side projects I've ever worked upon. Since it's conception it's racked up well over 100,000 page views and it's still growing.</p>
         
         <p>It's undergone <b>many changes</b> since it was first created and overall I've probably commited well over 1,000 hours towards the site and it's content. This is something I use to hone my own programming skills and I use it as a means of expanding my programming horizons by encouraging me to move into new areas that I've never touched before.</p>
@@ -38,12 +31,6 @@ The Story
         <p>My plan for the site is to hit the 100 complete tutorials milestone and get the new forum system up and running so that the site can continue to grow and provide help on all aspects of web development. I hope to build a thriving online community that will become the authority on all things web development related.</p>
 
         
-    </div>
-</div>
-
-<div class="comment-container">
-    <div class="comments">
-        @include('frontend.partials._author')
     </div>
 </div>
 @endsection
