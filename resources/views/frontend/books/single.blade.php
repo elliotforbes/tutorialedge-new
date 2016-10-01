@@ -8,20 +8,14 @@
 <meta name="description" content="{{ $book->description }}">
 @endsection
 
-@section('banner')
-<div class="gray-container">
-    <div class="content">
-        <h1>{{ $book->book_name }} Review</h1>
-    </div>
-</div>
-@endsection
-
 @section('content')
 
 <div class="content">
     <div class="row">
         <div class="col s12 m8 l8">
             <div class="post-body">
+                 <h1>{{ $book->book_name }} Review</h1>
+
                 {!! $book->body !!}    
                 
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

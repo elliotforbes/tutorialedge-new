@@ -8,20 +8,10 @@ All Courses
 <meta name="description" content="All Courses">
 @endsection
 
-@section('banner')
-<div class="gray-container">
-    <div class="content">
-        <h1>All Courses</h1>
-        <div class="info">
-            
-        </div>
-    </div>
-</div>
-@endsection
-
 @section('content')
 <div class="container">
     <div class="course-container row">
+    <h1>All Courses</h1>
     @foreach($courses as $course)
         <div class="col s12 m6 l4">
             <div class="card">

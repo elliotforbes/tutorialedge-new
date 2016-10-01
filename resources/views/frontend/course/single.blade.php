@@ -9,17 +9,12 @@
 @endsection
 
 @section('content')
-<div class="gray-container">
-    <div class="content">
-        <h1>{{ $course->title }}</h1>
-    </div><!-- .content -->
-</div><!-- .gray-container -->
-
 <div class="content">
     <div class="row">
         
         <div class="col s12 m8 l8">
             <div class="post-body">  
+                <h1>{{ $course->title }}</h1>
                 {!! Markdown::parse($course->body) !!}
                 
                 @include('frontend.partials._ad')

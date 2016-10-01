@@ -8,17 +8,10 @@ All Tutorials
 <meta name="description" content="All Tutorials">
 @endsection
 
-@section('banner')
-<div class="gray-container">
-    <div class="content">
-        <h1>All Tutorials</h1>
-    </div>
-</div>
-@endsection
-
 @section('content')
 <div class="container">
     <div class="course-container row">
+    <h1>All Tutorials</h1>
     @foreach($lessons as $lesson)
         <div class="lesson col s12 m6 l4">
             <figure class="snip1253">
