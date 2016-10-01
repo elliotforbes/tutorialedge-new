@@ -8,52 +8,44 @@
 <meta name="description" content="{{ $lesson->description }}">
 @endsection
 
-@section('banner')
-<div class="gray-container">
-    <div class="content">
-        <h1>{{ $lesson->title }}</h1>
-    </div>
-</div>
-@endsection
-
 @section('content')
 
 <div class="content">
     <div class="row">
-        <div class="col s12 m8 l8">            
+        <div class="col s2 m2 l2">
+            <div class="left-sidebar">
+                <div class="left-sidebar-content">
+                    <img src="https://avatars0.githubusercontent.com/u/3332224?v=3&s=466" alt="">
+                    <h2>{!! $lesson->author !!}</h2>
+                    <h4>Software Engineer</h4>
+                </div>
+                <div class="social-links">
+                </div>
+            </div>
+        </div>
+
+        <div class="col s8 m8 l7">            
             <div class="post-body">
-                {!! Markdown::parse($lesson->body) !!}    
-                
-                <!--@include('frontend.partials._recommended')-->
-               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- article ad -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-6782067367590597"
-                    data-ad-slot="5293007688"
-                    data-ad-format="auto"></ins>
-                <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>     
-                        
+                <div class="post-title">
+                    <h1>{!! $lesson->title !!}</h1>
+                </div>  
+
+                {!! Markdown::parse($lesson->body) !!}                    
             </div><!-- .post-body -->
+
+            <div class="comment-container">
+                <div class="comments">
+                @include('frontend.partials._comments')
+                </div>
+                <div class="clear"></div>
+            </div>
         </div><!-- .col s9 -->
         
-        <div class="sidebar col s12 m4 l4"><!-- .sidebar -->
-            
+        <div class="sidebar col s2 m2 l3"><!-- .sidebar -->
             @include('frontend.partials._sidebar')
-            
         </div><!-- end of sidebar-->
         
     </div>
-</div>
-<div class="comment-container">
-    <div class="comments">
-    @include('frontend.partials._author')
-
-    @include('frontend.partials._comments')
-    </div>
-    <div class="clear"></div>
 </div>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=emforce"></script>
