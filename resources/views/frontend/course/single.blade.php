@@ -15,7 +15,7 @@
             <div class="left-sidebar">
                 <div class="left-sidebar-content">
                     <img src="https://avatars0.githubusercontent.com/u/3332224?v=3&s=466" alt="">
-                    <h2>{!! $lesson->author !!}</h2>
+                    <h2>{!! $course->author !!}</h2>
                     <h4>Software Engineer</h4>
 
                     <p>23 Year old Software Engineer who loves all manner of front end programing.</p>
