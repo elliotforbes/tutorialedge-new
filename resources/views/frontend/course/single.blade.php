@@ -97,10 +97,4 @@
     </div><!-- .row -->
 </div><!-- .content -->
 
-<div class="gray-container">
-    <div class="content">
-        @include('frontend.partials._author')
-    </div>
-</div>
-
 @endsection
